@@ -22,12 +22,4 @@ const JumbotronMain = ({ title }) => (
   </Jumbotron>
 );
 
-JumbotronMain.propTypes = {
-  title: string,
-};
-
-JumbotronMain.defaultProps = {
-  title: 'Please provide a title',
-};
-
 export default JumbotronMain;
