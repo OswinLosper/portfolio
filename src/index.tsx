@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
@@ -15,10 +15,11 @@ import AboutPage from '~/components/pages/about';
 
 render(
   <BrowserRouter>
-    <Route exact path="/" component={HomePage}
-    />
-    <Route exact path="/" component={AboutPage}
-    />
+    <Switch>
+      <Route exact path="/" component={HomePage}/>
+      <Route exact path="/home" component={HomePage}/>
+      <Route exact path="/about" component={AboutPage}/>
+    </Switch>
   </BrowserRouter>,
   target,
 );

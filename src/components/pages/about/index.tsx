@@ -2,25 +2,32 @@ import React, { Component } from 'react';
 import { Navbar } from '~/components/molecules';
 
 import {
-  MainContainer,
-  AutomationTester,
+  HeadingTextWaterMark,
+  HeadingText,
  } from '~/styles';
 
-export default class AboutPage extends Component<any> {
+ export interface IAboutPageProps {
+  title?: string;
+}
+
+export default class AboutPage extends Component<IAboutPageProps, any> {
   static defaultProps = {
-    title: 'Welcome!',
+    title: 'About Us!',
   };
 
   render() {
     return (
-      <MainContainer
-      >
-        <AutomationTester>
-          About Us Tester
-        </AutomationTester>
-      </MainContainer>
+      <div>
+        <Navbar
+        />
+     <HeadingTextWaterMark>
+        who am i
+     </HeadingTextWaterMark> 
 
-
+         <HeadingText>
+       about me
+     </HeadingText> 
+     </div>
     );
   }
 }
