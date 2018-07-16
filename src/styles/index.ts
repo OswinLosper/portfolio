@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import withProps from 'styled-components-ts';
-
+import img from '../resources/bg.jpg';
 
 export const MainContainer = withProps<any>(styled.div)`
   flex-direction: column;
   align-items: center;
   padding: 15rem 0rem 0rem 25rem;
-  width: 100%;
-  height: 100%;
+  background-image: url(${img});
+  background-repeat: no-repeat top center fixed;
 `;
 
 export const AutomationTester = withProps<any>(styled.div)`
@@ -32,14 +32,14 @@ export const HomeText = withProps<any>(styled.div)`
      color: #808080;
 `;
 
-
 export const HomeButtonsContainer = withProps<any>(styled.div)`
 display: flex;
-margin-top: 25px
+margin-top: 35px
 margin-right: 14px;
 `;
 
 export const HomeButtons = withProps<any>(styled.button)`
+    background-color: rgba(255,0,0,0.0);
     border: 1px solid #808080;
     color: #808080;
     padding: 15px 32px;
@@ -49,6 +49,9 @@ export const HomeButtons = withProps<any>(styled.button)`
     font-size: 16px;
     cursor: pointer;
     margin-right: 20px;
+    :hover {
+        background-color: rgba(255,255,255,0.9);
+    }
 `;
 
 

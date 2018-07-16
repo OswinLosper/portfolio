@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar } from '~/components/molecules';
+
 import {
   MainContainer,
   AutomationTester,
@@ -21,7 +22,8 @@ export default class HomePage extends Component<IHomePageProps, any> {
 
   render() {
     return (
-      <MainContainer>
+      <MainContainer
+      >
         <AutomationTester>
           Automation Tester
         </AutomationTester>
@@ -35,7 +37,7 @@ export default class HomePage extends Component<IHomePageProps, any> {
         </Designer>
 
         <HomeText>
-          Hi, I'm Oswin Losper. 27 year old automation tester, front-end developer and designer based in Cape Town..
+          Hi, I'm Oswin Losper. 27 year old automation tester, front-end developer and designer based in Cape Town.
         </HomeText>
 
         <HomeButtonsContainer>
