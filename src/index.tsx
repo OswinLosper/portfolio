@@ -11,10 +11,14 @@ const { render } = ReactDOM;
 const target = document.querySelector('#root') as HTMLElement;
 
 import HomePage from '~/components/pages/home';
+import AboutPage from '~/components/pages/about';
 
 render(
   <BrowserRouter>
-    <Route exact path="/" component={HomePage} />
+    <Route exact path="/" component={HomePage}
+    />
+    <Route exact path="/" component={AboutPage}
+    />
   </BrowserRouter>,
   target,
 );

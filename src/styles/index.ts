@@ -7,7 +7,6 @@ export const MainContainer = withProps<any>(styled.div)`
   align-items: center;
   padding: 15rem 0rem 0rem 25rem;
   background-image: url(${img});
-  background-repeat: no-repeat top center fixed;
 `;
 
 export const AutomationTester = withProps<any>(styled.div)`
