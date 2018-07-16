@@ -4,14 +4,13 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import './index.css';
+// import './styles/index.css';
 
 import registerServiceWorker from './registerServiceWorker';
 const { render } = ReactDOM;
 const target = document.querySelector('#root') as HTMLElement;
 
 import HomePage from '~/components/pages/home';
-
 
 render(
   <BrowserRouter>
