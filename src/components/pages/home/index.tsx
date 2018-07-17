@@ -1,14 +1,24 @@
 import React, { Component } from 'react';
 import { Navbar } from '~/components/molecules';
+import { Buttons } from '~/components/molecules';
+
+import ibgImg from '~/resources/bg.jpg';
+
+const bgStyle = {
+  width: '100%',
+  backgroundImage: `url(${ibgImg})`,
+};
 
 import {
   MainContainer,
+  HomeLogoContainer,
   AutomationTester,
   FrontEnd,
   Designer,
   HomeText,
   HomeButtonsContainer,
-  HomeButtons
+  HomeButtons,
+  LayoutContainer,
  } from '~/styles';
 
 export interface IHomePageProps {
@@ -22,39 +32,21 @@ export default class HomePage extends Component<IHomePageProps, any> {
 
   render() {
     return (
-      <MainContainer
-      >
-        <AutomationTester>
-          Automation Tester
-        </AutomationTester>
-
-        <FrontEnd>
-          Front-End Developer
-        </FrontEnd>
-
-        <Designer>
-          Designer
+      <LayoutContainer>
+          <MainContainer data-qa="main-container">
+            <Designer>
+              Automation Tester, Designer
         </Designer>
 
-        <HomeText>
-          Hi, I'm Oswin Losper. 27 year old automation tester, front-end developer and designer based in Cape Town.
+            <FrontEnd>
+              Front-end developer
+        </FrontEnd>
+            <HomeText>
+              Hi, I'm Oswin Losper. 27 year old automation tester, front-end developer and designer based in Cape Town.
         </HomeText>
-
-        <HomeButtonsContainer>
-          <HomeButtons>
-            About & Contact
-          </HomeButtons>
-
-          <HomeButtons>
-            My Work
-          </HomeButtons>
-
-          <HomeButtons>
-            Resume
-          </HomeButtons>
-        </HomeButtonsContainer>
-
-      </MainContainer>
+          <Buttons />
+          </MainContainer>
+      </LayoutContainer>
 
 
     );

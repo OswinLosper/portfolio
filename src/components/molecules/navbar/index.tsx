@@ -24,7 +24,7 @@ export default class ExampleNavbar extends Component<any, any> {
     return (
       <HeaderContainer>
         <LogoContainer>
-        
+
         </LogoContainer>
 
         <NavContainer>
@@ -33,7 +33,7 @@ export default class ExampleNavbar extends Component<any, any> {
             <a href="/#/">MY WORK</a> |
             <a href="/#/">MY RESUME</a>
             </nav>
-        </NavContainer>            
+        </NavContainer>
       </HeaderContainer>
     );
   }
