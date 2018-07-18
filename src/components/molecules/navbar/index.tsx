@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+
+import arrowBack from '~/resources/arrow-back.png';
+import logo from '~/resources/logo.png';
+
 import {
   HeaderContainer,
   LogoContainer,
   NavContainer,
+  BackContainer,
 } from '~/styles';
-
 
 export default class ExampleNavbar extends Component<any, any> {
   constructor(props) {
@@ -22,19 +26,30 @@ export default class ExampleNavbar extends Component<any, any> {
   }
   render() {
     return (
-      <HeaderContainer>
-        <LogoContainer>
+      <HeaderContainer
+      data-qa= "header container"
+      >
+        <BackContainer
+          data-qa= "back container"
+          >
+          <img src={arrowBack} width="70px" />
+        </BackContainer>
 
+          <LogoContainer
+          data-qa= "logo container">
+          <img src={logo} width="150px" />
         </LogoContainer>
 
-        <NavContainer>
-            <nav>
-            <a href="/#/">ABOUT ME</a> |
-            <a href="/#/">MY WORK</a> |
-            <a href="/#/">MY RESUME</a>
-            </nav>
-        </NavContainer>
       </HeaderContainer>
+
     );
   }
 }
+
+{/* <NavContainer>
+  <nav>
+    <a href="/#/">ABOUT ME</a> |
+            <a href="/#/">MY WORK</a> |
+            <a href="/#/">MY RESUME</a>
+  </nav>
+</NavContainer> */}

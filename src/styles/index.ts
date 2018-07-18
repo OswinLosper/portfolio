@@ -70,24 +70,28 @@ export const HomeButtons = withProps<any>(styled.button)`
 
 export const HeaderContainer = withProps<any>(styled.div)`
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
 flex-direction: row;
 align-items: center;
-padding: 3px 5px 7px 10px;
-background-color: #000;
+margin-top: 1rem;
+position: fixed;
+width: 100%;
+`;
+
+export const BackContainer = withProps<any>(styled.div)`
+justify-content: flex-start;
+margin-left: 10%;
 `;
 
 export const LogoContainer = withProps<any>(styled.div)`
-background-repeat: no-repeat;
-width: 300px;
-height: 100px;
+justify-content: flex-end;
+margin-right: 10%;
 `;
 
 export const NavContainer = withProps<any>(styled.div)`
 font-size: 1rem;
 padding-right: 1rem;
 color: #fff;
-
     & a {
         color: #fff;
         text-decoration: none;
@@ -218,7 +222,7 @@ height: 150px;
 max-width: 150px;
 min-width: 10rem
 :hover {
-  background-color: #efefef;;
+  background-color: #efefef;
 }
 `;
 
@@ -261,6 +265,7 @@ flex-direction: column;
 color: #fff;
 background-color: #d6595e;
 padding: 5rem;
+margin-top: 5rem;
 }
 `;
 
@@ -303,3 +308,48 @@ font-size: 2rem;
 font-weight: 300;
 }
 `;
+
+export const Laptop = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+flex-direction: row;
+align-items: center;
+margin-bottom: 2rem;
+height: 80vh;
+}
+`;
+
+export const ProjectButtonWrapper = withProps<any>(styled.div)`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255,0,0,0.0);
+    color: #808080;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    :hover {
+        background-color: rgba(255,255,255,0.9);
+    }
+`;
+
+export const ProjectButton = withProps<any>(styled.div)`
+    background-color: rgba(255,0,0,0.0);
+    border: 1px solid #808080;
+    color: #808080;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 250px;
+    margin-bottom: 5rem;
+    :hover {
+        background-color: #efefef;;
+    }
+`;
+
+

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
-import { Experience } from '~/components/molecules';
-import { SocialMedia } from '~/components/molecules';
-import { Skills } from '~/components/molecules';
-import { Footer } from '~/components/molecules';
-
+import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
 import {
   HeadingTextWaterMark,
   HeadingText,
@@ -26,6 +22,7 @@ export default class AboutPage extends Component<IAboutPageProps, any> {
   render() {
     return (
       <div>
+        <Navbar />
 
      <HeadingTextWaterMark>
         who am i
