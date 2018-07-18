@@ -5,3 +5,7 @@ export { default as Experience } from './experience';
 export { default as Buttons } from './buttons';
 export { default as Skills } from './skills';
 export { default as Footer } from './footer';
+export { default as PreviousWork } from './previous-work';
+export { default as SkillandTools } from './skills-tools';
+
+

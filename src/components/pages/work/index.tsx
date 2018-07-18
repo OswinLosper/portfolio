@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import laptop from '~/resources/laptop-previous.png';
 
 import { Navbar } from '~/components/molecules';
-
 import { Footer } from '~/components/molecules';
 
 import {
@@ -18,7 +17,7 @@ export interface IWorkPageProps {
   title?: string;
 }
 
-export default class AboutPage extends Component<IWorkPageProps, any> {
+export default class WorkPage extends Component<IWorkPageProps, any> {
   static defaultProps = {
     title: 'Work',
   };

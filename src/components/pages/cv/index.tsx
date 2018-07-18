@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import { PreviousWork } from '~/components/molecules';
+import { SkillandTools } from '~/components/molecules';
+
 import {
   CVLAYOUT,
   HeaderLayout,
@@ -71,12 +74,12 @@ export default class CVPage extends Component<ICVPageProps, any> {
 
     <MiddleSection>
           <WorkEperienceSection>
-                  ergergergerhger
+           <PreviousWork/>
           </WorkEperienceSection>
 
-        <RightSideBarSection>
-  ergergergergerhg
-        </RightSideBarSection>
+          <RightSideBarSection>
+            <SkillandTools/>
+          </RightSideBarSection>
 
         </MiddleSection>
       </CVLAYOUT>
