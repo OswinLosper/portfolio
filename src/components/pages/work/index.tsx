@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-import laptop from '~/resources/laptop-previous.png';
+import laptop from '~/resources/laptop.png';
+import logolaptop from '~/resources/logo-design-laptop1.jpg';
+import logolaptop2 from '~/resources/logo-design-laptop2.jpg';
 
 import { Navbar, Footer } from '~/components/molecules';
 
@@ -64,7 +66,7 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
         </ProjectButtonWrapper>
 
         <Laptop>
-          <img src={laptop} width="800px" />
+          <img src={logolaptop2} width="800px" />
         </Laptop>
 
         <ProjectButtonWrapper>
@@ -74,12 +76,12 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
         </ProjectButtonWrapper>
 
         <Laptop>
-          <img src={laptop} width="800px" />
+          <img src={logolaptop} width="800px" />
         </Laptop>
 
         <ProjectButtonWrapper>
           <ProjectButton>
-            View project
+            View logos
             </ProjectButton>
         </ProjectButtonWrapper>
 
