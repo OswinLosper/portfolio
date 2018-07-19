@@ -90,9 +90,10 @@ width: 100%;
 
 export const RightSideBarSection = withProps<any>(styled.div)`
 display: flex;
-flex-direction: column;
 background-color: #000;
 color: #fff;
+min-width: 20%;
+max-width: 20%;
 `;
 
 export const WorkSection = withProps<any>(styled.div)`
@@ -116,6 +117,7 @@ justify-content: space-between;
 export const PositionTitle = withProps<any>(styled.div)`
 background-color: #852147;
 justify-content: space-between;
+border-bottom: 2px solid #ff0;
 `;
 
 export const Date = withProps<any>(styled.div)`
@@ -132,6 +134,24 @@ export const WorkDescription = withProps<any>(styled.div)`
 background-color: #FF33AC;
 color: #fff;
 border-bottom: 2px solid #ff0;
+`;
+
+export const SideBarSection = withProps<any>(styled.div)`
+padding: 10px;
+`;
+
+export const SkillsandToolsSection = withProps<any>(styled.div)`
+background-color: #0A5905;
+`;
+
+export const SideBarHeading = withProps<any>(styled.div)`
+padding-bottom: 5px;
+border-bottom: 1px solid #ff0;
+font-size: 1.1rem;
+`;
+
+export const SkillsandTools = withProps<any>(styled.div)`
+background-color: #DCA101
 `;
 
 

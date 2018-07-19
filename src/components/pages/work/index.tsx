@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 import laptop from '~/resources/laptop-previous.png';
 
-import { Navbar } from '~/components/molecules';
-import { Footer } from '~/components/molecules';
+import { Navbar, Footer } from '~/components/molecules';
 
 import {
+  InnerPagesLayoutContainer,
   HeadingTextWaterMark,
   HeadingText,
   Laptop,
@@ -24,7 +24,7 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
 
   render() {
     return (
-      <div>
+      <InnerPagesLayoutContainer>
         <Navbar />
         <HeadingTextWaterMark>
           small work selection
@@ -84,7 +84,8 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
         </ProjectButtonWrapper>
 
         <Footer/>
-      </div>
+
+      </InnerPagesLayoutContainer>
     );
   }
 }

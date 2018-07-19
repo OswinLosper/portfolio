@@ -1,3 +1,3 @@
-export { default as cvInformation } from '~/components/pages/cv/cv-data';
+export { default as cvInformation } from '~/components/pages/cv/work-description-data';
 
 

@@ -31,3 +31,4 @@ const cvInformation = [
 ];
 
 export default cvInformation;
+

@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar } from '~/components/molecules';
 import { Buttons } from '~/components/molecules';
 
 import ibgImg from '~/resources/bg.jpg';
-
-const bgStyle = {
-  width: '100%',
-  backgroundImage: `url(${ibgImg})`,
-};
 
 import {
   MainContainer,
@@ -45,6 +39,7 @@ export default class HomePage extends Component<IHomePageProps, any> {
               Hi, I'm Oswin Losper. 27 year old automation tester, front-end developer and designer based in Cape Town.
         </HomeText>
           <Buttons />
+
           </MainContainer>
       </LayoutContainer>
 

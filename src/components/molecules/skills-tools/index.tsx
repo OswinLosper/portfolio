@@ -1,27 +1,54 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import {
-} from '~/styles';
+  SideBarSection,
+  SkillsandToolsSection,
+  SideBarHeading,
+  SkillsandTools,
+} from '~/components/pages/cv/styles';
+
+import { cvSideBarInformation } from '~/components/pages/cv/sidebar';
 
 export default class SkillsTools extends Component<any, any> {
   constructor(props) {
     super(props);
+  }
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false,
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
+  state = {
+    items: cvSideBarInformation,
+  };
+
   render() {
+    const {
+      items,
+    } = this.state;
+
     return (
-      <div>
-        THIS IS A MOLECULE FOR SKILLS AND TOOLS
-      </div>
+      <SideBarSection>
+
+        {items.map(({
+          id, heading, information,
+        }) => (
+            <Fragment key={id}>
+
+        <SkillsandToolsSection>
+        <SideBarHeading>
+            {heading}
+         </SideBarHeading>
+            {
+              information.map(
+                ({ idInfo, title, }) =>
+                (<SkillsandTools id={idInfo}>{title}</SkillsandTools>),
+              )
+            }
+        </SkillsandToolsSection>
+        </Fragment>
+
+          ))}
+      </SideBarSection>
+
     );
   }
 }
+
+

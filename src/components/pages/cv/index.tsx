@@ -26,7 +26,6 @@ export default class CVPage extends Component<ICVPageProps, any> {
     title: 'Work',
   };
 
-
   render() {
     return (
       <CVLAYOUT>
@@ -71,18 +70,16 @@ export default class CVPage extends Component<ICVPageProps, any> {
     </Text>
 
     <MiddleSection>
-          <WorkEperienceSection>
 
-           <PreviousWork/>
-          </WorkEperienceSection>
+      <WorkEperienceSection>
+        <PreviousWork/>
+      </WorkEperienceSection>
 
-          <RightSideBarSection>
-            <SkillandTools/>
-          </RightSideBarSection>
+      <RightSideBarSection>
+        <SkillandTools/>
+      </RightSideBarSection>
 
-        </MiddleSection>
-
-
+    </MiddleSection>
 
       </CVLAYOUT>
 

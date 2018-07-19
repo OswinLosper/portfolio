@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import withProps from 'styled-components-ts';
 import img from '../resources/bg.jpg';
+import bg from '../resources/innerBG.png';
 
 export const LayoutContainer = withProps<any>(styled.div)`
 display: flex;
@@ -8,6 +9,12 @@ flex-direction: column;
 height: 100vh;
 justify-content: center;
  background-image: url(${img});
+`;
+
+export const InnerPagesLayoutContainer = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+ background-image: url(${bg});
 `;
 
 export const MainContainer = withProps<any>(styled.div)`

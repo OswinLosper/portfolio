@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
 import {
+  InnerPagesLayoutContainer,
   HeadingTextWaterMark,
   HeadingText,
   WrapperText,
@@ -21,7 +22,7 @@ export default class AboutPage extends Component<IAboutPageProps, any> {
 
   render() {
     return (
-      <div>
+      <InnerPagesLayoutContainer>
         <Navbar />
 
      <HeadingTextWaterMark>
@@ -78,7 +79,7 @@ export default class AboutPage extends Component<IAboutPageProps, any> {
 
         <Footer />
 
-      </div>
+      </InnerPagesLayoutContainer>
     );
   }
 }
