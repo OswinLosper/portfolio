@@ -85,11 +85,53 @@ export const WorkEperienceSection = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
 background-color: #548;
+width: 100%;
 `;
 
 export const RightSideBarSection = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
 background-color: #000;
+color: #fff;
 `;
+
+export const WorkSection = withProps<any>(styled.div)`
+padding: 10px;
+`;
+
+export const PositionHeader = withProps<any>(styled.div)`
+display: flex;
+background-color: #33FF74;
+justify-content: space-between;
+align-items: center;
+border-bottom: 2px solid #ff0;
+`;
+
+export const PositionandDate = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+`;
+
+export const PositionTitle = withProps<any>(styled.div)`
+background-color: #852147;
+justify-content: space-between;
+`;
+
+export const Date = withProps<any>(styled.div)`
+background-color: #107E7D;
+justify-content: space-between;
+`;
+
+export const CompanyName = withProps<any>(styled.div)`
+background-color: #3FA34D;
+justify-content: space-between;
+`;
+
+export const WorkDescription = withProps<any>(styled.div)`
+background-color: #FF33AC;
+color: #fff;
+border-bottom: 2px solid #ff0;
+`;
+
 

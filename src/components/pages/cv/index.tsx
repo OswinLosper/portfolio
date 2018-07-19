@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
-import { PreviousWork } from '~/components/molecules';
-import { SkillandTools } from '~/components/molecules';
+import { PreviousWork, SkillandTools } from '~/components/molecules';
 
 import {
   CVLAYOUT,
@@ -27,12 +26,12 @@ export default class CVPage extends Component<ICVPageProps, any> {
     title: 'Work',
   };
 
+
   render() {
     return (
       <CVLAYOUT>
 
         <HeaderLayout>
-
         <Heading>
            Oswin Losper
         <Title>
@@ -69,11 +68,11 @@ export default class CVPage extends Component<ICVPageProps, any> {
            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
            and more recently with desktop publishing software
           like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
     </Text>
 
     <MiddleSection>
           <WorkEperienceSection>
+
            <PreviousWork/>
           </WorkEperienceSection>
 
@@ -82,6 +81,9 @@ export default class CVPage extends Component<ICVPageProps, any> {
           </RightSideBarSection>
 
         </MiddleSection>
+
+
+
       </CVLAYOUT>
 
     );
