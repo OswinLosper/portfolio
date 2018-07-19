@@ -72,10 +72,9 @@ export default class AboutPage extends Component<IAboutPageProps, any> {
        </HeadingText>
         <SocialMedia />
 
-
         <GitHubText>
-            Designed & coded with passion by me. Open source on Github.
-          </GitHubText>
+          Designed & coded with passion by me. Open source on Github.
+        </GitHubText>
 
         <Footer />
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import arrowBack from '~/resources/arrow-back.png';
-import logo from '~/resources/logo.png';
+import arrowBack from '~/resources/icons/back-arrow.svg';
+import logo from '~/resources/icons/logo.svg';
 
 import {
   HeaderContainer,
@@ -30,14 +30,14 @@ export default class ExampleNavbar extends Component<any, any> {
       data-qa= "header container"
       >
         <BackContainer
-          data-qa= "back container"
+          data-qa="back container"
           >
-          <img src={arrowBack} width="70px" />
+          <img src={arrowBack} width="150px" />
         </BackContainer>
 
           <LogoContainer
-          data-qa= "logo container">
-          <img src={logo} width="150px" />
+          data-qa="logo container">
+          <img src={logo} width="150px"/>
         </LogoContainer>
 
       </HeaderContainer>

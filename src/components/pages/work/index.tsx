@@ -27,14 +27,14 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
       <InnerPagesLayoutContainer>
         <Navbar />
         <HeadingTextWaterMark>
-          small work selection
+          what i do
      </HeadingTextWaterMark>
         <HeadingText>
           My work
       </HeadingText>
 
         <Laptop>
-          <img src={laptop} width="1000px" />
+          <img src={laptop} width="800px" />
         </Laptop>
 
         <ProjectButtonWrapper>
@@ -44,7 +44,7 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
         </ProjectButtonWrapper>
 
         <Laptop>
-          <img src={laptop} width="1000px" />
+          <img src={laptop} width="800px" />
         </Laptop>
 
         <ProjectButtonWrapper>
@@ -54,7 +54,7 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
         </ProjectButtonWrapper>
 
         <Laptop>
-          <img src={laptop} width="1000px" />
+          <img src={laptop} width="800px" />
         </Laptop>
 
         <ProjectButtonWrapper>
@@ -64,7 +64,7 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
         </ProjectButtonWrapper>
 
         <Laptop>
-          <img src={laptop} width="1000px" />
+          <img src={laptop} width="800px" />
         </Laptop>
 
         <ProjectButtonWrapper>
@@ -74,7 +74,7 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
         </ProjectButtonWrapper>
 
         <Laptop>
-          <img src={laptop} width="1000px" />
+          <img src={laptop} width="800px" />
         </Laptop>
 
         <ProjectButtonWrapper>

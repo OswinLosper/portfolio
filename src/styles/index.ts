@@ -71,7 +71,7 @@ export const HomeButtons = withProps<any>(styled.button)`
     cursor: pointer;
     margin-right: 20px;
     :hover {
-        background-color: rgba(255,255,255,0.9);
+        background-color: rgba(255,255,255,0.5);
     }
 `;
 
@@ -80,19 +80,26 @@ display: flex;
 justify-content: space-between;
 flex-direction: row;
 align-items: center;
-margin-top: 1rem;
 position: fixed;
 width: 100%;
 `;
 
 export const BackContainer = withProps<any>(styled.div)`
 justify-content: flex-start;
-margin-left: 10%;
+margin-left: 5%;
+cursor: pointer;
+:hover {
+    background-color: #ececed;
+}
 `;
 
 export const LogoContainer = withProps<any>(styled.div)`
 justify-content: flex-end;
-margin-right: 10%;
+margin-right: 5%;
+cursor: pointer;
+:hover {
+    background-color: #ececed;;
+}
 `;
 
 export const NavContainer = withProps<any>(styled.div)`
@@ -113,7 +120,7 @@ justify-content: center;
 flex-direction: row;
 font-size: 120px;
 font-weight: 900;
-color: #ECECED;
+color: #ececed;
 text-transform: none;
 `;
 
@@ -227,9 +234,10 @@ border: 1px solid #ccc;
 background-color: #ffffff;
 height: 150px;
 max-width: 150px;
-min-width: 10rem
+min-width: 10rem;
+cursor: pointer;
 :hover {
-  background-color: #efefef;
+  background-color: #ececed;
 }
 `;
 
@@ -238,7 +246,6 @@ margin-top: 2rem;
 display: flex;
 justify-content: center;
 flex-direction: row;
-align-content: center;
 width: 70%;
 margin-right: auto;
 margin-left: auto;
@@ -247,12 +254,12 @@ margin-left: auto;
 
 export const SkillsUsed = withProps<any>(styled.div)`
 margin-top: 2rem;
-margin-bottom: 5rem;
+margin-bottom: 2rem;
 display: flex;
 justify-content: center;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
-margin-right: 5%;
+margin-right: 2%;
 padding: 54px 61px;
 border: 1px solid #ccc;
 background-color: #ffffff;
@@ -260,8 +267,9 @@ height: 150px;
 max-width: 150px;
 min-width: 10rem;
 text-align: center;
+font-size: 0.8rem;
 :hover {
-  background-color: #efefef;
+  background-color: #ececed;
 }
 `;
 
@@ -302,6 +310,10 @@ font-weight: 300;
 width: 40%;
 margin-right: auto;
 margin-left: auto;
+cursor: pointer;
+    :hover {
+        background-color: rgba(255,255,255,0.1);
+    }
 }
 `;
 
