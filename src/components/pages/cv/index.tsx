@@ -23,7 +23,7 @@ export interface ICVPageProps {
 
 export default class CVPage extends Component<ICVPageProps, any> {
   static defaultProps = {
-    title: 'Work',
+    title: 'Resume',
   };
 
   render() {

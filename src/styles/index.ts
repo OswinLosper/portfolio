@@ -370,4 +370,32 @@ export const ProjectButton = withProps<any>(styled.div)`
     }
 `;
 
+export const ProjectInfo = withProps<any>(styled.div)`
+display: flex;
+justify-content: space-between;
+padding-top: 2rem;
+padding-left: 10%;
+padding-right: 10%;
+`;
+
+export const Role = withProps<any>(styled.div)`
+display: flex;
+`;
+
+export const Date = withProps<any>(styled.div)`
+display: flex;
+`;
+
+export const Context = withProps<any>(styled.div)`
+display: flex;
+`;
+
+
+export const ProjectDescription = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+padding-top: 2rem;
+padding-bottom: 5rem;
+`;
+
 
