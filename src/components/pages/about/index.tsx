@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
+
 import {
   InnerPagesLayoutContainer,
   HeadingTextWaterMark,

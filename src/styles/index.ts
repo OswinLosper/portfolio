@@ -163,6 +163,7 @@ padding: 20px;
 line-height: 2.5;
 text-align: justify;
 justify-content: center;
+text-align: center;
 `;
 
 export const ExperienceWrapper = withProps<any>(styled.div)`
@@ -333,7 +334,6 @@ display: flex;
 justify-content: center;
 flex-direction: row;
 align-items: center;
-margin-bottom: 2rem;
 height: 80vh;
 }
 `;
@@ -365,7 +365,6 @@ export const ProjectButton = withProps<any>(styled.div)`
     font-size: 1.2rem;
     cursor: pointer;
     width: 250px;
-    margin-bottom: 5rem;
     :hover {
         background-color: #efefef;;
     }

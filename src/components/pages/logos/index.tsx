@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 
-import { Navbar, Footer } from '~/components/molecules';
+import { Navbar, Footer, WorkHeading, } from '~/components/molecules';
 
 import {
+  InnerPagesLayoutContainer,
+  HeadingTextWaterMark,
+  HeadingText,
+  WrapperText,
+  Text,
  } from '~/styles';
 
 export interface ILogosPageProps {
@@ -16,15 +21,27 @@ export default class LogosPage extends Component<ILogosPageProps, any> {
 
   render() {
     return (
-      <div>
+      <InnerPagesLayoutContainer>>
 
         <Navbar/>
 
-        THIS IS THE LOGO PAGE
+        <HeadingTextWaterMark>
+          Latest Logos
+        </HeadingTextWaterMark>
+
+        <HeadingText>
+          Logos collection
+        </HeadingText>
+
+        <WrapperText>
+          <Text>
+            A small selection of logo's I designed
+        </Text>
+        </WrapperText>
 
         <Footer/>
 
-      </div>
+      </InnerPagesLayoutContainer>
     );
   }
 }

@@ -7,5 +7,6 @@ export { default as Skills } from './skills';
 export { default as Footer } from './footer';
 export { default as PreviousWork } from './previous-work';
 export { default as SkillandTools } from './skills-tools';
+export { default as WorkHeading } from './work-heading';
 
 
