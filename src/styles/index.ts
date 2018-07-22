@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import withProps from 'styled-components-ts';
 import img from '../resources/bg.jpg';
 import bg from '../resources/innerBG.png';
+import outbuildingHeaderBG from '../resources/projects/outbuildingHeaderBG.jpg';
 
 export const LayoutContainer = withProps<any>(styled.div)`
 display: flex;
@@ -9,6 +10,12 @@ flex-direction: column;
 height: 100vh;
 justify-content: center;
  background-image: url(${img});
+`;
+
+export const OutbuildingHeader = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+background-image: url(${outbuildingHeaderBG});
 `;
 
 export const InnerPagesLayoutContainer = withProps<any>(styled.div)`
@@ -88,6 +95,7 @@ export const BackContainer = withProps<any>(styled.div)`
 justify-content: flex-start;
 margin-left: 5%;
 cursor: pointer;
+image: url(${img});
 :hover {
     background-color: #ececed;
 }
@@ -122,6 +130,7 @@ font-size: 120px;
 font-weight: 900;
 color: #ececed;
 text-transform: none;
+padding-top: 2rem;
 `;
 
 export const HeadingText = withProps<any>(styled.div)`
@@ -329,12 +338,16 @@ font-weight: 300;
 }
 `;
 
-export const Laptop = withProps<any>(styled.div)`
+export const Project = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
 flex-direction: row;
 align-items: center;
-height: 80vh;
+margin-right: auto;
+margin-left: auto;
+margin-top: 5rem;
+border: 1px solid #D2CACA;
+box-shadow: 0 0.3125rem 1.3125rem rgba(125,138,149,0.65);
 }
 `;
 
@@ -356,8 +369,7 @@ export const ProjectButtonWrapper = withProps<any>(styled.div)`
 `;
 
 export const ProjectButton = withProps<any>(styled.div)`
-    background-color: rgba(255,0,0,0.0);
-    border: 1px solid #808080;
+    border: 1px solid #D2CACA;
     color: #808080;
     padding: 15px 32px;
     text-align: center;
@@ -365,6 +377,8 @@ export const ProjectButton = withProps<any>(styled.div)`
     font-size: 1.2rem;
     cursor: pointer;
     width: 250px;
+    margin-top: -48px;
+    background-color: rgba(255,255,255,1);
     :hover {
         background-color: #efefef;;
     }
@@ -376,26 +390,48 @@ justify-content: space-between;
 padding-top: 2rem;
 padding-left: 10%;
 padding-right: 10%;
+margin-right: auto;
+margin-left: auto;
+#color: #808080;;
+& span {
+    font-weight: 600;
+    margin-right: 0.5rem;
 `;
 
 export const Role = withProps<any>(styled.div)`
 display: flex;
+margin-right: 1rem;
+}
 `;
 
 export const Date = withProps<any>(styled.div)`
 display: flex;
+margin-right: 1rem;
 `;
 
 export const Context = withProps<any>(styled.div)`
 display: flex;
 `;
 
-
-export const ProjectDescription = withProps<any>(styled.div)`
+export const ProjectDescriptionWrapper = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
+flex-direction: column;
 padding-top: 2rem;
-padding-bottom: 5rem;
 `;
 
+export const ProjectDescription = withProps<any>(styled.div)`
+font-size: 28px;
+justify-content: center;
+padding-top: 2rem;
+padding-bottom: 2rem;
+color: #544F51;
+margin-right: auto;
+margin-left: auto;
+`;
+
+export const OutbuildingDisplay = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+`;
 

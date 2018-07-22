@@ -18,8 +18,9 @@ import LogosPage from '~/components/pages/logos';
 import IOutBuildingPage from '~/components/pages/outbuilding';
 import BeeHivePage from '~/components/pages/bee-hive';
 import ProjectItem from '~/components/pages/project-item';
+import OutBuildingPage from '~/components/pages/outbuilding';
 
-import { projectDataHeading } from '~/components/pages/projects';
+// import { projectDataHeading } from '~/components/pages/projects';
 
 render(
   <BrowserRouter>
@@ -30,16 +31,17 @@ render(
       <Route exact path="/work" component={WorkPage} />
       <Route exact path="/cv" component={CVPage} />
       <Route exact path="/logos" component={LogosPage} />
+      <Route exact path="/outbuilding" component={OutBuildingPage} />
       {/* <Route exact path="/outbuilding" component={IOutBuildingPage} />
       <Route exact path="/bee-hive" component={BeeHivePage} /> */}
 
-     {
+     {/* {
        projectDataHeading.map(item => {
          const { route, ...rest } = item;
          return (
            <Route exact path={`/${route}`} component={ProjectItem} {...rest}  />
          );
-       })}
+       })} */}
 
     </Switch>
   </BrowserRouter>,
