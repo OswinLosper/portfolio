@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Navbar, Footer, WorkHeading, } from '~/components/molecules';
+import { Navbar, Footer, } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
@@ -10,13 +10,13 @@ import {
   Text,
  } from '~/styles';
 
-export interface ILogosPageProps {
+export interface IDesignsPageProps {
   title?: string;
 }
 
-export default class LogosPage extends Component<ILogosPageProps, any> {
+export default class DesignsPage extends Component<any, any> {
   static defaultProps = {
-    title: 'Logos',
+    title: 'Designs',
   };
 
   render() {
@@ -26,16 +26,16 @@ export default class LogosPage extends Component<ILogosPageProps, any> {
         <Navbar/>
 
         <HeadingTextWaterMark>
-          Latest Logos
+          Latest Designs
         </HeadingTextWaterMark>
 
         <HeadingText>
-          Logos collection
+          Designs collection
         </HeadingText>
 
         <WrapperText>
           <Text>
-            A small selection of logo's I designed
+            A small selection of some of my katest designs.
         </Text>
         </WrapperText>
 
