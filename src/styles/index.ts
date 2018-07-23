@@ -2,20 +2,23 @@ import styled from 'styled-components';
 import withProps from 'styled-components-ts';
 import img from '../resources/bg.jpg';
 import bg from '../resources/innerBG.png';
-import outbuildingHeaderBG from '../resources/projects/outbuildingHeaderBG.jpg';
+import outbuildingHeaderBG from '../resources/projects/outbuilding-company/outbuilding-headerBG2.jpg';
 
 export const LayoutContainer = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
 height: 100vh;
 justify-content: center;
- background-image: url(${img});
+background-image: url(${img});
+background-repeat: no-repeat;
 `;
 
 export const OutbuildingHeader = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
 background-image: url(${outbuildingHeaderBG});
+height: 70vh;
+justify-content: center;
 `;
 
 export const InnerPagesLayoutContainer = withProps<any>(styled.div)`
@@ -387,12 +390,12 @@ export const ProjectButton = withProps<any>(styled.div)`
 export const ProjectInfo = withProps<any>(styled.div)`
 display: flex;
 justify-content: space-between;
-padding-top: 2rem;
+padding: 2rem;
 padding-left: 10%;
 padding-right: 10%;
 margin-right: auto;
 margin-left: auto;
-#color: #808080;;
+color: #efefef;
 & span {
     font-weight: 600;
     margin-right: 0.5rem;
@@ -420,6 +423,13 @@ flex-direction: column;
 padding-top: 2rem;
 `;
 
+export const OutbuildingDisplay = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+padding-top: 2rem;
+padding-bottom: 2rem;
+`;
+
 export const ProjectDescription = withProps<any>(styled.div)`
 font-size: 28px;
 justify-content: center;
@@ -428,10 +438,88 @@ padding-bottom: 2rem;
 color: #544F51;
 margin-right: auto;
 margin-left: auto;
+color: #efefef;
 `;
 
-export const OutbuildingDisplay = withProps<any>(styled.div)`
+export const ProjectColours = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
+padding-top: 1rem;
 `;
+
+
+export const HeadingTextInnerWrapper = withProps<any>(styled.div)`
+display: flex;
+flex-direction: row;
+font-size: 3rem;
+color: #544F51;
+font-weight: 900;
+margin-top: 2rem;
+`;
+
+export const HeadingTextInner = withProps<any>(styled.div)`
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+font-size: 3rem;
+color: #544F51;
+font-weight: 900;
+margin-top: 2rem;
+`;
+
+export const WorkText = withProps<any>(styled.div)`
+margin-top: 2rem;
+font-size: 28px;
+color: #808080;
+line-height: 2.5;
+text-align: justify;
+text-align: left;
+padding-bottom: 1rem;
+`;
+
+export const FontsUsedWrapper = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+font-size: 3rem;
+color: #544F51;
+font-weight: 900;
+margin-top: 2rem;
+margin-right: auto;
+margin-left: auto;
+flex-direction: column;
+`;
+
+export const FontsUsed = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+font-size: 1.2rem;
+color: #544F51;
+margin-top: 2rem;
+font-weight: normal;
+border-bottom: 2px solid #8F7D4F;
+padding-bottom: 1.5rem;
+
+    & span {
+        font-weight: 600;
+        margin-right: 0.5rem;
+    }
+`;
+
+export const IconDesigns = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+padding-top: 2rem;
+padding-bottom: 2rem;
+color: #544F51;
+`;
+
+export const IconsText = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+font-size: 1.1rem;
+padding-top: 2rem;
+padding-bottom: 2rem;
+color: #544F51;
+`;
+
 

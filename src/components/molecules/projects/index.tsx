@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import outbuilding from '~/resources/projects/outbuilding.jpg';
+import outbuilding from '~/resources/projects/outbuilding-company/outbuilding.jpg';
 import busyHive from '~/resources/projects/busy-hive.jpg';
 import invoiceBook from '~/resources/projects/invoice-book.jpg';
 import smartHeat from '~/resources/projects/smartheat.jpg';
@@ -20,52 +20,52 @@ export default class Projects extends Component<any, any> {
 
   render() {
     return (
-      <InnerPagesLayoutContainer>     
-      
+      <InnerPagesLayoutContainer>
+
         <Project>
-          <img src={outbuilding} width="900px" />
+          <img src={outbuilding} width="100%"/>
         </Project>
-   
+
         <ProjectButtonWrapper>
           <ProjectButton>
             View Project
           </ProjectButton>
         </ProjectButtonWrapper>
-  
+
         <Project>
-          <img src={busyHive} width="900px" />
+          <img src={busyHive} width="100%"/>
         </Project>
-   
+
         <ProjectButtonWrapper>
           <ProjectButton>
             View Project
           </ProjectButton>
         </ProjectButtonWrapper>
-      
+
         <Project>
-          <img src={smartHeat} width="900px" />
+          <img src={smartHeat} width="100%" />
         </Project>
-   
+
         <ProjectButtonWrapper>
           <ProjectButton>
             View Project
           </ProjectButton>
         </ProjectButtonWrapper>
-      
+
         <Project>
-          <img src={invoiceBook} width="900px" />
+          <img src={invoiceBook} width="100%" />
         </Project>
-   
+
         <ProjectButtonWrapper>
           <ProjectButton>
             View Project
           </ProjectButton>
-        </ProjectButtonWrapper>]
-           
+        </ProjectButtonWrapper>
+
         <Project>
-          <img src={otherDesigns} width="900px" />
+          <img src={otherDesigns} width="100%" />
         </Project>
-   
+
         <ProjectButtonWrapper>
           <ProjectButton>
             View More Designs
@@ -73,6 +73,6 @@ export default class Projects extends Component<any, any> {
         </ProjectButtonWrapper>
 
            </InnerPagesLayoutContainer>
-          );
-        }
-      }
+    );
+  }
+}

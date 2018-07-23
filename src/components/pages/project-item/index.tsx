@@ -7,7 +7,6 @@ import {
   HeadingTextWaterMark,
   HeadingText,
   WrapperText,
-  OutbuildingHeader,
   ProjectInfo,
   Role,
   Date,
@@ -60,18 +59,40 @@ export default class ProjectItem extends Component<any, any> {
 
         <Navbar />
 
-        <OutbuildingHeader>
-          <HeadingTextWaterMark>
-            Case Study
-          </HeadingTextWaterMark>
-          <HeadingText>
-            Out Building Company
-          </HeadingText>
-     
+        <HeadingTextWaterMark>
+           Case Study
+        </HeadingTextWaterMark>
+        <HeadingText>
+          Out Building Company
+        </HeadingText>
 
-        </OutbuildingHeader>
+        <WrapperText>
 
-   
+              <Fragment key={id}>
+
+            <ProjectInfo>
+              <Role>
+                {role}
+              </Role>
+
+              <Date>
+                {date}
+              </Date>
+
+              <Context>
+                {context}
+              </Context>
+
+            </ProjectInfo>
+
+            <ProjectDescription>
+              {projectdescription}
+            </ProjectDescription>
+
+          </Fragment>
+
+
+        </WrapperText>
 
         <Footer />
 
