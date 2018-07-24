@@ -1,0 +1,12 @@
+export { default as SmartHeat } from '~/resources/projects/logos/smartheat.jpg';
+export { default as AutoEvolved } from '~/resources/projects/logos/auto-evolved.jpg';
+export { default as EarlyTurf } from '~/resources/projects/logos/early-turf.jpg';
+export { default as EliteHandyman } from '~/resources/projects/logos/elite-handyman.jpg';
+export { default as IXRM } from '~/resources/projects/logos/ixrm.jpg';
+export { default as JCFlooring } from '~/resources/projects/logos/jc-flooring.jpg';
+export { default as Micro } from '~/resources/projects/logos/micro.jpg';
+export { default as OvenRepairs } from '~/resources/projects/logos/oven-repairs.jpg';
+export { default as RGJConstruction } from '~/resources/projects/logos/rgj-construction.jpg';
+export { default as SwanShutters } from '~/resources/projects/logos/swan-shutters.jpg';
+export { default as DanYorkBlinds } from '~/resources/projects/logos/dan-york-blinds.jpg';
+export { default as Aberdeenshire } from '~/resources/projects/logos/aberdeenshire.jpg';

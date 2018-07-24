@@ -15,6 +15,7 @@ import WorkPage from '~/components/pages/work';
 import CVPage from '~/components/pages/cv';
 import OutBuildingPage from '~/components/pages/outbuilding';
 import DesignsPage from '~/components/pages/designs';
+import LogosPage from '~/components/pages/logos';
 
 render(
   <BrowserRouter>
@@ -26,6 +27,7 @@ render(
       <Route exact path="/cv" component={CVPage} />
       <Route exact path="/designs" component={DesignsPage} />
       <Route exact path="/outbuilding" component={OutBuildingPage} />
+      <Route exact path="/logos" component={LogosPage} />
 
     </Switch>
   </BrowserRouter>,

@@ -72,7 +72,8 @@ export default class Projects extends Component<any, any> {
           </ProjectButton>
         </ProjectButtonWrapper>
 
-           </InnerPagesLayoutContainer>
+      </InnerPagesLayoutContainer>
+
     );
   }
 }

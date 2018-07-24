@@ -3,6 +3,8 @@ import withProps from 'styled-components-ts';
 import img from '../resources/bg.jpg';
 import bg from '../resources/innerBG.png';
 import outbuildingHeaderBG from '../resources/projects/outbuilding-company/outbuilding-headerBG2.jpg';
+import LogosHeaderBG from '../resources/projects/logos/logo-bg.jpg';
+import DesignHeader from '../resources/projects/designs/design-bg.jpg';
 
 export const LayoutContainer = withProps<any>(styled.div)`
 display: flex;
@@ -17,7 +19,7 @@ export const OutbuildingHeader = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
 background-image: url(${outbuildingHeaderBG});
-height: 70vh;
+height: 100vh;
 justify-content: center;
 `;
 
@@ -520,6 +522,83 @@ font-size: 1.1rem;
 padding-top: 2rem;
 padding-bottom: 2rem;
 color: #544F51;
+`;
+
+export const SmartHeatHeader = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+background-image: url(${LogosHeaderBG});
+// height: 70vh;
+justify-content: center;
+margin-bottom: 3rem;
+background-color: #544F51;
+`;
+
+export const LogoCollectionWrapper = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+`;
+
+export const Logo = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin: 2rem;
+background-color: #ffffff;
+box-shadow: 0 0.3125rem 1.3125rem rgba(125,138,149,0.65);
+`;
+
+export const LogoName = withProps<any>(styled.div)`
+display: flex;
+text-align: center;
+flex-direction: column;
+`;
+
+export const AllDesign = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+background-image: url(${DesignHeader});
+height: 100vh;
+justify-content: center;
+margin-bottom: 3rem;
+background-color: #544F51;
+`;
+
+export const SafeMiningWrapper = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-right: auto;
+margin-left: auto;
+`;
+
+export const SafeMining = withProps<any>(styled.div)`
+display: flex;
+text-align: center;
+flex-direction: column;
+`;
+
+export const FlyerWrapper = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-right: auto;
+margin-left: auto;
+`;
+
+export const Flyer = withProps<any>(styled.div)`
+display: flex;
+text-align: center;
+flex-direction: column;
+`;
+
+export const Information = withProps<any>(styled.div)`
+display: flex;
+text-align: center;
+font-size: 1rem;
+padding-bottom: 2rem;
+padding-top: 2rem;
 `;
 
 
