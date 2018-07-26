@@ -4,6 +4,7 @@ import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
+  HeadingTextWaterMarkAbout,
   HeadingTextWaterMark,
   HeadingText,
   WrapperText,
@@ -26,9 +27,9 @@ export default class AboutPage extends Component<IAboutPageProps, any> {
       <InnerPagesLayoutContainer>
         <Navbar />
 
-     <HeadingTextWaterMark>
+        <HeadingTextWaterMarkAbout>
         who am i
-     </HeadingTextWaterMark>
+     </HeadingTextWaterMarkAbout>
       <HeadingText>
           About me
       </HeadingText>

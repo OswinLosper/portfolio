@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import { Navbar, Footer, } from '~/components/molecules';
 
-import OutbuildingImages from '~/resources/projects/outbuilding-company/outbuilding-displays.jpg';
-import OutbuildingLogos from '~/resources/projects/outbuilding-company/logos.jpg';
-import OutbuildingColours from '~/resources/projects/outbuilding-company/outbuilding-colours.jpg';
-import OutbuildingIcons from '~/resources/projects/outbuilding-company/outbuilding-icons.jpg';
+import BusyHiveImages from '~/resources/projects/busy-hive/busy-hive-displays.jpg';
+import BusyHiveLogos from '~/resources/projects/busy-hive/logos.jpg';
+
+import BusyHiveColours from '~/resources/projects/busy-hive/busy-hive-colours.jpg';
+import BusyHiveIcons from '~/resources/projects/busy-hive/busyhive-icons.jpg';
 
 import {
-  InnerPagesLayoutContainer, HeadingTextWaterMark, HeadingText, OutbuildingHeader,
+  InnerPagesLayoutContainer, HeadingTextWaterMark, HeadingText, BusyHiveHeader,
   ProjectInfo, Role, Date, Context, ProjectDescription, WrapperText, WorkText,
   ProjectButton, ProjectButtonWrapper, OutbuildingDisplay, ProjectColours,
-  HeadingTextInnerWrapper, HeadingTextInner, FontsUsed, FontsUsedWrapper,
+  HeadingTextInnerWrapper, HeadingTextInner, FontsUsedBusyHive, FontsUsedWrapper,
   IconDesigns, IconsText, Chevron, ChevronWrapper, HeadingTextWaterMarkAbout,
 } from '~/styles';
 
@@ -19,13 +20,13 @@ import { projectDataHeading } from '~/components/pages/projects';
 
 import chevronIcon from '~/resources/icons/chevron.svg';
 
-export interface IOutBuildingPageProps {
+export interface IBusyHivePageProps {
   title?: string;
 }
 
-export default class OutBuildingPage extends Component<any, any> {
+export default class BusyHivePage extends Component<any, any> {
   static defaultProps = {
-    title: 'The Outbuilding Company',
+    title: 'Busy Hive',
   };
 
   state = {
@@ -43,15 +44,15 @@ export default class OutBuildingPage extends Component<any, any> {
 
         <Navbar />
 
-        <OutbuildingHeader
+        <BusyHiveHeader
           data-qa="outbuilding-header">
           <HeadingTextWaterMark
             data-qa="water-mark-text">
-            Garden Rooms
+            PA Services
           </HeadingTextWaterMark>
           <HeadingText
             data-qa="heading-text">
-            Out Building Company
+            Busy Hive
           </HeadingText>
 
           <ChevronWrapper
@@ -60,38 +61,38 @@ export default class OutBuildingPage extends Component<any, any> {
             <ProjectInfo
               data-qa="project-info-wrapper">
               <Role>
-              <span>
-                ROLE:
+                <span>
+                  ROLE:
               </span>
                 Web Senior Designer
               </Role>
 
               <Date>
                 <span>
-                DATE:
+                  DATE:
                 </span>
-                  20 July 2018
+                20 July 2018
               </Date>
               <Context>
                 <span>
                   CONTEXT:
                 </span>
-                 Website Design
+                Website Design
               </Context>
             </ProjectInfo>
 
             <ProjectDescription
               data-qa="project-description">
-              Create unique outdoor spaces for work and leisure
+              Busy Hive we provide a professional and affordable personal assistant services in and around the Sussex area.
             </ProjectDescription>
 
           </ChevronWrapper>
 
-              <Chevron>
+          <Chevron>
             <img src={chevronIcon} />
-            </Chevron>
+          </Chevron>
 
-        </OutbuildingHeader>
+        </BusyHiveHeader>
 
         <WrapperText
           data-qa="wrapper-text">
@@ -100,14 +101,12 @@ export default class OutBuildingPage extends Component<any, any> {
             The Challenge
           </HeadingTextInner>
           <WorkText
-            data-qa="work-text"
-            >
-          The Outbuilding Company designs and builds bespoke garden rooms for clients.
-          Our garden rooms can be built at a fraction of the cost of adding an extension
-          to your home, and as such, they are the most affordable means of creating additional
-          living space at your property. <br/>
-          In addition, most of our outbuildings do not require planning
-          permission and can be used all year round <br/><br/>
+            data-qa="work-text">
+              Busy Hive have over 16 years’ experience of supplying and sourcing administrative and
+              personal support in key sectors across Brighton including start up business',
+              professional organisations and events. We understand the challenges that you and
+              your company face with admin support, company management and planning whether for a
+              particular project at short notice or strengthening your business. <br /><br />
           </WorkText>
         </WrapperText>
 
@@ -119,18 +118,16 @@ export default class OutBuildingPage extends Component<any, any> {
           </ProjectButton>
         </ProjectButtonWrapper>
 
-          <OutbuildingDisplay
+        <OutbuildingDisplay
           data-qa="project-view-displays">
-            <img src={OutbuildingImages} />
-           </OutbuildingDisplay>
+          <img src={BusyHiveImages} />
+        </OutbuildingDisplay>
 
         <WrapperText>
-
           <HeadingTextInner
             data-qa="inner-text">
             Solution
           </HeadingTextInner>
-
           <WorkText>
             The Outbuilding Company designs and builds bespoke garden rooms for clients.
             Our garden rooms can be built at a fraction of the cost of adding an extension
@@ -141,28 +138,25 @@ export default class OutBuildingPage extends Component<any, any> {
         </WrapperText>
 
         <ProjectColours>
-          <img src={OutbuildingLogos} />
+          <img src={BusyHiveLogos} />
         </ProjectColours>
 
         <HeadingTextInnerWrapper>
           <FontsUsedWrapper>
-
-           Fonts & Colours Used
-
-            <FontsUsed>
+            Fonts & Colours Used
+            <FontsUsedBusyHive>
               <span>
-              Fonts Used:
+                Fonts Used:
               </span>
               Maven PRO, Impact
-            </FontsUsed>
+            </FontsUsedBusyHive>
 
           </FontsUsedWrapper>
         </HeadingTextInnerWrapper>
 
         <ProjectColours>
-          <img src={OutbuildingColours} />
+          <img src={BusyHiveColours} />
         </ProjectColours>
-
 
         <HeadingTextInnerWrapper>
           <FontsUsedWrapper>
@@ -170,13 +164,13 @@ export default class OutBuildingPage extends Component<any, any> {
           </FontsUsedWrapper>
         </HeadingTextInnerWrapper>
 
-          <IconsText>
+        <IconsText>
           The Outbuilding Company designs and builds bespoke garden rooms for clients.
-              Our garden rooms can be built at a fraction of the cost of adding an extension
+          Our garden rooms can be built at a fraction of the cost of adding an extension
           </IconsText>
 
         <IconDesigns>
-          <img src={OutbuildingIcons} />
+          <img src={BusyHiveIcons} />
         </IconDesigns>
 
         <WrapperText>

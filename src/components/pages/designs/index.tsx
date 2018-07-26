@@ -5,6 +5,7 @@ import { Navbar, Footer, } from '~/components/molecules';
 import {
   InnerPagesLayoutContainer,
   HeadingTextWaterMark,
+  HeadingTextWaterMarkAbout,
   HeadingText,
   WrapperText,
   Text,
@@ -16,6 +17,8 @@ import {
   Information,
   FlyerWrapper,
   Flyer,
+  ChevronWrapper,
+  Chevron,
  } from '~/styles';
 
 import {
@@ -23,6 +26,8 @@ import {
   BonlineFlyer,
   StrikaPoster,
 } from '~/components/pages/designs/images';
+
+import chevronIcon from '~/resources/icons/chevron.svg';
 
 export interface IDesignsPageProps {
   title?: string;
@@ -40,6 +45,9 @@ export default class DesignsPage extends Component<any, any> {
         <Navbar/>
 
         <AllDesign>
+
+          <ChevronWrapper>
+
         <HeadingTextWaterMark>
           Latest Designs
         </HeadingTextWaterMark>
@@ -53,6 +61,12 @@ export default class DesignsPage extends Component<any, any> {
             A small selection of some of my latest designs.
           </Text>
           </WrapperText>
+
+        </ChevronWrapper>
+
+          <Chevron>
+            <img src={chevronIcon} />
+          </Chevron>
 
           </AllDesign>
 
@@ -70,9 +84,9 @@ export default class DesignsPage extends Component<any, any> {
             </WorkText>
           </WrapperText>
 
-        <HeadingTextWaterMark>
+        <HeadingTextWaterMarkAbout>
           Flyer Designs
-          </HeadingTextWaterMark>
+          </HeadingTextWaterMarkAbout>
         <SafeMiningWrapper>
           <SafeMining>
             <img src={Mines} />
@@ -94,9 +108,9 @@ export default class DesignsPage extends Component<any, any> {
             Our garden rooms can be built at a he most affordable means of creating additional
           </Information>
 
-        <HeadingTextWaterMark>
+          <HeadingTextWaterMarkAbout>
           Poster Design
-          </HeadingTextWaterMark>
+          </HeadingTextWaterMarkAbout>
 
           <Flyer>
             <img src={StrikaPoster} />

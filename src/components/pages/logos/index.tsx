@@ -8,16 +8,12 @@ import {
  } from '~/components/pages/logos/images';
 
 import {
-  InnerPagesLayoutContainer,
-  HeadingTextWaterMark,
-  HeadingText,
-  WrapperText,
-  LogoCollectionWrapper,
-  Logo,
-  ProjectDescription,
-  SmartHeatHeader,
-  LogoName,
+  InnerPagesLayoutContainer, HeadingTextWaterMark, HeadingText, WrapperText,
+  LogoCollectionWrapper, Logo, ProjectDescription,
+  SmartHeatHeader, LogoName, Chevron, ChevronWrapper,
  } from '~/styles';
+
+import chevronIcon from '~/resources/icons/chevron.svg';
 
 export interface ILogosPageProps {
   title?: string;
@@ -35,6 +31,9 @@ export default class LogosPage extends Component<any, any> {
         <Navbar/>
 
         <SmartHeatHeader>
+
+          <ChevronWrapper>
+
         <HeadingTextWaterMark>
           Logo Designs
         </HeadingTextWaterMark>
@@ -48,6 +47,13 @@ export default class LogosPage extends Component<any, any> {
             A small selection of some of my logo designs.
         </ProjectDescription>
         </WrapperText>
+
+    </ChevronWrapper>
+
+        <Chevron>
+          <img src={chevronIcon} />
+        </Chevron>
+
       </SmartHeatHeader>
 
       <LogoCollectionWrapper>

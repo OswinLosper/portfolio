@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import withProps from 'styled-components-ts';
 import img from '../resources/bg.jpg';
 import bg from '../resources/innerBG.png';
-import outbuildingHeaderBG from '../resources/projects/outbuilding-company/outbuilding-headerBG2.jpg';
-import LogosHeaderBG from '../resources/projects/logos/logo-bg.jpg';
+import outbuildingHeaderBG from '../resources/projects/outbuilding-company/outbuilding-headerBG.jpg';
+import busyHivegHeaderBG from '../resources/projects/busy-hive/busy-hiveBG.jpg';
 import DesignHeader from '../resources/projects/designs/design-bg.jpg';
 
 export const LayoutContainer = withProps<any>(styled.div)`
@@ -19,6 +19,14 @@ export const OutbuildingHeader = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
 background-image: url(${outbuildingHeaderBG});
+height: 100vh;
+justify-content: center;
+`;
+
+export const BusyHiveHeader = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+background-image: url(${busyHivegHeaderBG});
 height: 100vh;
 justify-content: center;
 `;
@@ -127,7 +135,7 @@ color: #fff;
     }
 `;
 
-export const HeadingTextWaterMark = withProps<any>(styled.div)`
+export const HeadingTextWaterMarkAbout = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
 flex-direction: row;
@@ -136,6 +144,18 @@ font-weight: 900;
 color: #ececed;
 text-transform: none;
 padding-top: 2rem;
+`;
+
+export const HeadingTextWaterMark = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+flex-direction: row;
+font-size: 120px;
+font-weight: 900;
+color: #ececed;
+text-transform: none;
+padding-top: 10rem;
+padding-bottom: 2rem;
 `;
 
 export const HeadingText = withProps<any>(styled.div)`
@@ -421,7 +441,6 @@ display: flex;
 export const ProjectDescriptionWrapper = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
-flex-direction: column;
 padding-top: 2rem;
 `;
 
@@ -500,7 +519,21 @@ margin-top: 2rem;
 font-weight: normal;
 border-bottom: 2px solid #8F7D4F;
 padding-bottom: 1.5rem;
+    & span {
+        font-weight: 600;
+        margin-right: 0.5rem;
+    }
+`;
 
+export const FontsUsedBusyHive = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+font-size: 1.2rem;
+color: #544F51;
+margin-top: 2rem;
+font-weight: normal;
+border-bottom: 2px solid #FFCA08;
+padding-bottom: 1.5rem;
     & span {
         font-weight: 600;
         margin-right: 0.5rem;
@@ -527,8 +560,8 @@ color: #544F51;
 export const SmartHeatHeader = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
-background-image: url(${LogosHeaderBG});
-// height: 70vh;
+background-image: url(${DesignHeader});
+height: 100vh;
 justify-content: center;
 margin-bottom: 3rem;
 background-color: #544F51;
@@ -599,6 +632,18 @@ text-align: center;
 font-size: 1rem;
 padding-bottom: 2rem;
 padding-top: 2rem;
+`;
+
+export const ChevronWrapper = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+flex-direction: column;
+flex: 1 1 auto;
+`;
+
+export const Chevron = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
 `;
 
 
