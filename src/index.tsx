@@ -17,6 +17,8 @@ import OutBuildingPage from '~/components/pages/outbuilding';
 import BusyHivePage from '~/components/pages/busy-hive';
 import DesignsPage from '~/components/pages/designs';
 import LogosPage from '~/components/pages/logos';
+import InvoiceAppPage from '~/components/pages/invoice-app';
+import SmartHeatPage from '~/components/pages/smartheat';
 
 render(
   <BrowserRouter>
@@ -30,6 +32,8 @@ render(
       <Route exact path="/outbuilding" component={OutBuildingPage} />
       <Route exact path="/busy-hive" component={BusyHivePage} />
       <Route exact path="/logos" component={LogosPage} />
+      <Route exact path="/invoice-app" component={InvoiceAppPage} />
+      <Route exact path="/smartheat" component={SmartHeatPage} />
 
     </Switch>
   </BrowserRouter>,
