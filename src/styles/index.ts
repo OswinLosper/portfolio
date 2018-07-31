@@ -4,6 +4,7 @@ import img from '../resources/bg.jpg';
 import bg from '../resources/innerBG.png';
 import outbuildingHeaderBG from '../resources/projects/outbuilding-company/outbuilding-headerBG.jpg';
 import busyHivegHeaderBG from '../resources/projects/busy-hive/busy-hiveBG.jpg';
+import smartHeatHeaderBG from '../resources/projects/smartheat/smart-heatheaderBG.jpg';
 import DesignHeader from '../resources/projects/designs/design-bg.jpg';
 
 export const LayoutContainer = withProps<any>(styled.div)`
@@ -27,6 +28,14 @@ export const BusyHiveHeader = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
 background-image: url(${busyHivegHeaderBG});
+height: 100vh;
+justify-content: center;
+`;
+
+export const SmartHeat = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+background-image: url(${smartHeatHeaderBG});
 height: 100vh;
 justify-content: center;
 `;
