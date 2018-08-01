@@ -2,17 +2,17 @@ import React, { Component, Fragment } from 'react';
 
 import { Navbar, Footer, } from '~/components/molecules';
 
-import OutbuildingImages from '~/resources/projects/smartheat/smartheat-displays.jpg';
-import OutbuildingLogos from '~/resources/projects/smartheat/logos.jpg';
-import OutbuildingColours from '~/resources/projects/smartheat/outbuilding-colours.jpg';
-import OutbuildingIcons from '~/resources/projects/smartheat/outbuilding-icons.jpg';
+import SmartheatImages from '~/resources/projects/smartheat/smartheat-displays.jpg';
+import SmartheatLogos from '~/resources/projects/smartheat/logos.jpg';
+import SmartheatColours from '~/resources/projects/smartheat/smartheat-colours.jpg';
+import SmartheatIcons from '~/resources/projects/smartheat/smartheat-icons.jpg';
 
 import {
   InnerPagesLayoutContainer, HeadingTextWaterMark, HeadingText, SmartHeat,
   ProjectInfo, Role, Date, Context, ProjectDescription, WrapperText, WorkText,
   ProjectButton, ProjectButtonWrapper, OutbuildingDisplay, ProjectColours,
   HeadingTextInnerWrapper, HeadingTextInner, FontsUsed, FontsUsedWrapper,
-  IconDesigns, IconsText, Chevron, ChevronWrapper, HeadingTextWaterMarkAbout,
+  IconDesigns, IconsText, Chevron, ChevronWrapper,
 } from '~/styles';
 
 import chevronIcon from '~/resources/icons/chevron.svg';
@@ -121,7 +121,7 @@ export default class SmartHeatPage extends Component<any, any> {
 
         <OutbuildingDisplay
           data-qa="project-view-displays">
-          <img src={OutbuildingImages} />
+          <img src={SmartheatImages} />
         </OutbuildingDisplay>
 
         <WrapperText>
@@ -141,7 +141,7 @@ export default class SmartHeatPage extends Component<any, any> {
         </WrapperText>
 
         <ProjectColours>
-          <img src={OutbuildingLogos} />
+          <img src={SmartheatLogos} />
         </ProjectColours>
 
         <HeadingTextInnerWrapper>
@@ -160,7 +160,7 @@ export default class SmartHeatPage extends Component<any, any> {
         </HeadingTextInnerWrapper>
 
         <ProjectColours>
-          <img src={OutbuildingColours} />
+          <img src={SmartheatColours} />
         </ProjectColours>
 
 
@@ -176,7 +176,7 @@ export default class SmartHeatPage extends Component<any, any> {
           </IconsText>
 
         <IconDesigns>
-          <img src={OutbuildingIcons} />
+          <img src={SmartheatIcons} />
         </IconDesigns>
 
         <WrapperText>
