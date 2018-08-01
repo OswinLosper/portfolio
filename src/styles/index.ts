@@ -5,6 +5,7 @@ import bg from '../resources/innerBG.png';
 import outbuildingHeaderBG from '../resources/projects/outbuilding-company/outbuilding-headerBG.jpg';
 import busyHivegHeaderBG from '../resources/projects/busy-hive/busy-hiveBG.jpg';
 import smartHeatHeaderBG from '../resources/projects/smartheat/smart-heatheaderBG.jpg';
+import inVoiceBookAPPHeaderBG from '../resources/projects/invoice-book-app/header-BG.jpg';
 import DesignHeader from '../resources/projects/designs/design-bg.jpg';
 
 
@@ -41,6 +42,14 @@ export const SmartHeat = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
 background-image: url(${smartHeatHeaderBG});
+height: 100vh;
+justify-content: center;
+`;
+
+export const InVoiceBookAPP = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+background-image: url(${inVoiceBookAPPHeaderBG});
 height: 100vh;
 justify-content: center;
 `;
