@@ -7,6 +7,11 @@ import busyHivegHeaderBG from '../resources/projects/busy-hive/busy-hiveBG.jpg';
 import smartHeatHeaderBG from '../resources/projects/smartheat/smart-heatheaderBG.jpg';
 import DesignHeader from '../resources/projects/designs/design-bg.jpg';
 
+
+export const DatePickerDiv = withProps<any>(styled.div)`
+display: flex;
+`;
+
 export const LayoutContainer = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
