@@ -24,25 +24,27 @@ export default class SkillsTools extends Component<any, any> {
     } = this.state;
 
     return (
-      <SideBarSection>
+      <SideBarSection
+        data-qa="sidebar-section">
 
         {items.map(({
           id, heading, information,
         }) => (
             <Fragment key={id}>
 
-        <SkillsandToolsSection>
-        <SideBarHeading>
-            {heading}
-         </SideBarHeading>
-            {
-              information.map(
-                ({ idInfo, title, }) =>
-                (<SkillsandTools id={idInfo}>{title}</SkillsandTools>),
-              )
-            }
-        </SkillsandToolsSection>
-        </Fragment>
+              <SkillsandToolsSection
+                data-qa="skill-and-tools">
+                <SideBarHeading>
+                  {heading}
+                </SideBarHeading>
+                {
+                  information.map(
+                    ({ idInfo, title, }) =>
+                      (<SkillsandTools id={idInfo}>{title}</SkillsandTools>),
+                  )
+                }
+              </SkillsandToolsSection>
+            </Fragment>
 
           ))}
       </SideBarSection>
