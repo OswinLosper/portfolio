@@ -8,7 +8,7 @@ import SmartheatColours from '~/resources/projects/invoice-book-app/smartheat-co
 import SmartheatIcons from '~/resources/projects/invoice-book-app/smartheat-icons.jpg';
 
 import {
-  InnerPagesLayoutContainer, HeadingTextWaterMark, HeadingText, InVoiceBookAPP,
+  InnerPagesLayoutContainer, HeadingText, InVoiceBookAPP,
   ProjectInfo, Role, Date, Context, ProjectDescription, WrapperText, WorkText,
   ProjectButton, ProjectButtonWrapper, OutbuildingDisplay, ProjectColours,
   HeadingTextInnerWrapper, HeadingTextInner, FontsUsed, FontsUsedWrapper,
@@ -45,10 +45,9 @@ export default class InvoiceAppPage extends Component<any, any> {
 
         <InVoiceBookAPP
           data-qa="outbuilding-header">
-          <HeadingTextWaterMark
-            data-qa="water-mark-text">
-            Invoice Book APP
-          </HeadingTextWaterMark>
+
+
+
           <HeadingText
             data-qa="heading-text">
             Invoice Book APP
@@ -145,11 +144,12 @@ export default class InvoiceAppPage extends Component<any, any> {
         </ProjectColours>
 
         <HeadingTextInnerWrapper>
-          <FontsUsedWrapper>
-
+          <FontsUsedWrapper
+            data-qa="font-used-wrapper">
             Fonts & Colours Used
-
-            <FontsUsed>
+            <FontsUsed
+              className="invoicebook-font-used"
+            >
               <span>
                 Fonts Used:
               </span>
@@ -162,7 +162,6 @@ export default class InvoiceAppPage extends Component<any, any> {
         <ProjectColours>
           <img src={SmartheatColours} />
         </ProjectColours>
-
 
         <HeadingTextInnerWrapper>
           <FontsUsedWrapper>

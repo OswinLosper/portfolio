@@ -1,48 +1,78 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import {
-  HeadingTextWaterMark,
-  HeadingText,
-  WrapperText,
-  Text,
+  Header, HeadingText, ProjectInfo, Role,
+  Date, Context, ProjectDescription, Chevron, ChevronWrapper,
 } from '~/styles';
 
-export default class WorkHeading extends Component<any, any> {
+import chevronIcon from '~/resources/icons/chevron.svg';
+
+import { DataHeading } from '~/components/pages/header-data-project';
+
+interface IProps {
+  id: number;
+  title: string;
+  role: string;
+  date: string;
+  context: string;
+  projectdescription: string;
+}
+
+export default class WorkHeading extends Component<IProps, any> {
   constructor(props) {
     super(props);
+  }
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false,
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
+  state = {
+    items: DataHeading,
+  };
+
   render() {
+    const {
+      title,
+      role,
+      date,
+      context,
+      projectdescription,
+    } = this.props;
+
     return (
-      <div>
-      <HeadingTextWaterMark>
-          Latest Logos
-        </HeadingTextWaterMark>
+      <Header
+        data-qa="big-header-image">
+        <HeadingText
+          data-qa="heading-text">
+          {title}
+        </HeadingText>
 
-          <HeadingText>
-            Logos collection
-          </HeadingText>
+        <ChevronWrapper
+          data-qa="content-wrapper">
+          <ProjectInfo
+            data-qa="project-info-wrapper">
+            <Role>
+              {role}
+            </Role>
 
-         <WrapperText>
-          <Text>
-            Some of the logos I designed
-          </Text>
-        </WrapperText>
+            <Date
+              data-qa="project-date">
+              {date}
+            </Date>
+            <Context>
+              {context}
+            </Context>
+          </ProjectInfo>
 
-        <div>
-          sd;lfjsbdlkhfg ksgfks gflk
-          </div>
+          <ProjectDescription
+            data-qa="project-description">
+            {projectdescription}
+          </ProjectDescription>
 
-      </div>
+        </ChevronWrapper>
+        <Chevron>
+          <img src={chevronIcon} />
+        </Chevron>
+      </Header>
+
+
     );
   }
 }

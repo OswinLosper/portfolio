@@ -21,6 +21,8 @@ import LogosPage from '~/components/pages/logos';
 import DesignsPage from '~/components/pages/designs';
 import CVPage from '~/components/pages/cv';
 
+import PAGES from './pages';
+
 render(
   <MuiThemeProvider>
     <BrowserRouter>
@@ -36,6 +38,7 @@ render(
         <Route exact path="/logos" component={LogosPage} />
         <Route exact path="/designs" component={DesignsPage} />
         <Route exact path="/cv" component={CVPage} />
+        {/* {PAGES.map(page => <Route exact path={page.routePath} component={})} */}
       </Switch>
     </BrowserRouter>
   </MuiThemeProvider>,

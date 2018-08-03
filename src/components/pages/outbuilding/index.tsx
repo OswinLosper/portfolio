@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Navbar, Footer, } from '~/components/molecules';
+import { Navbar, WorkHeading, Footer, NextAndPrevious } from '~/components/molecules';
 
 import OutbuildingImages from '~/resources/projects/outbuilding-company/outbuilding-displays.jpg';
 import OutbuildingLogos from '~/resources/projects/outbuilding-company/logos.jpg';
@@ -8,16 +8,15 @@ import OutbuildingColours from '~/resources/projects/outbuilding-company/outbuil
 import OutbuildingIcons from '~/resources/projects/outbuilding-company/outbuilding-icons.jpg';
 
 import {
-  InnerPagesLayoutContainer, HeadingTextWaterMark, HeadingText, OutbuildingHeader,
-  ProjectInfo, Role, Date, Context, ProjectDescription, WrapperText, WorkText,
+  InnerPagesLayoutContainer, WrapperText, WorkText,
   ProjectButton, ProjectButtonWrapper, OutbuildingDisplay, ProjectColours,
   HeadingTextInnerWrapper, HeadingTextInner, FontsUsed, FontsUsedWrapper,
-  IconDesigns, IconsText, Chevron, ChevronWrapper, HeadingTextWaterMarkAbout,
+  IconDesigns, IconsText, NextAndPreviousWrapper,
 } from '~/styles';
 
 import { projectDataHeading } from '~/components/pages/projects';
 
-import chevronIcon from '~/resources/icons/chevron.svg';
+import headings from '~/components/pages/header-data';
 
 export interface IOutBuildingPageProps {
   title?: string;
@@ -42,56 +41,10 @@ export default class OutBuildingPage extends Component<any, any> {
         data-qa="page-container">
 
         <Navbar />
+        <WorkHeading
+          {...headings[0]}
+        />
 
-        <OutbuildingHeader
-          data-qa="outbuilding-header">
-          <HeadingTextWaterMark
-            data-qa="water-mark-text">
-            Garden Rooms
-          </HeadingTextWaterMark>
-          <HeadingText
-            data-qa="heading-text">
-            Out Building Company
-          </HeadingText>
-
-          <ChevronWrapper
-            data-qa="content-wrapper">
-
-            <ProjectInfo
-              data-qa="project-info-wrapper">
-              <Role>
-              <span>
-                ROLE:
-              </span>
-                Web Senior Designer
-              </Role>
-
-              <Date>
-                <span>
-                DATE:
-                </span>
-                  20 July 2018
-              </Date>
-              <Context>
-                <span>
-                  CONTEXT:
-                </span>
-                 Website Design
-              </Context>
-            </ProjectInfo>
-
-            <ProjectDescription
-              data-qa="project-description">
-              Create unique outdoor spaces for work and leisure
-            </ProjectDescription>
-
-          </ChevronWrapper>
-
-              <Chevron>
-            <img src={chevronIcon} />
-            </Chevron>
-
-        </OutbuildingHeader>
 
         <WrapperText
           data-qa="wrapper-text">
@@ -101,13 +54,13 @@ export default class OutBuildingPage extends Component<any, any> {
           </HeadingTextInner>
           <WorkText
             data-qa="work-text"
-            >
-          The Outbuilding Company designs and builds bespoke garden rooms for clients.
-          Our garden rooms can be built at a fraction of the cost of adding an extension
-          to your home, and as such, they are the most affordable means of creating additional
-          living space at your property. <br/>
-          In addition, most of our outbuildings do not require planning
-          permission and can be used all year round <br/><br/>
+          >
+            The Outbuilding Company designs and builds bespoke garden rooms for clients.
+            Our garden rooms can be built at a fraction of the cost of adding an extension
+            to your home, and as such, they are the most affordable means of creating additional
+          living space at your property. <br />
+            In addition, most of our outbuildings do not require planning
+          permission and can be used all year round <br /><br />
           </WorkText>
         </WrapperText>
 
@@ -119,10 +72,10 @@ export default class OutBuildingPage extends Component<any, any> {
           </ProjectButton>
         </ProjectButtonWrapper>
 
-          <OutbuildingDisplay
+        <OutbuildingDisplay
           data-qa="project-view-displays">
-            <img src={OutbuildingImages} />
-           </OutbuildingDisplay>
+          <img src={OutbuildingImages} />
+        </OutbuildingDisplay>
 
         <WrapperText>
 
@@ -145,13 +98,14 @@ export default class OutBuildingPage extends Component<any, any> {
         </ProjectColours>
 
         <HeadingTextInnerWrapper>
-          <FontsUsedWrapper>
-
-           Fonts & Colours Used
-
-            <FontsUsed>
+          <FontsUsedWrapper
+            data-qa="font-used-wrapper">
+            Fonts & Colours Used
+            <FontsUsed
+              className="outbuilding"
+            >
               <span>
-              Fonts Used:
+                Fonts Used:
               </span>
               Maven PRO, Impact
             </FontsUsed>
@@ -170,7 +124,7 @@ export default class OutBuildingPage extends Component<any, any> {
           </FontsUsedWrapper>
         </HeadingTextInnerWrapper>
 
-          <IconsText>
+        <IconsText>
           The Outbuilding Company designs and builds bespoke garden rooms for clients.
               Our garden rooms can be built at a fraction of the cost of adding an extension
           </IconsText>
@@ -194,6 +148,10 @@ export default class OutBuildingPage extends Component<any, any> {
           permission and can be used all year round <br /><br />
           </WorkText>
         </WrapperText>
+
+        <NextAndPreviousWrapper>
+          <NextAndPrevious />
+        </NextAndPreviousWrapper>
 
         <Footer />
 

@@ -1,16 +1,8 @@
 import React, { Component, Fragment } from 'react';
 
 import {
-  WorkSection,
-  PositionHeader,
-  PositionandDate,
-  PositionTitle,
-  Date,
-  CompanyName,
-  WorkDescription,
-  ResponsibiltiesDIV,
-  UsedSkills,
-  UsedSkillsWrapper,
+  WorkSection, PositionHeader, PositionandDate, PositionTitle, Date,
+  CompanyName, WorkDescription, ResponsibiltiesDIV, UsedSkills, UsedSkillsWrapper,
   TechHeadingDIV,
 } from '~/components/pages/cv/styles';
 
@@ -97,6 +89,9 @@ export default class PreviousWork extends Component<any, any> {
             </Fragment>
           );
         })}
+
+
+
         {/* <UsedSkillsWrapper
           data-qa="used-skills-wrapper">
 

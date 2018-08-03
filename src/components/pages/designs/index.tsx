@@ -4,7 +4,6 @@ import { Navbar, Footer, } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
-  HeadingTextWaterMark,
   HeadingTextWaterMarkAbout,
   HeadingText,
   WrapperText,
@@ -19,7 +18,7 @@ import {
   Flyer,
   ChevronWrapper,
   Chevron,
- } from '~/styles';
+} from '~/styles';
 
 import {
   Mines,
@@ -42,47 +41,43 @@ export default class DesignsPage extends Component<any, any> {
     return (
       <InnerPagesLayoutContainer>
 
-        <Navbar/>
+        <Navbar />
 
         <AllDesign>
 
           <ChevronWrapper>
 
-        <HeadingTextWaterMark>
-          Latest Designs
-        </HeadingTextWaterMark>
-
-        <HeadingText>
-          Designs collection
+            <HeadingText>
+              Designs collection
         </HeadingText>
 
-        <WrapperText>
-          <Text>
-            A small selection of some of my latest designs.
+            <WrapperText>
+              <Text>
+                A small selection of some of my latest designs.
           </Text>
-          </WrapperText>
+            </WrapperText>
 
-        </ChevronWrapper>
+          </ChevronWrapper>
 
           <Chevron>
             <img src={chevronIcon} />
           </Chevron>
 
-          </AllDesign>
+        </AllDesign>
 
-          <WrapperText>
-            <HeadingTextInner>
-              Information
+        <WrapperText>
+          <HeadingTextInner>
+            Information
           </HeadingTextInner>
-            <WorkText>
-              The Outbuilding Company designs and builds bespoke garden rooms for clients.
-              Our garden rooms can be built at a fraction of the cost of adding an extension
-              to your home, and as such, they are the most affordable means of creating additional
+          <WorkText>
+            The Outbuilding Company designs and builds bespoke garden rooms for clients.
+            Our garden rooms can be built at a fraction of the cost of adding an extension
+            to your home, and as such, they are the most affordable means of creating additional
               living space at your property. <br />
-              In addition, most of our outbuildings do not require planning
+            In addition, most of our outbuildings do not require planning
               permission and can be used all year round <br /><br />
-            </WorkText>
-          </WrapperText>
+          </WorkText>
+        </WrapperText>
 
         <HeadingTextWaterMarkAbout>
           Flyer Designs
@@ -109,7 +104,7 @@ export default class DesignsPage extends Component<any, any> {
           </Information>
 
           <HeadingTextWaterMarkAbout>
-          Poster Design
+            Poster Design
           </HeadingTextWaterMarkAbout>
 
           <Flyer>
@@ -122,7 +117,7 @@ export default class DesignsPage extends Component<any, any> {
           </Information>
         </FlyerWrapper>
 
-        <Footer/>
+        <Footer />
 
       </InnerPagesLayoutContainer>
     );

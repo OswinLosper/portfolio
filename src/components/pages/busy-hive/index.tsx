@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-import { Navbar, Footer, } from '~/components/molecules';
+import { Navbar, WorkHeading, Footer, } from '~/components/molecules';
 
 import BusyHiveImages from '~/resources/projects/busy-hive/busy-hive-displays.jpg';
 import BusyHiveLogos from '~/resources/projects/busy-hive/logos.jpg';
@@ -9,16 +9,18 @@ import BusyHiveColours from '~/resources/projects/busy-hive/busy-hive-colours.jp
 import BusyHiveIcons from '~/resources/projects/busy-hive/busyhive-icons.jpg';
 
 import {
-  InnerPagesLayoutContainer, HeadingTextWaterMark, HeadingText, BusyHiveHeader,
+  InnerPagesLayoutContainer, HeadingText, BusyHiveHeader,
   ProjectInfo, Role, Date, Context, ProjectDescription, WrapperText, WorkText,
   ProjectButton, ProjectButtonWrapper, OutbuildingDisplay, ProjectColours,
-  HeadingTextInnerWrapper, HeadingTextInner, FontsUsedBusyHive, FontsUsedWrapper,
-  IconDesigns, IconsText, Chevron, ChevronWrapper, HeadingTextWaterMarkAbout,
+  HeadingTextInnerWrapper, HeadingTextInner, FontsUsed, FontsUsedWrapper,
+  IconDesigns, IconsText, Chevron, ChevronWrapper,
 } from '~/styles';
 
 import { projectDataHeading } from '~/components/pages/projects';
 
 import chevronIcon from '~/resources/icons/chevron.svg';
+
+import headings from '~/components/pages/header-data';
 
 export interface IBusyHivePageProps {
   title?: string;
@@ -44,12 +46,15 @@ export default class BusyHivePage extends Component<any, any> {
 
         <Navbar />
 
-        <BusyHiveHeader
+
+        <WorkHeading
+          {...headings[1]}
+        />
+
+
+
+        {/* <BusyHiveHeader
           data-qa="outbuilding-header">
-          <HeadingTextWaterMark
-            data-qa="water-mark-text">
-            PA Services
-          </HeadingTextWaterMark>
           <HeadingText
             data-qa="heading-text">
             Busy Hive
@@ -92,7 +97,9 @@ export default class BusyHivePage extends Component<any, any> {
             <img src={chevronIcon} />
           </Chevron>
 
-        </BusyHiveHeader>
+        </BusyHiveHeader> */}
+
+
 
         <WrapperText
           data-qa="wrapper-text">
@@ -102,10 +109,10 @@ export default class BusyHivePage extends Component<any, any> {
           </HeadingTextInner>
           <WorkText
             data-qa="work-text">
-              Busy Hive have over 16 years’ experience of supplying and sourcing administrative and
-              personal support in key sectors across Brighton including start up business',
-              professional organisations and events. We understand the challenges that you and
-              your company face with admin support, company management and planning whether for a
+            Busy Hive have over 16 years’ experience of supplying and sourcing administrative and
+            personal support in key sectors across Brighton including start up business',
+            professional organisations and events. We understand the challenges that you and
+            your company face with admin support, company management and planning whether for a
               particular project at short notice or strengthening your business. <br /><br />
           </WorkText>
         </WrapperText>
@@ -142,14 +149,17 @@ export default class BusyHivePage extends Component<any, any> {
         </ProjectColours>
 
         <HeadingTextInnerWrapper>
-          <FontsUsedWrapper>
+          <FontsUsedWrapper
+            data-qa="font-used-wrapper">
             Fonts & Colours Used
-            <FontsUsedBusyHive>
+            <FontsUsed
+              className="busyhive-font-used "
+            >
               <span>
                 Fonts Used:
               </span>
               Maven PRO, Impact
-            </FontsUsedBusyHive>
+            </FontsUsed>
 
           </FontsUsedWrapper>
         </HeadingTextInnerWrapper>

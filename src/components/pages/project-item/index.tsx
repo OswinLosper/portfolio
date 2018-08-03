@@ -4,7 +4,6 @@ import { Navbar, Footer, } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
-  HeadingTextWaterMark,
   HeadingText,
   WrapperText,
   ProjectInfo,
@@ -12,7 +11,7 @@ import {
   Date,
   Context,
   ProjectDescription,
- } from '~/styles';
+} from '~/styles';
 
 import { projectDataHeading } from '~/components/pages/projects';
 
@@ -59,16 +58,14 @@ export default class ProjectItem extends Component<any, any> {
 
         <Navbar />
 
-        <HeadingTextWaterMark>
-           Case Study
-        </HeadingTextWaterMark>
+
         <HeadingText>
           Out Building Company
         </HeadingText>
 
         <WrapperText>
 
-              <Fragment key={id}>
+          <Fragment key={id}>
 
             <ProjectInfo>
               <Role>

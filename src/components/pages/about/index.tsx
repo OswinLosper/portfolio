@@ -5,13 +5,12 @@ import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
 import {
   InnerPagesLayoutContainer,
   HeadingTextWaterMarkAbout,
-  HeadingTextWaterMark,
   HeadingText,
   WrapperText,
   Text,
   SkillsHeadingText,
   GitHubText,
- } from '~/styles';
+} from '~/styles';
 
 export interface IAboutPageProps {
   title?: string;
@@ -28,31 +27,24 @@ export default class AboutPage extends Component<IAboutPageProps, any> {
         <Navbar />
 
         <HeadingTextWaterMarkAbout>
-        who am i
+          who am i
      </HeadingTextWaterMarkAbout>
-      <HeadingText>
+        <HeadingText>
           About me
       </HeadingText>
         <WrapperText>
           <Text>
-          I work as a full time Senior Designer at bOnline Ltd, a UK based company dealing with small to medium
-            sized business websites.
+            I work as a full time Senior Designer at bOnline Ltd, a UK based company dealing with small to medium
+              sized business websites.
 
-            In my spare time I enjoy watching Rugby, Football, American Football, hanging out with friends and
-            playing PlayStation.
+              In my spare time I enjoy watching Rugby, Football, American Football, hanging out with friends and
+              playing PlayStation.
 
-            The saying 'less is more' is a key inﬂuence in my design and I utilise a very simplistic, minimalist
-            style that effectively portrays my clients needs and expectations.
+              The saying 'less is more' is a key inﬂuence in my design and I utilise a very simplistic, minimalist
+              style that effectively portrays my clients needs and expectations.
           </Text>
         </WrapperText>
 
-        {/* <HeadingTextWaterMark>
-          places i worked
-        </HeadingTextWaterMark>
-        <HeadingText>
-          Expereince
-       </HeadingText>
-        <Experience /> */}
 
         <SkillsHeadingText>
           Skills frequently used
@@ -60,15 +52,12 @@ export default class AboutPage extends Component<IAboutPageProps, any> {
         <Skills />
         <WrapperText>
           <Text>
-          My passion for design ranges from very contemporary, modern designs through to the more alternative, vintage style.
-          The saying 'less is more' is a key inﬂuence in my design and I utilise a very simplistic, minimalist style that effectively
-          portrays my clients needs and expectations.
+            My passion for design ranges from very contemporary, modern designs through to the more alternative, vintage style.
+            The saying 'less is more' is a key inﬂuence in my design and I utilise a very simplistic, minimalist style that effectively
+            portrays my clients needs and expectations.
           </Text>
-          </WrapperText>
+        </WrapperText>
 
-        <HeadingTextWaterMark>
-          get in touch
-        </HeadingTextWaterMark>
         <HeadingText>
           Contact
        </HeadingText>

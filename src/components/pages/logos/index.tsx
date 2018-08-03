@@ -5,13 +5,13 @@ import { Navbar, Footer, } from '~/components/molecules';
 import {
   SmartHeat, AutoEvolved, EarlyTurf, EliteHandyman, IXRM, JCFlooring,
   Micro, OvenRepairs, RGJConstruction, SwanShutters, DanYorkBlinds, Aberdeenshire
- } from '~/components/pages/logos/images';
+} from '~/components/pages/logos/images';
 
 import {
-  InnerPagesLayoutContainer, HeadingTextWaterMark, HeadingText, WrapperText,
+  InnerPagesLayoutContainer, HeadingText, WrapperText,
   LogoCollectionWrapper, Logo, ProjectDescription,
   SmartHeatHeader, LogoName, Chevron, ChevronWrapper,
- } from '~/styles';
+} from '~/styles';
 
 import chevronIcon from '~/resources/icons/chevron.svg';
 
@@ -28,40 +28,37 @@ export default class LogosPage extends Component<any, any> {
     return (
       <InnerPagesLayoutContainer>
 
-        <Navbar/>
+        <Navbar />
 
         <SmartHeatHeader>
 
           <ChevronWrapper>
 
-        <HeadingTextWaterMark>
-          Logo Designs
-        </HeadingTextWaterMark>
 
-        <HeadingText>
-          Logo collection
+            <HeadingText>
+              Logo collection
         </HeadingText>
 
-        <WrapperText>
-            <ProjectDescription>
-            A small selection of some of my logo designs.
+            <WrapperText>
+              <ProjectDescription>
+                A small selection of some of my logo designs.
         </ProjectDescription>
-        </WrapperText>
+            </WrapperText>
 
-    </ChevronWrapper>
+          </ChevronWrapper>
 
-        <Chevron>
-          <img src={chevronIcon} />
-        </Chevron>
+          <Chevron>
+            <img src={chevronIcon} />
+          </Chevron>
 
-      </SmartHeatHeader>
+        </SmartHeatHeader>
 
-      <LogoCollectionWrapper>
-        <Logo>
-            <img src={SmartHeat} width="100%"/>
+        <LogoCollectionWrapper>
+          <Logo>
+            <img src={SmartHeat} width="100%" />
             <LogoName>
             </LogoName>
-        </Logo>
+          </Logo>
 
           <Logo>
             <img src={AutoEvolved} width="100%" />
@@ -70,12 +67,12 @@ export default class LogosPage extends Component<any, any> {
           <Logo>
             <img src={EarlyTurf} width="100%" />
           </Logo>
-         </LogoCollectionWrapper>
+        </LogoCollectionWrapper>
 
-      <LogoCollectionWrapper>
-        <Logo>
-            <img src={EliteHandyman} width="100%"/>
-        </Logo>
+        <LogoCollectionWrapper>
+          <Logo>
+            <img src={EliteHandyman} width="100%" />
+          </Logo>
 
           <Logo>
             <img src={IXRM} width="100%" />
@@ -84,12 +81,12 @@ export default class LogosPage extends Component<any, any> {
           <Logo>
             <img src={JCFlooring} width="100%" />
           </Logo>
-         </LogoCollectionWrapper>
+        </LogoCollectionWrapper>
 
-      <LogoCollectionWrapper>
-        <Logo>
-            <img src={Micro} width="100%"/>
-        </Logo>
+        <LogoCollectionWrapper>
+          <Logo>
+            <img src={Micro} width="100%" />
+          </Logo>
 
           <Logo>
             <img src={OvenRepairs} width="100%" />
@@ -98,24 +95,24 @@ export default class LogosPage extends Component<any, any> {
           <Logo>
             <img src={RGJConstruction} width="100%" />
           </Logo>
-         </LogoCollectionWrapper>
+        </LogoCollectionWrapper>
 
-      <LogoCollectionWrapper>
-        <Logo>
-            <img src={SwanShutters} width="100%"/>
-        </Logo>
+        <LogoCollectionWrapper>
+          <Logo>
+            <img src={SwanShutters} width="100%" />
+          </Logo>
 
-        <Logo>
-            <img src={DanYorkBlinds} width="100%"/>
-        </Logo>
+          <Logo>
+            <img src={DanYorkBlinds} width="100%" />
+          </Logo>
 
-        <Logo>
-            <img src={Aberdeenshire} width="100%"/>
-        </Logo>
+          <Logo>
+            <img src={Aberdeenshire} width="100%" />
+          </Logo>
 
-         </LogoCollectionWrapper>
+        </LogoCollectionWrapper>
 
-        <Footer/>
+        <Footer />
 
       </InnerPagesLayoutContainer>
     );

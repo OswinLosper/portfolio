@@ -9,5 +9,6 @@ export { default as PreviousWork } from './previous-work';
 export { default as SkillandTools } from './skills-tools';
 export { default as WorkHeading } from './work-heading';
 export { default as Projects } from './projects';
+export { default as NextAndPrevious } from './next-and-previous';
 
 

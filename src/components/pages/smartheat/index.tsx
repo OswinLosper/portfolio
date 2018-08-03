@@ -8,7 +8,7 @@ import SmartheatColours from '~/resources/projects/smartheat/smartheat-colours.j
 import SmartheatIcons from '~/resources/projects/smartheat/smartheat-icons.jpg';
 
 import {
-  InnerPagesLayoutContainer, HeadingTextWaterMark, HeadingText, SmartHeat,
+  InnerPagesLayoutContainer, HeadingText, SmartHeat,
   ProjectInfo, Role, Date, Context, ProjectDescription, WrapperText, WorkText,
   ProjectButton, ProjectButtonWrapper, OutbuildingDisplay, ProjectColours,
   HeadingTextInnerWrapper, HeadingTextInner, FontsUsed, FontsUsedWrapper,
@@ -45,10 +45,9 @@ export default class SmartHeatPage extends Component<any, any> {
 
         <SmartHeat
           data-qa="outbuilding-header">
-          <HeadingTextWaterMark
-            data-qa="water-mark-text">
-            Smart Heat
-          </HeadingTextWaterMark>
+
+
+
           <HeadingText
             data-qa="heading-text">
             Smart Heat
@@ -145,11 +144,11 @@ export default class SmartHeatPage extends Component<any, any> {
         </ProjectColours>
 
         <HeadingTextInnerWrapper>
-          <FontsUsedWrapper>
-
+          <FontsUsedWrapper
+            data-qa="font-used-wrapper">
             Fonts & Colours Used
-
-            <FontsUsed>
+            <FontsUsed
+              className="smartheat-font-used">
               <span>
                 Fonts Used:
               </span>

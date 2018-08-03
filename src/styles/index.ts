@@ -1,5 +1,9 @@
 import styled from 'styled-components';
+import { prop, ifProp, switchProp } from 'styled-tools';
+
 import withProps from 'styled-components-ts';
+
+
 import img from '../resources/bg.jpg';
 import bg from '../resources/innerBG.png';
 import outbuildingHeaderBG from '../resources/projects/outbuilding-company/outbuilding-headerBG.jpg';
@@ -7,6 +11,31 @@ import busyHivegHeaderBG from '../resources/projects/busy-hive/busy-hiveBG.jpg';
 import smartHeatHeaderBG from '../resources/projects/smartheat/smart-heatheaderBG.jpg';
 import inVoiceBookAPPHeaderBG from '../resources/projects/invoice-book-app/header-BG.jpg';
 import DesignHeader from '../resources/projects/designs/design-bg.jpg';
+
+
+export const NextAndPreviousWrapper = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+ flex-wrap: wrap;
+margin-top: 1rem;
+`;
+
+export const NextButtons = withProps<any>(styled.button)`
+    background-color: rgba(255,0,0,0.0);
+    border: 1px solid #808080;
+    color: #808080;
+    padding: 1rem 5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 10px 10px;
+    cursor: pointer;
+    :hover {
+        background-color: rgba(255,255,255,0.5);
+    }
+`;
+
 
 
 export const DatePickerDiv = withProps<any>(styled.div)`
@@ -23,6 +52,14 @@ background-repeat: no-repeat;
 `;
 
 export const OutbuildingHeader = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+background-image: url(${outbuildingHeaderBG});
+height: 100vh;
+justify-content: center;
+`;
+
+export const Header = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
 background-image: url(${outbuildingHeaderBG});
@@ -169,7 +206,7 @@ text-transform: none;
 padding-top: 2rem;
 `;
 
-export const HeadingTextWaterMark = withProps<any>(styled.div)`
+export const HeadingText = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
 flex-direction: row;
@@ -181,15 +218,14 @@ padding-top: 10rem;
 padding-bottom: 2rem;
 `;
 
-export const HeadingText = withProps<any>(styled.div)`
-display: flex;
-justify-content: center;
-flex-direction: row;
-font-size: 4rem;
-color: #544F51;
-margin-top: -90px;
-font-weight: 900;
-`;
+// export const HeadingText = withProps<any>(styled.div)`
+// display: flex;
+// justify-content: center;
+// flex-direction: row;
+// font-size: 4rem;
+// color: #544F51;
+// font-weight: 900;
+// `;
 
 export const SkillsHeadingText = withProps<any>(styled.div)`
 display: flex;
@@ -336,7 +372,7 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 color: #fff;
-background-color: #d6595e;
+background-color: #808080;
 padding: 5rem;
 margin-top: 5rem;
 }
@@ -531,6 +567,11 @@ margin-top: 2rem;
 margin-right: auto;
 margin-left: auto;
 flex-direction: column;
+
+    & span {
+        font-weight: 600;
+         margin-right: 0.5rem;
+     }
 `;
 
 export const FontsUsed = withProps<any>(styled.div)`
@@ -540,13 +581,29 @@ font-size: 1.2rem;
 color: #544F51;
 margin-top: 2rem;
 font-weight: normal;
-border-bottom: 2px solid #8F7D4F;
 padding-bottom: 1.5rem;
-    & span {
-        font-weight: 600;
-        margin-right: 0.5rem;
+
+    &.outbuilding-font-used {
+        border-bottom: 2px solid #8F7D4F;
+        padding-bottom: 1rem;
     }
-`;
+
+    &.smartheat-font-used {
+        border-bottom: 2px solid #F29200;
+        padding-bottom: 1rem;
+        }
+
+    &.busyhive-font-used  {
+        border-bottom: 2px solid #FFCA08;
+        padding-bottom: 1rem;
+        }
+
+    &.invoicebook-font-used  {
+        border-bottom: 2px solid #003C47;
+        padding-bottom: 1rem;
+        }
+    `;
+
 
 export const FontsUsedBusyHive = withProps<any>(styled.div)`
 display: flex;
