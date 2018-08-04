@@ -24,7 +24,7 @@ const DataHeading = [
   //   role: 'Role: Web Senior Designer',
   //   date: 'Date: 20 July 2018',
   //   context: 'Context: Website Design ergergherhert',
-  //   projectdescription: 'Webiste build for Bee Hive case study',
+  //   projectDescription: 'Webiste build for Bee Hive case study',
   // },
   // {
   //   id: 3,
@@ -32,17 +32,17 @@ const DataHeading = [
   //   role: 'Role: Web Senior Designer',
   //   date: 'Date: 20 July 2018',
   //   context: 'Context: Website Design ergergherhert',
-  //   projectdescription: 'Webiste build for Bee Hive case study',
+  //   projectDescription: 'Webiste build for Bee Hive case study',
   // },
   // {
   //   id: 4,
   //   title: 'Latest Logos',
-  //   projectdescription: 'A small selection of some of my designs.',
+  //   projectDescription: 'A small selection of some of my designs.',
   // },
   // {
   //   id: 5,
   //   title: 'Designs Collection',
-  //   projectdescription: 'A small selection of some of my logo designs.',
+  //   projectDescription: 'A small selection of some of my logo designs.',
   // },
 
 
