@@ -13,8 +13,6 @@ import {
   ProjectDescription,
 } from '~/styles';
 
-import { projectDataHeading } from '~/components/pages/projects';
-
 export interface IOutBuildingPageProps {
   route: {
     title?: string;
@@ -38,9 +36,6 @@ export default class ProjectItem extends Component<any, any> {
     },
   };
 
-  state = {
-    items: projectDataHeading,
-  };
 
   render() {
     const {

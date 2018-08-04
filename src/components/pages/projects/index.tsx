@@ -1,3 +1,3 @@
-export { default as projectDataHeading } from '~/components/pages/projects-data';
+// export { default as projectDataHeading } from '~/components/pages/projects-data';
 
 

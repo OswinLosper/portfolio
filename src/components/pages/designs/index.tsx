@@ -1,23 +1,18 @@
 import React, { Component } from 'react';
 
-import { Navbar, Footer, } from '~/components/molecules';
+import { Navbar, Footer, WorkHeading, } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
   HeadingTextWaterMarkAbout,
-  HeadingText,
   WrapperText,
-  Text,
   SafeMining,
   SafeMiningWrapper,
-  AllDesign,
   WorkText,
   HeadingTextInner,
   Information,
   FlyerWrapper,
   Flyer,
-  ChevronWrapper,
-  Chevron,
 } from '~/styles';
 
 import {
@@ -26,7 +21,7 @@ import {
   StrikaPoster,
 } from '~/components/pages/designs/images';
 
-import chevronIcon from '~/resources/icons/chevron.svg';
+import headings from '~/components/pages/header-data';
 
 export interface IDesignsPageProps {
   title?: string;
@@ -43,27 +38,11 @@ export default class DesignsPage extends Component<any, any> {
 
         <Navbar />
 
-        <AllDesign>
+             <WorkHeading
+          {...headings[5]}
+        />
 
-          <ChevronWrapper>
-
-            <HeadingText>
-              Designs collection
-        </HeadingText>
-
-            <WrapperText>
-              <Text>
-                A small selection of some of my latest designs.
-          </Text>
-            </WrapperText>
-
-          </ChevronWrapper>
-
-          <Chevron>
-            <img src={chevronIcon} />
-          </Chevron>
-
-        </AllDesign>
+        
 
         <WrapperText>
           <HeadingTextInner>
