@@ -48,7 +48,7 @@ const pages: IPageItem[] = [
   {
     bannerInfo: {
       role: 'Role: Web Senior Designer',
-      title: 'Building Company',
+      title: 'Busy Hive',
       date: 'Date: 20 July 2018',
       context: 'Context: Website Design',
       projectDescription: 'Website built for Busy Hive case study',
