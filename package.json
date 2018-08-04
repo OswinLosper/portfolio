@@ -63,7 +63,6 @@
     "tslint": "tslint -c tslint.json --project tsconfig.json 'src/**/*.ts{,x}'",
     "lint": "yarn tslint",
     "commitmsg": "commitlint -E GIT_PARAMS",
-    "prepush": "",
     "postmerge": "yarn"
   },
   "devDependencies": {
