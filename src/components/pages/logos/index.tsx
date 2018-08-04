@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Navbar, Footer, } from '~/components/molecules';
+import { Navbar, Footer, WorkHeading } from '~/components/molecules';
 
 import {
   SmartHeat, AutoEvolved, EarlyTurf, EliteHandyman, IXRM, JCFlooring,
@@ -13,7 +13,7 @@ import {
   SmartHeatHeader, LogoName, Chevron, ChevronWrapper,
 } from '~/styles';
 
-import chevronIcon from '~/resources/icons/chevron.svg';
+import headings from '~/components/pages/header-data';
 
 export interface ILogosPageProps {
   title?: string;
@@ -30,28 +30,11 @@ export default class LogosPage extends Component<any, any> {
 
         <Navbar />
 
-        <SmartHeatHeader>
+     <WorkHeading
+          {...headings[4]}
+        />
 
-          <ChevronWrapper>
 
-
-            <HeadingText>
-              Logo collection
-        </HeadingText>
-
-            <WrapperText>
-              <ProjectDescription>
-                A small selection of some of my logo designs.
-        </ProjectDescription>
-            </WrapperText>
-
-          </ChevronWrapper>
-
-          <Chevron>
-            <img src={chevronIcon} />
-          </Chevron>
-
-        </SmartHeatHeader>
 
         <LogoCollectionWrapper>
           <Logo>
