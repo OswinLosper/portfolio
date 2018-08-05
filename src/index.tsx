@@ -33,26 +33,26 @@ render(
         <Route exact path="/work" component={WorkPage} />
         {/*<Route exact path="/outbuilding2" component={OutBuildingPage} />*/}
         {/*<Route exact path="/busy-hive" component={BusyHivePage} />*/}
-        <Route exact path="/smartheat" component={SmartHeatPage} />
-        <Route exact path="/invoice-app" component={InvoiceAppPage} />
+        {/* <Route exact path="/smartheat" component={SmartHeatPage} /> */}
+        {/* <Route exact path="/invoice-app" component={InvoiceAppPage} /> */}
         <Route exact path="/logos" component={LogosPage} />
         <Route exact path="/designs" component={DesignsPage} />
         <Route exact path="/cv" component={CVPage} />
-         {PAGES.map(page => (
-           <Route
-             exact path={page.route}
-             render={props => <PortfolioItem
-               bannerInfo={page.bannerInfo}
-               challenge={page.challenge}
-               solution={page.solution}
-               fonts={page.fonts}
-               icons={page.icons}
-               conclusion={page.conclusion}
-               images={page.images}
-               {...props}
-             />}
-           />
-         ))}
+        {PAGES.map(page => (
+          <Route
+            exact path={page.route}
+            render={props => <PortfolioItem
+              bannerInfo={page.bannerInfo}
+              challenge={page.challenge}
+              solution={page.solution}
+              fonts={page.fonts}
+              icons={page.icons}
+              conclusion={page.conclusion}
+              images={page.images}
+              {...props}
+            />}
+          />
+        ))}
       </Switch>
     </BrowserRouter>
   </MuiThemeProvider>,
