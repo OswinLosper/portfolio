@@ -38,8 +38,7 @@ export default class SmartHeatPage extends Component<any, any> {
           {...headings[2]}
         />    
 
-          />
-             <WorkContent
+        <WorkContent
           {...content[2]}
         />  
 
