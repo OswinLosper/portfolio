@@ -539,12 +539,17 @@ margin-top: 2rem;
 
 export const HeadingTextInner = withProps<any>(styled.div)`
 display: flex;
-justify-content: flex-start;
+justify-content: ${props => {
+  return props.centered ? 'center' : 'flex-start';
+}};
 flex-direction: column;
 font-size: 3rem;
 color: #544F51;
 font-weight: 900;
 margin-top: 2rem;
+text-align: ${props => {
+  return props.centered ? 'center' : 'left';
+}};
 `;
 
 export const WorkText = withProps<any>(styled.div)`
@@ -555,6 +560,9 @@ line-height: 2.5;
 text-align: justify;
 text-align: left;
 padding-bottom: 1rem;
+text-align: ${props => {
+  return props.centered ? 'center' : 'left';
+}};
 `;
 
 export const FontsUsedWrapper = withProps<any>(styled.div)`

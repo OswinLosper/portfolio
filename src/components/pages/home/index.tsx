@@ -32,21 +32,6 @@ export default class HomePage extends Component<IHomePageProps, any> {
             Hi, I'm Oswin Losper. 27 year old automation tester, front-end developer and designer based in Cape Town.
         </HomeText>
           <Buttons />
-
-          <DatePickerDiv
-            data-qa="date-picker-wrapper"
-          >
-            <DatePicker
-              className="ui-date-picker"
-              data-qa="ui-date-picker"
-              floatingLabelText="Date Picker"
-              fullWidth
-              hintText="Date Picker"
-            />
-          </DatePickerDiv>
-
-
-
         </MainContainer>
       </LayoutContainer>
 

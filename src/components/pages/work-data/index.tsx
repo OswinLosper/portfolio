@@ -1,3 +1,4 @@
+/* tslint:disable */
 const DataContent = [
   {
     id: 0,
@@ -25,7 +26,7 @@ const DataContent = [
     iconstext: ('The Outbuilding Company designs and builds bespoke garden rooms for clients. Our garden rooms can be built at a fraction of the cost of adding an extension'),
     conclusionheading: 'Conclusion',
     conclusion: ('The Outbuilding Company designs and builds bespoke garden rooms for clients. Our garden rooms can be built at a fraction of the cost of adding an extension to your home, and as such, they are the most affordable means of creating additional living space at your property. In addition, most of our outbuildings do not require planning permission and can be used all year round'),
-    
+
   },
 
   {
@@ -40,7 +41,7 @@ const DataContent = [
     iconstext: ('The Outbuilding Company designs and builds bespoke garden rooms for clients. Our garden rooms can be built at a fraction of the cost of adding an extension'),
     conclusionheading: 'Conclusion',
     conclusion: ('The Outbuilding Company designs and builds bespoke garden rooms for clients. Our garden rooms can be built at a fraction of the cost of adding an extension to your home, and as such, they are the most affordable means of creating additional living space at your property. In addition, most of our outbuildings do not require planning permission and can be used all year round'),
-   
+
   },
 
   {
@@ -56,7 +57,7 @@ const DataContent = [
     conclusionheading: 'Conclusion',
     conclusion: ('The Outbuilding Company designs and builds bespoke garden rooms for clients. Our garden rooms can be built at a fraction of the cost of adding an extension to your home, and as such, they are the most affordable means of creating additional living space at your property. In addition, most of our outbuildings do not require planning permission and can be used all year round'),
   },
-  
+
 ];
 
 export default DataContent;
