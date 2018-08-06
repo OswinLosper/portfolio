@@ -6,7 +6,6 @@ import img from '../resources/bg.jpg';
 import bg from '../resources/innerBG.png';
 import DesignHeader from '../resources/projects/designs/design-bg.jpg';
 
-
 export const NextAndPreviousWrapper = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
@@ -48,6 +47,7 @@ display: flex;
 flex-direction: column;
 height: 100vh;
 justify-content: center;
+padding-top: 10rem;
 ${props => {
   return `background-image: url(${props.backgroundImage});`;
 }}
@@ -163,7 +163,7 @@ justify-content: center;
 flex-direction: row;
 font-size: 120px;
 font-weight: 900;
-color: #524;
+color: #544F51;
 text-transform: none;
 padding-top: 7rem;
 padding-bottom: 2rem;
@@ -674,6 +674,8 @@ transition-timing-function: ease;
 export const Chevron = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
+}
+
 `;
 
 
