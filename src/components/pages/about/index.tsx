@@ -1,69 +1,86 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
 
 import {
-  InnerPagesLayoutContainer,
-  HeadingText,
-  WrapperText,
-  Text,
-  SkillsHeadingText,
-  GitHubText,
+  InnerPagesLayoutContainer, HeadingTextAbout, Text,
+  SkillsHeadingText, GitHubText, ButtonToWork,
 } from '~/styles';
 
-export interface IAboutPageProps {
-  title?: string;
-}
+import { AboutMe } from '~/components/pages/about-data-project';
+import { Animated } from 'react-animated-css';
 
-export default class AboutPage extends Component<IAboutPageProps, any> {
+export default class AboutMePage extends Component<any, any> {
   static defaultProps = {
-    title: 'About Us',
+    title: 'About Me',
+  };
+
+  state = {
+    items: AboutMe,
   };
 
   render() {
+    const {
+      items,
+    } = this.state;
     return (
       <InnerPagesLayoutContainer>
         <Navbar />
-        <HeadingText>
-          About Me
-      </HeadingText>
-        <WrapperText>
-          <Text>
-            I work as a full time Senior Designer at bOnline Ltd, a UK based company dealing with small to medium
-              sized business websites.
+        <Animated animationIn="slideInUp" animationOut="bounce" isVisible={true}>
 
-              In my spare time I enjoy watching Rugby, Football, American Football, hanging out with friends and
-              playing PlayStation.
+          {items.map(({
+            id,
+            aboutHeading,
+            about,
+            skillsHeading,
+            skillContent,
+            contactHeading,
+            githubText,
+            workText,
+          }) => (
+              <Fragment key={id}>
+                <HeadingTextAbout
+                  data-qa="about-header">
+                  {aboutHeading}
+                </HeadingTextAbout>
 
-              The saying 'less is more' is a key inﬂuence in my design and I utilise a very simplistic, minimalist
-              style that effectively portrays my clients needs and expectations.
-          </Text>
-        </WrapperText>
+                <Text
+                  data-qa="about-content-text">
+                  {about}
+                </Text>
 
+                <SkillsHeadingText
+                  data-qa="skills-heading-text">
+                  {skillsHeading}
+                </SkillsHeadingText>
+                <Skills
+                  data-qa="skills-component" />
 
-        <SkillsHeadingText>
-          Skills frequently used
-       </SkillsHeadingText>
-        <Skills />
-        <WrapperText>
-          <Text>
-            My passion for design ranges from very contemporary, modern designs through to the more alternative, vintage style.
-            The saying 'less is more' is a key inﬂuence in my design and I utilise a very simplistic, minimalist style that effectively
-            portrays my clients needs and expectations.
-          </Text>
-        </WrapperText>
+                <Text
+                  data-qa="about-content-text">
+                  {skillContent}
+                </Text>
 
-        <HeadingText>
-          Contact
-       </HeadingText>
-        <SocialMedia />
+                <HeadingTextAbout
+                  data-qa="contact-heading">
+                  {contactHeading}
+                </HeadingTextAbout>
+                <SocialMedia />
 
-        <GitHubText>
-          Designed & coded with passion by me. Open source on Github.
-        </GitHubText>
+                <GitHubText
+                  data-qa="github-text">
+                  {githubText}
+                </GitHubText>
 
+                <ButtonToWork
+                  data-qa="github-text">
+                  {workText}
+                </ButtonToWork>
+
+              </Fragment>
+            ))}
+        </Animated>
         <Footer />
-
       </InnerPagesLayoutContainer>
     );
   }

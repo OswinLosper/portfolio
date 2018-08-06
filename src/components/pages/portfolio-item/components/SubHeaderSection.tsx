@@ -12,7 +12,7 @@ interface IProps {
 
 export default class SubHeaderSection extends Component<IProps, any> {
   static defaultProps = {
-    subtextFontSize: 14,
+    subtextFontSize: 12,
     centered: false,
   };
 
@@ -34,7 +34,7 @@ export default class SubHeaderSection extends Component<IProps, any> {
           <WorkText
             centered={centered}
             data-qa="work-text">
-            {subtext} <br/><br/>
+            {subtext} <br /><br />
           </WorkText>
         </WrapperText>
         {children}

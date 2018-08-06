@@ -11,7 +11,7 @@ import {
   Project,
   ProjectButton,
   ProjectButtonWrapper,
- } from '~/styles';
+} from '~/styles';
 
 export default class Projects extends Component<any, any> {
   constructor(props) {
@@ -23,7 +23,7 @@ export default class Projects extends Component<any, any> {
       <InnerPagesLayoutContainer>
 
         <Project>
-          <img src={outbuilding} width="100%"/>
+          <img src={outbuilding} width="100%" />
         </Project>
 
         <ProjectButtonWrapper>
@@ -33,7 +33,7 @@ export default class Projects extends Component<any, any> {
         </ProjectButtonWrapper>
 
         <Project>
-          <img src={busyHive} width="100%"/>
+          <img src={busyHive} width="100%" />
         </Project>
 
         <ProjectButtonWrapper>
@@ -68,7 +68,7 @@ export default class Projects extends Component<any, any> {
 
         <ProjectButtonWrapper>
           <ProjectButton>
-            View More Designs
+            View Logos
           </ProjectButton>
         </ProjectButtonWrapper>
 

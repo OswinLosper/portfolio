@@ -14,6 +14,8 @@ import SubHeaderSection from './components/SubHeaderSection';
 import WorkDetailsContainer from './components/WorkDetailsContainer';
 import CallToActionButton from './components/CallToActionButton';
 
+import { Animated } from 'react-animated-css';
+
 export interface IProps {
   bannerInfo: {
     headerBG: any;
@@ -49,15 +51,16 @@ export default class PortfolioItemPage extends Component<IProps, any> {
         data-qa="page-container">
 
         <Navbar />
-
-        <FullScreenBanner
-          headerBG={bannerInfo.headerBG}
-          role={bannerInfo.role}
-          title={bannerInfo.title}
-          date={bannerInfo.date}
-          context={bannerInfo.context}
-          projectDescription={bannerInfo.projectDescription}
-        />
+        <Animated animationIn="zoomIn" animationOut="zoomIn" isVisible={true}>
+          <FullScreenBanner
+            headerBG={bannerInfo.headerBG}
+            role={bannerInfo.role}
+            title={bannerInfo.title}
+            date={bannerInfo.date}
+            context={bannerInfo.context}
+            projectDescription={bannerInfo.projectDescription}
+          />
+        </Animated>
 
         <WorkDetailsContainer>
           <SubHeaderSection

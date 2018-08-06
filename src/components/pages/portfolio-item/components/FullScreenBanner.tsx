@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 // @ts-ignore
 import chevronIcon from '~/resources/icons/chevron.svg';
 
+import { Animated } from 'react-animated-css';
+
 import {
   Chevron,
   ChevronWrapper,
@@ -68,10 +70,16 @@ export default class FullScreenBanner extends Component<IProps, any> {
             {projectDescription}
           </ProjectDescription>
 
+
         </ChevronWrapper>
-        <Chevron>
-          <img src={chevronIcon} />
-        </Chevron>
+        <Animated
+          animationIn="bounce"
+          animationOut="bounce"
+          isVisible={true}>
+          <Chevron>
+            <img src={chevronIcon} />
+          </Chevron>
+        </Animated>
       </Header>
     );
   }

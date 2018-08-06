@@ -4,6 +4,7 @@ import withProps from 'styled-components-ts';
 
 import img from '../resources/bg.jpg';
 import bg from '../resources/innerBG.png';
+import LogoBackgroundImage from '../resources/projects/logos/logo-headerBG.jpg';
 import DesignHeader from '../resources/projects/designs/design-bg.jpg';
 
 export const NextAndPreviousWrapper = withProps<any>(styled.div)`
@@ -51,6 +52,16 @@ padding-top: 10rem;
 ${props => {
   return `background-image: url(${props.backgroundImage});`;
 }}
+
+`;
+export const LogosHeaderBG = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+height: 100vh;
+justify-content: center;
+padding-top: 10rem;
+margin-bottom: 2rem;
+background-image: url(${LogoBackgroundImage});
 `;
 
 export const InnerPagesLayoutContainer = withProps<any>(styled.div)`
@@ -124,13 +135,15 @@ flex-direction: row;
 align-items: center;
 position: fixed;
 width: 100%;
+z-index: 1;
 `;
 
 export const BackContainer = withProps<any>(styled.div)`
 justify-content: flex-start;
-margin-left: 5%;
+margin-left: 0;
 cursor: pointer;
 image: url(${img});
+padding: 1rem;
 :hover {
     background-color: #ececed;
 }
@@ -138,8 +151,9 @@ image: url(${img});
 
 export const LogoContainer = withProps<any>(styled.div)`
 justify-content: flex-end;
-margin-right: 5%;
+margin-right: 0;
 cursor: pointer;
+padding: 1rem;
 :hover {
     background-color: #ececed;;
 }
@@ -157,15 +171,27 @@ color: #fff;
     }
 `;
 
+export const HeadingTextAbout = withProps<any>(styled.div)`
+display: flex;
+justify-content: center;
+flex-direction: row;
+font-size: 5rem;
+font-weight: 900;
+color: #544F51;
+text-transform: none;
+padding-top: 5rem;
+padding-bottom: 2rem;
+`;
+
 export const HeadingText = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
 flex-direction: row;
-font-size: 120px;
+font-size: 6rem;
 font-weight: 900;
-color: #544F51;
+color: #ececed;
 text-transform: none;
-padding-top: 7rem;
+padding-top: 5rem;
 padding-bottom: 2rem;
 `;
 
@@ -176,6 +202,7 @@ flex-direction: row;
 font-size: 2rem;
 color: #544F51;
 font-weight: 900;
+padding-top: 2rem;
 `;
 
 export const WrapperText = withProps<any>(styled.div)`
@@ -190,14 +217,19 @@ margin-left: auto;
 `;
 
 export const Text = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-right: auto;
+margin-left: auto;
+width: 70%;
 margin-top: 2rem;
-font-size: 28px;
+font-size: 22px;
 color: #808080;
 padding: 20px;
 line-height: 2.5;
 text-align: justify;
-justify-content: center;
-text-align: center;
+
 `;
 
 export const ExperienceWrapper = withProps<any>(styled.div)`
@@ -281,6 +313,7 @@ margin-top: 2rem;
 display: flex;
 justify-content: center;
 flex-direction: row;
+flex-wrap: wrap;
 width: 70%;
 margin-right: auto;
 margin-left: auto;
@@ -312,8 +345,9 @@ export const FooterWrapper = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
 flex-direction: column;
+flex-wrap: wrap;
 color: #fff;
-background-color: #808080;
+background-color: #a1a1a1;
 padding: 5rem;
 margin-top: 5rem;
 }
@@ -325,9 +359,31 @@ justify-content: center;
 flex-direction: row;
 align-items: center;
 color: #544F51;
-font-size: 1.5rem;
-font-weight: 300;
+font-size: 1.2rem;
 margin-bottom: 2rem;
+color: #808080;
+}
+`;
+
+export const ButtonToWork = withProps<any>(styled.div)`
+margin-top: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 5%;
+border: 1px solid #ccc;
+height: 5rem;
+text-align: center;
+font-size: 1.2rem;
+width: 30%;
+margin-right: auto;
+margin-left: auto;
+margin-top: 5rem;
+cursor: pointer;
+color: #808080;
+    :hover {
+        background-color: #ececed;
+    }
 }
 `;
 
@@ -426,16 +482,19 @@ color: #efefef;
 export const Role = withProps<any>(styled.div)`
 display: flex;
 margin-right: 1rem;
+font-size: 20px;
 }
 `;
 
 export const Date = withProps<any>(styled.div)`
 display: flex;
 margin-right: 1rem;
+font-size: 20px;
 `;
 
 export const Context = withProps<any>(styled.div)`
 display: flex;
+font-size: 20px;
 `;
 
 export const ProjectDescriptionWrapper = withProps<any>(styled.div)`
@@ -465,7 +524,6 @@ color: #efefef;
 export const ProjectColours = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
-padding-top: 1rem;
 `;
 
 
