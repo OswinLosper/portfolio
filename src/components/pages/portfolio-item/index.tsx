@@ -107,9 +107,7 @@ export default class PortfolioItemPage extends Component<IProps, any> {
           />
         </WorkDetailsContainer>
 
-
         <NextAndPrevious />
-
 
         <Footer />
       </InnerPagesLayoutContainer>

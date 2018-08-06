@@ -7,6 +7,8 @@ import {
 
 import chevronIcon from '~/resources/icons/chevron.svg';
 
+import { Animated } from 'react-animated-css';
+
 import { DataHeading } from '~/components/pages/header-data-project';
 
 interface IProps {
@@ -67,9 +69,17 @@ export default class WorkHeading extends Component<IProps, any> {
           </ProjectDescription>
 
         </ChevronWrapper>
-        <Chevron>
-          <img src={chevronIcon} />
-        </Chevron>
+
+        <Animated
+          animationIn="bounce"
+          animationOut="bounce"
+          isVisible={true}>
+
+          <Chevron>
+            <img src={chevronIcon} />
+          </Chevron>
+        </Animated>
+
       </Header>
 
 
