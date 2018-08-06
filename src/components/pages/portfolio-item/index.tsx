@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Navbar, Footer, } from '~/components/molecules';
+import { Navbar, NextAndPrevious, Footer } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
@@ -16,6 +16,7 @@ import CallToActionButton from './components/CallToActionButton';
 
 export interface IProps {
   bannerInfo: {
+    headerBG: any;
     role: string;
     title: string;
     date: string;
@@ -47,9 +48,10 @@ export default class PortfolioItemPage extends Component<IProps, any> {
       <InnerPagesLayoutContainer
         data-qa="page-container">
 
-        <Navbar/>
+        <Navbar />
 
         <FullScreenBanner
+          headerBG={bannerInfo.headerBG}
           role={bannerInfo.role}
           title={bannerInfo.title}
           date={bannerInfo.date}
@@ -62,7 +64,7 @@ export default class PortfolioItemPage extends Component<IProps, any> {
             header="The Challenge"
             subtext={challenge}
           >
-            <CallToActionButton label="View Website"/>
+            <CallToActionButton label="View Website" />
           </SubHeaderSection>
 
           <SubHeaderSection
@@ -72,7 +74,7 @@ export default class PortfolioItemPage extends Component<IProps, any> {
 
           <OutbuildingDisplay
             data-qa="project-view-displays">
-            <img src={images.images}/>
+            <img src={images.images} />
           </OutbuildingDisplay>
 
           <SubHeaderSection
@@ -82,11 +84,11 @@ export default class PortfolioItemPage extends Component<IProps, any> {
           />
 
           <ProjectColours>
-            <img src={images.colors}/>
+            <img src={images.colors} />
           </ProjectColours>
 
           <ProjectColours>
-            <img src={images.logos}/>
+            <img src={images.logos} />
           </ProjectColours>
 
           <SubHeaderSection
@@ -96,7 +98,7 @@ export default class PortfolioItemPage extends Component<IProps, any> {
           />
 
           <IconDesigns>
-            <img src={images.icons}/>
+            <img src={images.icons} />
           </IconDesigns>
 
           <SubHeaderSection
@@ -105,7 +107,11 @@ export default class PortfolioItemPage extends Component<IProps, any> {
           />
         </WorkDetailsContainer>
 
-        <Footer/>
+
+        <NextAndPrevious />
+
+
+        <Footer />
       </InnerPagesLayoutContainer>
     );
   }

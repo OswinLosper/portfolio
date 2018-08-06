@@ -1,15 +1,9 @@
 import styled from 'styled-components';
-import { prop, ifProp, switchProp } from 'styled-tools';
 
 import withProps from 'styled-components-ts';
 
-
 import img from '../resources/bg.jpg';
 import bg from '../resources/innerBG.png';
-import outbuildingHeaderBG from '../resources/projects/outbuilding-company/outbuilding-headerBG.jpg';
-import busyHivegHeaderBG from '../resources/projects/busy-hive/busy-hiveBG.jpg';
-import smartHeatHeaderBG from '../resources/projects/smartheat/smart-heatheaderBG.jpg';
-import inVoiceBookAPPHeaderBG from '../resources/projects/invoice-book-app/header-BG.jpg';
 import DesignHeader from '../resources/projects/designs/design-bg.jpg';
 
 
@@ -36,8 +30,6 @@ export const NextButtons = withProps<any>(styled.button)`
     }
 `;
 
-
-
 export const DatePickerDiv = withProps<any>(styled.div)`
 display: flex;
 `;
@@ -51,50 +43,20 @@ background-image: url(${img});
 background-repeat: no-repeat;
 `;
 
-export const OutbuildingHeader = withProps<any>(styled.div)`
-display: flex;
-flex-direction: column;
-background-image: url(${outbuildingHeaderBG});
-height: 100vh;
-justify-content: center;
-`;
-
 export const Header = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
-background-image: url(${outbuildingHeaderBG});
 height: 100vh;
 justify-content: center;
-`;
-
-export const BusyHiveHeader = withProps<any>(styled.div)`
-display: flex;
-flex-direction: column;
-background-image: url(${busyHivegHeaderBG});
-height: 100vh;
-justify-content: center;
-`;
-
-export const SmartHeat = withProps<any>(styled.div)`
-display: flex;
-flex-direction: column;
-background-image: url(${smartHeatHeaderBG});
-height: 100vh;
-justify-content: center;
-`;
-
-export const InVoiceBookAPP = withProps<any>(styled.div)`
-display: flex;
-flex-direction: column;
-background-image: url(${inVoiceBookAPPHeaderBG});
-height: 100vh;
-justify-content: center;
+${props => {
+  return `background-image: url(${props.backgroundImage});`;
+}}
 `;
 
 export const InnerPagesLayoutContainer = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
- background-image: url(${bg});
+background-image: url(${bg});
 `;
 
 export const MainContainer = withProps<any>(styled.div)`
@@ -195,37 +157,17 @@ color: #fff;
     }
 `;
 
-export const HeadingTextWaterMarkAbout = withProps<any>(styled.div)`
-display: flex;
-justify-content: center;
-flex-direction: row;
-font-size: 120px;
-font-weight: 900;
-color: #ececed;
-text-transform: none;
-padding-top: 2rem;
-`;
-
 export const HeadingText = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
 flex-direction: row;
 font-size: 120px;
 font-weight: 900;
-color: #ececed;
+color: #524;
 text-transform: none;
-padding-top: 10rem;
+padding-top: 7rem;
 padding-bottom: 2rem;
 `;
-
-// export const HeadingText = withProps<any>(styled.div)`
-// display: flex;
-// justify-content: center;
-// flex-direction: row;
-// font-size: 4rem;
-// color: #544F51;
-// font-weight: 900;
-// `;
 
 export const SkillsHeadingText = withProps<any>(styled.div)`
 display: flex;
@@ -234,7 +176,6 @@ flex-direction: row;
 font-size: 2rem;
 color: #544F51;
 font-weight: 900;
-margin-top: 2rem;
 `;
 
 export const WrapperText = withProps<any>(styled.div)`
@@ -727,6 +668,7 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 flex: 1 1 auto;
+transition-timing-function: ease;
 `;
 
 export const Chevron = withProps<any>(styled.div)`

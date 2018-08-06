@@ -4,7 +4,6 @@ import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
-  HeadingTextWaterMarkAbout,
   HeadingText,
   WrapperText,
   Text,
@@ -18,19 +17,15 @@ export interface IAboutPageProps {
 
 export default class AboutPage extends Component<IAboutPageProps, any> {
   static defaultProps = {
-    title: 'About Us!',
+    title: 'About Us',
   };
 
   render() {
     return (
       <InnerPagesLayoutContainer>
         <Navbar />
-
-        <HeadingTextWaterMarkAbout>
-          who am i
-     </HeadingTextWaterMarkAbout>
         <HeadingText>
-          About me
+          About Me
       </HeadingText>
         <WrapperText>
           <Text>

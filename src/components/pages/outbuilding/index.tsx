@@ -27,14 +27,15 @@ export default class OutBuildingPage extends Component<any, any> {
         data-qa="page-container">
 
         <Navbar />
-        <WorkHeading
+
+        {/* <WorkHeading
           {...headings[0]}
         />
-             <WorkContent
+        <WorkContent
           {...content[0]}
-        />
+        /> */}
 
-        
+
         <NextAndPreviousWrapper>
           <NextAndPrevious />
         </NextAndPreviousWrapper>

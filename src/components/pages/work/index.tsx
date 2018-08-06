@@ -4,7 +4,6 @@ import { Navbar, Footer, Projects } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
-  HeadingTextWaterMarkAbout,
   HeadingText,
 } from '~/styles';
 
@@ -24,7 +23,7 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
 
         <HeadingText>
           My work
-      </HeadingText>
+        </HeadingText>
 
         <Projects />
 

@@ -1,5 +1,6 @@
 export interface IPageItem {
   bannerInfo: {
+    headerBG: any;
     role: string;
     title: string;
     date: string;

@@ -6,14 +6,6 @@ import {
   InnerPagesLayoutContainer, NextAndPreviousWrapper,
 } from '~/styles';
 
-import SmartheatImages from '~/resources/projects/invoice-book-app/smartheat-displays.jpg';
-import SmartheatLogos from '~/resources/projects/invoice-book-app/logos.jpg';
-import SmartheatColours from '~/resources/projects/invoice-book-app/smartheat-colours.jpg';
-import SmartheatIcons from '~/resources/projects/invoice-book-app/smartheat-icons.jpg';
-
-import headings from '~/components/pages/header-data';
-import content from '~/components/pages/work-data';
-
 export interface IInvoiceAppPageProps {
   title?: string;
 }
@@ -33,15 +25,14 @@ export default class InvoiceAppPage extends Component<any, any> {
 
         <Navbar />
 
-      <WorkHeading
+        {/* <WorkHeading
           {...headings[3]}
         />
-        />
-             <WorkContent
+         <WorkContent
           {...content[3]}
-        />   
+        /> */}
 
-          <NextAndPreviousWrapper>
+        <NextAndPreviousWrapper>
           <NextAndPrevious />
         </NextAndPreviousWrapper>
 

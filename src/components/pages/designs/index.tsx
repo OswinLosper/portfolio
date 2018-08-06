@@ -4,12 +4,12 @@ import { Navbar, Footer, WorkHeading, } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
-  HeadingTextWaterMarkAbout,
   WrapperText,
   SafeMining,
   SafeMiningWrapper,
   WorkText,
   HeadingTextInner,
+  HeadingText,
   Information,
   FlyerWrapper,
   Flyer,
@@ -38,11 +38,9 @@ export default class DesignsPage extends Component<any, any> {
 
         <Navbar />
 
-             <WorkHeading
+        <WorkHeading
           {...headings[5]}
         />
-
-        
 
         <WrapperText>
           <HeadingTextInner>
@@ -58,9 +56,9 @@ export default class DesignsPage extends Component<any, any> {
           </WorkText>
         </WrapperText>
 
-        <HeadingTextWaterMarkAbout>
+        <HeadingText>
           Flyer Designs
-          </HeadingTextWaterMarkAbout>
+          </HeadingText>
         <SafeMiningWrapper>
           <SafeMining>
             <img src={Mines} />
@@ -82,9 +80,9 @@ export default class DesignsPage extends Component<any, any> {
             Our garden rooms can be built at a he most affordable means of creating additional
           </Information>
 
-          <HeadingTextWaterMarkAbout>
+          <HeadingText>
             Poster Design
-          </HeadingTextWaterMarkAbout>
+          </HeadingText>
 
           <Flyer>
             <img src={StrikaPoster} />

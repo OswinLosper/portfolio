@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // @ts-ignore
 import chevronIcon from '~/resources/icons/chevron.svg';
+
 import {
   Chevron,
   ChevronWrapper,
@@ -14,6 +15,7 @@ import {
 } from '~/styles';
 
 interface IProps {
+  headerBG: any;
   title: string;
   role: string;
   date: string;
@@ -28,6 +30,7 @@ export default class FullScreenBanner extends Component<IProps, any> {
 
   render() {
     const {
+      headerBG,
       title,
       role,
       date,
@@ -36,6 +39,7 @@ export default class FullScreenBanner extends Component<IProps, any> {
     } = this.props;
     return (
       <Header
+        backgroundImage={headerBG}
         data-qa="big-header-image">
         <HeadingText
           data-qa="heading-text">

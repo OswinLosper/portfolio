@@ -6,7 +6,7 @@ const DataHeading = [
     date: 'Date: 20 July 2018',
     context: 'Context: Website Design',
     projectdescription: 'Create unique outdoor spaces for work and leisure',
-    },
+  },
   {
     id: 1,
     title: 'Bee Hive',
