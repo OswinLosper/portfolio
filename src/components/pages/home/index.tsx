@@ -8,13 +8,14 @@ import {
   LayoutContainer,
 } from '~/styles';
 
+
 export interface IHomePageProps {
   title?: string;
 }
 
 export default class HomePage extends Component<IHomePageProps, any> {
   static defaultProps = {
-    title: 'Welcome!',
+    title: 'Home',
   };
 
   render() {
@@ -23,16 +24,18 @@ export default class HomePage extends Component<IHomePageProps, any> {
         <Animated animationIn="zoomIn" animationOut="zoomIn" isVisible={true}>
           <MainContainer
             data-qa="main-container">
-            <Designer>
+            <Designer
+              data-qa="automation-designer-title-container">
               Automation Tester, Designer
-        </Designer>
-
-            <FrontEnd>
+            </Designer>
+            <FrontEnd
+              data-qa="font-end-dev-title-container">
               Front-end developer
-        </FrontEnd>
-            <HomeText>
+           </FrontEnd>
+            <HomeText
+              data-qa="home-content">
               Hi, I'm Oswin Losper. 27 year old automation tester, front-end developer and designer based in Cape Town.
-        </HomeText>
+            </HomeText>
             <Buttons />
           </MainContainer>
         </Animated>
