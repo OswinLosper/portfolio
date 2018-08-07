@@ -42,7 +42,6 @@ export default class WorkHeading extends Component<IProps, any> {
       <Animated animationIn="zoomIn" animationOut="zoomIn" isVisible={true}>
         <LogosHeaderBG
           data-qa="big-header-image">
-
           <HeadingText
             data-qa="heading-text">
             {title}

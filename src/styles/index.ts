@@ -10,6 +10,22 @@ import LogoBackgroundImage from '../resources/projects/logos/logo-headerBG.jpg';
 // GLOABAL //
 
 // LAYOUT CONTAINER //
+
+export const Logo = withProps<any>(styled.div)`;
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin: 2rem;
+background-color: #ffffff;
+box-shadow: 0 0.3125rem 1.3125rem rgba(125, 138, 149, 0.65);
+`;
+
+export const LogoName = withProps<any>(styled.div)`;
+display: flex;
+text-align: center;
+flex-direction: column;
+`;
+
 export const LayoutContainer = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
@@ -389,6 +405,27 @@ margin-right: auto;
 margin-left: auto;
 `;
 
+export const SkillsUsed = withProps<any>(styled.div)`
+margin-top: 2rem;
+margin-bottom: 2rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-right: 2%;
+padding: 54px 61px;
+border: 1px solid #ccc;
+background-color: #ffffff;
+height: 150px;
+max-width: 150px;
+min-width: 10rem;
+text-align: center;
+font-size: 0.8rem;
+: hover {
+  background-color: #ececed;
+}
+`;
+
 export const SocialMediaContact = withProps<any>(styled.div)`
 margin-top: 2rem;
 margin-bottom: 5rem;
@@ -589,8 +626,22 @@ ${props => {
   @media (max-width: 850px) {
     height: 100%;
   }
-
 `;
+
+export const ChevronWrapper = withProps<any>(styled.div)`;
+display: flex;
+justify-content: center;
+flex-direction: column;
+flex: 1 1 auto;
+transition-timing-function: ease;
+`;
+
+export const Chevron = withProps<any>(styled.div)`;
+display: flex;
+justify-content: center;
+}
+`;
+
 
 export const HeadingText = withProps<any>(styled.div)`
 display: flex;
@@ -871,6 +922,8 @@ cursor: pointer;
 
 // -------------------//
 
+
+
 export const LogosHeaderBG = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
@@ -880,6 +933,8 @@ padding-top: 10rem;
 margin-bottom: 2rem;
 background-image: url(${ LogoBackgroundImage});
 `;
+
+//  EXPEREINCE MOLECULE //
 
 export const ExperienceWrapper = withProps<any>(styled.div)`
 margin-top: 2rem;
@@ -926,6 +981,10 @@ align-items: center;
 color: #d6595e;
 `;
 
+// ----------------- //
+
+
+// USED IN CV FOLDER //
 export const SkillsWrapper = withProps<any>(styled.div)`
 margin-top: 2rem;
 display: flex;
@@ -938,34 +997,6 @@ margin-left: auto;
 }
 `;
 
-export const SkillsUsed = withProps<any>(styled.div)`
-margin-top: 2rem;
-margin-bottom: 2rem;
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-margin-right: 2%;
-padding: 54px 61px;
-border: 1px solid #ccc;
-background-color: #ffffff;
-height: 150px;
-max-width: 150px;
-min-width: 10rem;
-text-align: center;
-font-size: 0.8rem;
-: hover {
-  background-color: #ececed;
-}
-`;
-
-
-export const ProjectDescriptionWrapper = withProps<any>(styled.div)`;
-display: flex;
-justify-content: center;
-padding-top: 2rem;
-`;
-
 export const OutbuildingDisplay = withProps<any>(styled.div)`;
 display: flex;
 justify-content: center;
@@ -973,11 +1004,12 @@ padding-top: 2rem;
 padding-bottom: 2rem;
 `;
 
+
+//  WORK CONTENT MOLECULE //
 export const ProjectColours = withProps<any>(styled.div)`;
 display: flex;
 justify-content: center;
 `;
-
 
 export const HeadingTextInnerWrapper = withProps<any>(styled.div)`;
 display: flex;
@@ -1033,48 +1065,10 @@ padding-bottom: 2rem;
 color: #544F51;
 `;
 
-
 export const LogoCollectionWrapper = withProps<any>(styled.div)`;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-`;
-
-export const Logo = withProps<any>(styled.div)`;
-display: flex;
-justify-content: center;
-flex-direction: column;
-margin: 2rem;
-background-color: #ffffff;
-box-shadow: 0 0.3125rem 1.3125rem rgba(125, 138, 149, 0.65);
-`;
-
-export const LogoName = withProps<any>(styled.div)`;
-display: flex;
-text-align: center;
-flex-direction: column;
-`;
-
-export const Information = withProps<any>(styled.div)`;
-display: flex;
-text-align: center;
-font-size: 1rem;
-padding-bottom: 2rem;
-padding-top: 2rem;
-`;
-
-export const ChevronWrapper = withProps<any>(styled.div)`;
-display: flex;
-justify-content: center;
-flex-direction: column;
-flex: 1 1 auto;
-transition-timing-function: ease;
-`;
-
-export const Chevron = withProps<any>(styled.div)`;
-display: flex;
-justify-content: center;
-}
 `;
 
 

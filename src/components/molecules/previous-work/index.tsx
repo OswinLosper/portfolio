@@ -2,8 +2,8 @@ import React, { Component, Fragment } from 'react';
 
 import {
   WorkSection, PositionHeader, PositionandDate, PositionTitle, Date,
-  CompanyName, WorkDescription, ResponsibiltiesDIV, UsedSkills, UsedSkillsWrapper,
-  TechHeadingDIV,
+  CompanyName, WorkDescription, ResponsibiltiesDIV, UsedSkills,
+  UsedSkillsWrapper, TechHeadingDIV,
 } from '~/components/pages/cv/styles';
 
 import { cvInformation } from '~/components/pages/cv/work-descriptions';
