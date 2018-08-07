@@ -21,16 +21,20 @@ export default class Buttons extends Component<any, any> {
   }
   render() {
     return (
-      <HomeButtonsContainer>
-        <HomeButtons>
+      <HomeButtonsContainer
+        data-qa="home-button-container">
+        <HomeButtons
+          data-qa="about-contact-button">
           About & Contact
           </HomeButtons>
 
-        <HomeButtons>
+        <HomeButtons
+          data-qa="work-button">
           My Work
           </HomeButtons>
 
-        <HomeButtons>
+        <HomeButtons
+          data-qa="resume-button">
           Resume
           </HomeButtons>
       </HomeButtonsContainer>
