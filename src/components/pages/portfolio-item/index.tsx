@@ -37,6 +37,7 @@ export interface IProps {
   title?: string;
   images: {
     images: any;
+    imagesMobile: any;
     logos: any;
     colors: any;
     icons: any;
@@ -79,7 +80,13 @@ export default class PortfolioItemPage extends Component<IProps, any> {
 
           <OutbuildingDisplay
             data-qa="project-view-displays">
-            <img src={images.images} />
+
+            <img src={images.images} className="desktop" />
+
+            <br />  <br />
+
+            <img src={images.imagesMobile} className="mobile" />
+
           </OutbuildingDisplay>
 
           <SubHeaderSection

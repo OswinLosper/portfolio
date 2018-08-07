@@ -20,6 +20,7 @@ export interface IPageItem {
   route: string;
   images: {
     images: any;
+    imagesMobile: any;
     logos: any;
     colors: any;
     icons: any;

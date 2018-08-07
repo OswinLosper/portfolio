@@ -2,24 +2,28 @@ import { IPageItem } from '~/interfaces/PageItem';
 
 import OutbuildingHeaderBG from '~/resources/projects/outbuilding-company/outbuilding-headerBG.jpg';
 import OutbuildingImages from '~/resources/projects/outbuilding-company/outbuilding-displays.jpg';
+import OutbuildingImagesMobile from '~/resources/projects/outbuilding-company/mobile-outbuilding-displays.jpg';
 import OutbuildingLogos from '~/resources/projects/outbuilding-company/logos.jpg';
 import OutbuildingColours from '~/resources/projects/outbuilding-company/outbuilding-colours.jpg';
 import OutbuildingIcons from '~/resources/projects/outbuilding-company/outbuilding-icons.jpg';
 
 import BusyHiveHeaderBG from '~/resources/projects/busy-hive/busy-hiveBG.jpg';
 import BusyHiveImages from '~/resources/projects/busy-hive/busy-hive-displays.jpg';
+import BusyHiveImagesMobile from '~/resources/projects/busy-hive/mobile-busy-hive-displays.jpg';
 import BusyHiveLogos from '~/resources/projects/busy-hive/logos.jpg';
 import BusyHiveColours from '~/resources/projects/busy-hive/busy-hive-colours.jpg';
 import BusyHiveIcons from '~/resources/projects/busy-hive/busyhive-icons.jpg';
 
 import SmartheatHeaderBG from '~/resources/projects/smartheat/smart-heatheaderBG.jpg';
 import SmartheatImages from '~/resources/projects/smartheat/smartheat-displays.jpg';
+import SmartheatImagesMobile from '~/resources/projects/smartheat/mobile-smartheat-displays.jpg';
 import SmartheatLogos from '~/resources/projects/smartheat/logos.jpg';
 import SmartheatColours from '~/resources/projects/smartheat/smartheat-colours.jpg';
 import SmartheatIcons from '~/resources/projects/smartheat/smartheat-icons.jpg';
 
 import InvoiceBookAPPHeaderBG from '~/resources/projects/invoice-book-app/invoice-book-app-headerBG.jpg';
 import InvoiceBookAPPImages from '~/resources/projects/invoice-book-app/invoice-book-app-displays.jpg';
+import InvoiceBookAPPImagesMobile from '~/resources/projects/invoice-book-app/mobile-invoice-book-app-displays.jpg';
 import InvoiceBookAPPLogos from '~/resources/projects/invoice-book-app/logos.jpg';
 import InvoiceBookAPPColours from '~/resources/projects/invoice-book-app/invoice-book-app-colours.jpg';
 import InvoiceBookAPPIcons from '~/resources/projects/invoice-book-app/invoice-book-app-icons.jpg';
@@ -56,6 +60,7 @@ const pages: IPageItem[] = [
     route: '/outbuilding',
     images: {
       images: OutbuildingImages,
+      imagesMobile: OutbuildingImagesMobile,
       logos: OutbuildingLogos,
       colors: OutbuildingColours,
       icons: OutbuildingIcons,
@@ -92,6 +97,7 @@ const pages: IPageItem[] = [
     route: '/busy-hive',
     images: {
       images: BusyHiveImages,
+      imagesMobile: BusyHiveImagesMobile,
       logos: BusyHiveLogos,
       colors: BusyHiveColours,
       icons: BusyHiveIcons,
@@ -128,6 +134,7 @@ const pages: IPageItem[] = [
     route: '/smartheat',
     images: {
       images: SmartheatImages,
+      imagesMobile: SmartheatImagesMobile,
       logos: SmartheatLogos,
       colors: SmartheatColours,
       icons: SmartheatIcons,
@@ -164,6 +171,7 @@ const pages: IPageItem[] = [
     route: '/invoice-app',
     images: {
       images: InvoiceBookAPPImages,
+      imagesMobile: InvoiceBookAPPImagesMobile,
       logos: InvoiceBookAPPLogos,
       colors: InvoiceBookAPPColours,
       icons: InvoiceBookAPPIcons,

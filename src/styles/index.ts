@@ -253,7 +253,6 @@ padding: 1rem;
 // -------------------//
 
 
-
 // HOMEPAGE
 
 export const MainContainer = withProps<any>(styled.div)`
@@ -1012,11 +1011,25 @@ margin-left: auto;
 }
 `;
 
+// ---------------//
+
+
 export const OutbuildingDisplay = withProps<any>(styled.div)`;
 display: flex;
 justify-content: center;
 padding-top: 2rem;
 padding-bottom: 2rem;
+}
+
+  &> img.mobile {
+    display: none;
+  }
+
+    &> img.desktop {
+        @media (max-width: 480px) {
+          display: none;
+    }
+  }
 `;
 
 
