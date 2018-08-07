@@ -4,7 +4,7 @@ import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer, HeadingTextAbout, Text,
-  SkillsHeadingText, GitHubText, ButtonToWork,
+  SkillsHeadingText, ButtonToWork,
 } from '~/styles';
 
 import { AboutMe } from '~/components/pages/about-data-project';
@@ -67,13 +67,13 @@ export default class AboutMePage extends Component<any, any> {
                 </HeadingTextAbout>
                 <SocialMedia />
 
-                <GitHubText
+                <Text
                   data-qa="github-text">
                   {githubText}
-                </GitHubText>
+                </Text>
 
                 <ButtonToWork
-                  data-qa="github-text">
+                  data-qa="link-to-work-page">
                   {workText}
                 </ButtonToWork>
 
