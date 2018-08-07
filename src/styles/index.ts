@@ -164,7 +164,7 @@ font-weight: 300;
   }
 `;
 
-// HEADER CONTAINER //
+// NAVBAR CONTAINER //
 
 export const HeaderContainer = withProps<any>(styled.div)`
 display: flex;
@@ -174,9 +174,23 @@ position: fixed;
 width: 100%;
 z-index: 1;
 
+  @media (max-width: 350px) {
+    background-color: #fff;
+    position: absolute;
+    height: 100px;
+    border-bottom: #ececed 1px solid;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,0.05), 0 0 4px 1px rgba(0,0,0,0.05);
+  }
+  @media (max-width: 480px) {
+    background-color: #fff;
+    position: absolute;
+    height: 100px;
+    border-bottom: #ececed 1px solid;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,0.05), 0 0 4px 1px rgba(0,0,0,0.05);
+  }
   @media (max-width: 850px) {
     background-color: #fff;
-    position: fixed;
+    position: absolute;
     height: 100px;
     border-bottom: #ececed 1px solid;
     box-shadow: 0 0 4px 1px rgba(0,0,0,0.05), 0 0 4px 1px rgba(0,0,0,0.05);
@@ -206,6 +220,7 @@ padding: 1rem;
 `;
 
 // -------------------//
+
 
 
 // HOMEPAGE
@@ -552,8 +567,8 @@ export const ProjectButton = withProps<any>(styled.div)`
 // -------------------//
 
 
-// PROJECT PAGES //
 
+// PROJECT PAGES //
 
 export const Header = withProps<any>(styled.div)`
 display: flex;
@@ -564,6 +579,17 @@ padding-top: 10rem;
 ${props => {
   return `background-image: url(${props.backgroundImage});`;
 }}
+
+  @media (max-width: 480px) {
+    height: 100vh;
+  }
+  @media (max-width: 640px) {
+    height: 100%;
+  }
+  @media (max-width: 850px) {
+    height: 100%;
+  }
+
 `;
 
 export const HeadingText = withProps<any>(styled.div)`
@@ -576,6 +602,39 @@ color: #ececed;
 text-transform: none;
 padding-top: 5rem;
 padding-bottom: 2rem;
+
+  @media (max-width: 480px) {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #ececed;
+  text-transform: none;
+  padding-top: 5rem;
+  }
+
+  @media (max-width: 640px) {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #ececed;
+  text-transform: none;
+  padding-top: 0;
+  }
+
+  @media (max-width: 850px) {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #ececed;
+  text-transform: none;
+  padding-top: 0;
+  }
 `;
 
 export const ProjectInfo = withProps<any>(styled.div)`
@@ -597,17 +656,51 @@ export const Role = withProps<any>(styled.div)`
 display: flex;
 margin-right: 1rem;
 font-size: 20px;
+
+  @media (max-width: 480px) {
+  font-size: 0.8rem;
+  }
+
+  @media (max-width: 640px) {
+  font-size: 0.9rem;
+  }
+
+  @media (max-width: 850px) {
+  font-size: 0.9rem;
+  }
 `;
 
 export const Date = withProps<any>(styled.div)`
 display: flex;
 margin-right: 1rem;
 font-size: 20px;
+
+  @media (max-width: 480px) {
+  font-size: 0.8rem;
+  }
+
+  @media (max-width: 640px) {
+  font-size: 0.9rem;
+  }
+
+  @media (max-width: 850px) {
+  font-size: 0.9rem;
+  }
 `;
 
 export const Context = withProps<any>(styled.div)`
 display: flex;
 font-size: 20px;
+
+  @media (max-width: 480px) {
+  font-size: 0.8rem;
+  }
+  @media (max-width: 640px) {
+  font-size: 0.9rem;
+  }
+  @media (max-width: 850px) {
+  font-size: 0.9rem;
+  }
 `;
 
 export const ProjectDescription = withProps<any>(styled.div)`
@@ -619,11 +712,139 @@ color: #544F51;
 margin-right: auto;
 margin-left: auto;
 color: #efefef;
+
+  @media (max-width: 480px) {
+  font-size: 1rem;
+  text-align: center;
+  }
+
+  @media (max-width: 640px) {
+  font-size: 1rem;
+  }
+
+  @media (max-width: 850px) {
+  font-size: 1rem;
+  }
 `;
 
-// -------------------//
+export const WrapperText = withProps<any>(styled.div)`
+margin-top: 2rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-content: center;
+width: 70%;
+margin-right: auto;
+margin-left: auto;
+}
+
+  @media (max-width: 480px) {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+  @media (max-width: 640px) {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+  @media (max-width: 850px) {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  }
+`;
 
 
+export const HeadingTextInner = withProps<any>(styled.div)`;
+display: flex;
+justify-content: ${
+  props => {
+    return props.centered ? 'center' : 'flex-start';
+  }
+  }
+flex-direction: column;
+font-size: 3rem;
+color: #544F51;
+font-weight: 900;
+margin-top: 2rem;
+text-align: ${
+  props => {
+    return props.centered ? 'center' : 'left';
+  }
+  }
+
+  @media (max-width: 480px) {
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  }
+
+  @media (max-width: 640px) {
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  }
+
+  @media (max-width: 850px) {
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  }
+`;
+
+export const WorkText = withProps<any>(styled.div)`;
+margin-top: 2rem;
+font-size: 28px;
+color: #808080;
+line-height: 2.5;
+text-align: justify;
+text-align: center;
+padding-bottom: 1rem;
+text-align: ${
+  props => {
+    return props.centered ? 'center' : 'left';
+  }
+  }
+
+  @media (max-width: 480px) {
+  font-size: 1rem;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  }
+
+  @media (max-width: 640px) {
+  font-size: 1rem;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  }
+
+  @media (max-width: 850px) {
+  font-size: 1rem;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  }
+`;
 
 export const NextAndPreviousWrapper = withProps<any>(styled.div)`
 display: flex;
@@ -648,6 +869,7 @@ cursor: pointer;
 }
 `;
 
+// -------------------//
 
 export const LogosHeaderBG = withProps<any>(styled.div)`
 display: flex;
@@ -658,21 +880,6 @@ padding-top: 10rem;
 margin-bottom: 2rem;
 background-image: url(${ LogoBackgroundImage});
 `;
-
-
-
-export const WrapperText = withProps<any>(styled.div)`
-margin-top: 2rem;
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-content: center;
-width: 70%;
-margin-right: auto;
-margin-left: auto;
-`;
-
-
 
 export const ExperienceWrapper = withProps<any>(styled.div)`
 margin-top: 2rem;
@@ -719,8 +926,6 @@ align-items: center;
 color: #d6595e;
 `;
 
-
-
 export const SkillsWrapper = withProps<any>(styled.div)`
 margin-top: 2rem;
 display: flex;
@@ -755,7 +960,6 @@ font-size: 0.8rem;
 `;
 
 
-
 export const ProjectDescriptionWrapper = withProps<any>(styled.div)`;
 display: flex;
 justify-content: center;
@@ -768,8 +972,6 @@ justify-content: center;
 padding-top: 2rem;
 padding-bottom: 2rem;
 `;
-
-
 
 export const ProjectColours = withProps<any>(styled.div)`;
 display: flex;
@@ -784,40 +986,6 @@ font-size: 3rem;
 color: #544F51;
 font-weight: 900;
 margin-top: 2rem;
-`;
-
-export const HeadingTextInner = withProps<any>(styled.div)`;
-display: flex;
-justify-content: ${
-  props => {
-    return props.centered ? 'center' : 'flex-start';
-  }
-  }
-flex-direction: column;
-font-size: 3rem;
-color: #544F51;
-font-weight: 900;
-margin-top: 2rem;
-text-align: ${
-  props => {
-    return props.centered ? 'center' : 'left';
-  }
-  }
-`;
-
-export const WorkText = withProps<any>(styled.div)`;
-margin-top: 2rem;
-font-size: 28px;
-color: #808080;
-line-height: 2.5;
-text-align: justify;
-text-align: left;
-padding-bottom: 1rem;
-text-align: ${
-  props => {
-    return props.centered ? 'center' : 'left';
-  }
-  }
 `;
 
 export const FontsUsedWrapper = withProps<any>(styled.div)`;

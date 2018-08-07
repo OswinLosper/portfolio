@@ -51,7 +51,9 @@ export default class PortfolioItemPage extends Component<IProps, any> {
         data-qa="page-container">
 
         <Navbar />
+
         <Animated animationIn="zoomIn" animationOut="zoomIn" isVisible={true}>
+
           <FullScreenBanner
             headerBG={bannerInfo.headerBG}
             role={bannerInfo.role}
@@ -95,7 +97,7 @@ export default class PortfolioItemPage extends Component<IProps, any> {
           </ProjectColours>
 
           <SubHeaderSection
-            header="Icons designed"
+            header="Icons Designed"
             subtext={icons.description}
             centered={true}
           />

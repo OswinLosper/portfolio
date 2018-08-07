@@ -30,7 +30,7 @@ const pages: IPageItem[] = [
     bannerInfo: {
       headerBG: OutbuildingHeaderBG,
       role: 'Role: Web Senior Designer',
-      title: 'Building Company',
+      title: 'Outbuilding Co.',
       date: 'Date: 20 July 2018',
       context: 'Context: Website Design',
       projectDescription: 'Create unique outdoor spaces for work and leisure',
@@ -137,7 +137,7 @@ const pages: IPageItem[] = [
     bannerInfo: {
       headerBG: InvoiceBookAPPHeaderBG,
       role: 'Role: Web Senior Designer',
-      title: 'Invoice Book APP',
+      title: 'Invoice APP',
       date: 'Date: 20 July 2018',
       context: 'Context: Website Design',
       projectDescription: 'Website built for Busy Hive case study',
