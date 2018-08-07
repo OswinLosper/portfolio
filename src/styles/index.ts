@@ -224,11 +224,13 @@ padding: 1rem;
     background-color: #ececed;
 }
 
-  @media (max-width: 850px)
+  @media (max-width: 850px) {
   justify-content: flex-start;
   margin-left: 0;
   :hover {
     background-color: rgba(0,0,0,0.0);
+  }
+}
 `;
 
 export const LogoContainer = withProps<any>(styled.div)`
@@ -240,12 +242,12 @@ padding: 1rem;
     background-color: #ececed;
 }
 
-  @media (max-width: 850px)
+  @media (max-width: 850px) {
   justify-content: flex-start;
   margin-left: 0;
   :hover {
     background-color: rgba(0,0,0,0.0);
-
+  }
 `;
 
 // -------------------//
