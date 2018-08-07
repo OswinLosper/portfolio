@@ -18,7 +18,6 @@ import WorkPage from '~/components/pages/work';
 import SmartHeatPage from '~/components/pages/smartheat';
 import InvoiceAppPage from '~/components/pages/invoice-app';
 import LogosPage from '~/components/pages/logos';
-import DesignsPage from '~/components/pages/designs';
 import CVPage from '~/components/pages/cv';
 
 import PAGES from './pages';
@@ -36,7 +35,6 @@ render(
         {/* <Route exact path="/smartheat" component={SmartHeatPage} /> */}
         {/* <Route exact path="/invoice-app" component={InvoiceAppPage} /> */}
         <Route exact path="/logos" component={LogosPage} />
-        <Route exact path="/designs" component={DesignsPage} />
         <Route exact path="/cv" component={CVPage} />
         {PAGES.map(page => (
           <Route
