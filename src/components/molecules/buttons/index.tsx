@@ -27,12 +27,10 @@ export default class Buttons extends Component<any, any> {
           data-qa="about-contact-button">
           About & Contact
           </HomeButtons>
-
         <HomeButtons
           data-qa="work-button">
           My Work
           </HomeButtons>
-
         <HomeButtons
           data-qa="resume-button">
           Resume
