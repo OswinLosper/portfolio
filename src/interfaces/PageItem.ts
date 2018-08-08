@@ -22,7 +22,10 @@ export interface IPageItem {
     images: any;
     imagesMobile: any;
     logos: any;
+    logosMobile: any;
     colors: any;
+    colorsMobile: any;
     icons: any;
+    iconsMobile: any;
   };
 }

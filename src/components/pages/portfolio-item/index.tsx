@@ -39,8 +39,11 @@ export interface IProps {
     images: any;
     imagesMobile: any;
     logos: any;
+    logosMobile: any;
     colors: any;
+    colorsMobile: any;
     icons: any;
+    iconsMobile: any;
   };
 }
 
@@ -87,17 +90,19 @@ export default class PortfolioItemPage extends Component<IProps, any> {
           </OutbuildingDisplay>
 
           <SubHeaderSection
-            header="Fonts & Colours Used"
+            header="Fonts & Colours"
             subtext={fonts.description}
             centered={true}
           />
 
           <ProjectColours>
-            <img src={images.colors} />
+            <img src={images.colors} className="desktop" />
+            <img src={images.colorsMobile} className="mobile" />
           </ProjectColours>
 
           <ProjectColours>
-            <img src={images.logos} />
+            <img src={images.logos} className="desktop" />
+            <img src={images.logosMobile} className="mobile" />
           </ProjectColours>
 
           <SubHeaderSection
@@ -107,7 +112,8 @@ export default class PortfolioItemPage extends Component<IProps, any> {
           />
 
           <IconDesigns>
-            <img src={images.icons} />
+            <img src={images.icons} className="desktop" />
+            <img src={images.iconsMobile} className="mobile" />
           </IconDesigns>
 
           <SubHeaderSection
