@@ -82,9 +82,6 @@ export default class PortfolioItemPage extends Component<IProps, any> {
             data-qa="project-view-displays">
 
             <img src={images.images} className="desktop" />
-
-            <br />  <br />
-
             <img src={images.imagesMobile} className="mobile" />
 
           </OutbuildingDisplay>
