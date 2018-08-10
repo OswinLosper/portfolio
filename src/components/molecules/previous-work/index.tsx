@@ -33,7 +33,7 @@ export default class PreviousWork extends Component<any, any> {
           return (
             <Fragment key={id}>
               <PositionHeader
-                data-qa="CV Position Header">
+                data-qa="cv-position-header">
                 <PositionandDate>
                   <PositionTitle
                     data-qa="Position Title">

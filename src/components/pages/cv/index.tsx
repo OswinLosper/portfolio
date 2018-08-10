@@ -9,9 +9,8 @@ import github from '~/resources/icons/github-cv2.svg';
 import {
   CVLAYOUT, ContentLayout,
   HeaderLayout, Heading, Title, Email, SocialMediaWapper, SocialMedia, CVHeadings, Text,
-  WorkEperienceSection, RightSideBarSection, MiddleSection,
+  WorkEperienceSection,
 } from './styles';
-
 
 export interface ICVPageProps {
   title?: string;
@@ -24,41 +23,58 @@ export default class CVPage extends Component<ICVPageProps, any> {
 
   render() {
     return (
-      <CVLAYOUT>
+      <CVLAYOUT
+        data-qa="cv-layout">
 
-        <HeaderLayout>
-          <Heading>
-            Oswin Losper
-        <Title>
+        <HeaderLayout
+          data-qa="cv-header-layout">
+          <Heading
+            data-qa="heading">
+            <div>
+              Oswin Losper
+            </div>
+
+            <Title
+              data-qa="title">
               Automation Tester,
               Front-end developer
-          </Title>
-            <Email>
+              </Title>
+            <Email
+              data-qa="email">
               oswinlosper@gmail.com
-        </Email>
+              </Email>
           </Heading>
 
-          <SocialMediaWapper>
-            <SocialMedia>
+          <SocialMediaWapper
+            data-qa="social-media-wrapper">
+            <SocialMedia
+              data-qa="social-media">
               <img src={facebook} width="30px" />
               <span>Facebook</span>
             </SocialMedia>
-            <SocialMedia>
+            <SocialMedia
+              data-qa="social-media">
               <img src={google} width="30px" />
               <span>Google Plus</span>
             </SocialMedia>
-            <SocialMedia>
+            <SocialMedia
+              data-qa="social-media">
               <img src={github} width="30px" />
               <span>Github</span>
             </SocialMedia>
           </SocialMediaWapper>
+
         </HeaderLayout>
 
-        <ContentLayout>
-          <CVHeadings>
+        <ContentLayout
+          data-qa="content-layout">
+          <CVHeadings
+            data-qa="cv-headings">
             CAREER SUMMARY
-    </CVHeadings>
-          <Text>
+          </CVHeadings>
+
+          <Text
+            data-qa="text">
             <p>
               I work as a full time Test at iPlatform, a South Africa based company, working on Insurance Configurable Management System.
               Part of my role is to understand of the very complex system we are building and attending regular meeting with the back end
@@ -76,21 +92,16 @@ export default class CVPage extends Component<ICVPageProps, any> {
             </p>
           </Text>
 
-          <MiddleSection>
+          <WorkEperienceSection
+            data-qa="work-experience-section">
 
-            <WorkEperienceSection>
+            <PreviousWork
+              data-qa="previous-experience" />
 
-              <br />
-              <PreviousWork />
-              <br />
+            <SkillandTools
+              data-qa="skills-tools" />
 
-            </WorkEperienceSection>
-
-            <RightSideBarSection>
-              <SkillandTools />
-            </RightSideBarSection>
-
-          </MiddleSection>
+          </WorkEperienceSection>
 
         </ContentLayout>
       </CVLAYOUT>

@@ -9,11 +9,11 @@ const cvInformation = [
     responsibilties: [
       {
         idInfo: 1,
-        information: 'Testcafe Automation',
+        information: 'Testcafe',
       },
       {
         idInfo: 2,
-        information: 'React Native',
+        information: 'React',
       },
       {
         idInfo: 3,
@@ -26,15 +26,15 @@ const cvInformation = [
     techUsed: [
       {
         idTech: 4,
-        software: 'Testcafe Automation',
+        software: 'Testcafe',
       },
       {
         idTech: 5,
-        software: 'Testcafe Automation',
+        software: 'Testcafe',
       },
       {
         idTech: 6,
-        software: 'React Native',
+        software: 'React',
       },
       {
         idTech: 7,
@@ -69,15 +69,15 @@ const cvInformation = [
     techUsed: [
       {
         idTech: 4,
-        software: 'Testcafe Automation',
+        software: 'Testcafe',
       },
       {
         idTech: 5,
-        software: 'Testcafe Automation',
+        software: 'Testcafe',
       },
       {
         idTech: 6,
-        software: 'React Native',
+        software: 'React',
       },
       {
         idTech: 7,
@@ -113,15 +113,15 @@ const cvInformation = [
     techUsed: [
       {
         idTech: 4,
-        software: 'Testcafe Automation',
+        software: 'Testcafe',
       },
       {
         idTech: 5,
-        software: 'Testcafe Automation',
+        software: 'Testcafe',
       },
       {
         idTech: 6,
-        software: 'React Native',
+        software: 'React',
       },
       {
         idTech: 7,
