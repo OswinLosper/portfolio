@@ -78,6 +78,10 @@ padding: 20px;
 line-height: 2.5;
 text-align: justify;
 
+  & span {
+    text-align: center;
+  }
+
   @media (max-width: 850px) {
     width: 100%;
     margin-right: auto;

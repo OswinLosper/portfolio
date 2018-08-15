@@ -69,7 +69,9 @@ export default class AboutMePage extends Component<any, any> {
 
                 <Text
                   data-qa="github-text">
-                  {githubText}
+                  <span>
+                    {githubText}
+                  </span>
                 </Text>
 
                 <ButtonToWork
