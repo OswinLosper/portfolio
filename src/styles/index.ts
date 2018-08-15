@@ -16,7 +16,6 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 margin: 2rem;
-background-color: #ffffff;
 box-shadow: 0 0.3125rem 1.3125rem rgba(125, 138, 149, 0.65);
 `;
 
@@ -55,13 +54,6 @@ export const InnerPagesLayoutContainer = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
 background-image: url(${bg});
-`;
-
-export const HomeLogoContainer = withProps<any>(styled.div)`
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-right: 20%;
 `;
 
 export const Text = withProps<any>(styled.div)`
@@ -217,7 +209,6 @@ z-index: 1;
   }
 `;
 
-
 export const BackContainer = withProps<any>(styled.div)`
 justify-content: flex-start;
 margin-left: 0;
@@ -227,6 +218,14 @@ padding: 1rem;
 :hover {
     background-color: #ececed;
 }
+
+  @media (max-width: 350px) {
+    justify-content: flex-start;
+    margin-left: 0;
+    padding: 0;
+  :hover {
+    background-color: rgba(0,0,0,0.0);
+  }
 
   @media (max-width: 850px) {
   justify-content: flex-start;
@@ -245,6 +244,22 @@ padding: 1rem;
 :hover {
     background-color: #ececed;
 }
+
+  @media (max-width: 350px) {
+    justify-content: flex-start;
+    margin-left: 0;
+    padding: 0;
+  :hover {
+    background-color: rgba(0,0,0,0.0);
+  }
+
+  @media (max-width: 480px) {
+    justify-content: flex-start;
+    margin-left: 0;
+    background-color: #f00;
+    :hover {
+      background-color: rgba(0,0,0,0.0);
+  }
 
   @media (max-width: 850px) {
   justify-content: flex-start;
@@ -933,6 +948,10 @@ cursor: pointer;
     : hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+  @media (max-width: 850px) {
+    width: 18rem;
+  }
 `;
 
 // -------------------//
@@ -1032,6 +1051,12 @@ export const OutbuildingDisplay = withProps<any>(styled.div)`
 
   /* Medium Devices, Desktops */
   @media only screen and (max-width : 992px) {
+    .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
   }
 
   /* Small Devices, Tablets */
@@ -1046,12 +1071,23 @@ export const OutbuildingDisplay = withProps<any>(styled.div)`
 
   /* Extra Small Devices, Phones */
   @media only screen and (max-width : 480px) {
+    .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
   }
 
   /* Custom, iPhone Retina */
   @media only screen and (max-width : 320px) {
+      .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
   }
-
 `;
 
 
@@ -1060,7 +1096,7 @@ export const ProjectColours = withProps<any>(styled.div)`;
 display: flex;
 justify-content: center;
 
- /* Large Devices, Wide Screens */
+  /* Large Devices, Wide Screens */
   @media only screen and (min-width : 992px) {
     .mobile {
       display: none;
@@ -1072,6 +1108,12 @@ justify-content: center;
 
   /* Medium Devices, Desktops */
   @media only screen and (max-width : 992px) {
+    .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
   }
 
   /* Small Devices, Tablets */
@@ -1086,10 +1128,22 @@ justify-content: center;
 
   /* Extra Small Devices, Phones */
   @media only screen and (max-width : 480px) {
+    .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
   }
 
   /* Custom, iPhone Retina */
   @media only screen and (max-width : 320px) {
+      .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
   }
 `;
 
@@ -1136,7 +1190,7 @@ padding-top: 2rem;
 padding-bottom: 2rem;
 color:; #544F51;
 
-/* Large Devices, Wide Screens */
+  /* Large Devices, Wide Screens */
   @media only screen and (min-width : 992px) {
     .mobile {
       display: none;
@@ -1148,6 +1202,12 @@ color:; #544F51;
 
   /* Medium Devices, Desktops */
   @media only screen and (max-width : 992px) {
+    .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
   }
 
   /* Small Devices, Tablets */
@@ -1162,13 +1222,23 @@ color:; #544F51;
 
   /* Extra Small Devices, Phones */
   @media only screen and (max-width : 480px) {
+    .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
   }
 
   /* Custom, iPhone Retina */
   @media only screen and (max-width : 320px) {
+      .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
   }
-
-
 `;
 
 export const IconsText = withProps<any>(styled.div)`;
