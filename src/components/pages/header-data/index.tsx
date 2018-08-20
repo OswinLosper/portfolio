@@ -6,7 +6,7 @@ const DataHeading = [
     role: '',
     date: '',
     context: '',
-    projectdescription: 'Some of my latest logo designs.',
+    projectdescription: 'I’ve been designing logos for 8 years, below is a small selection of logos I designed.',
   },
 ];
 

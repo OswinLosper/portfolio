@@ -256,7 +256,6 @@ padding: 1rem;
   @media (max-width: 480px) {
     justify-content: flex-start;
     margin-left: 0;
-    background-color: #f00;
     :hover {
       background-color: rgba(0,0,0,0.0);
   }

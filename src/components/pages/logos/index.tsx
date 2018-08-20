@@ -34,12 +34,9 @@ export default class LogosPage extends Component<any, any> {
         />
 
         <Text>
-          I work as a full time Senior Designer at bOnline Ltd, a UK based
-          company. dealing with small to medium sized business websites. In my
-          spare time I enjoy watching Rugby, Football, American Football, hanging
-          out with friends and playing PlayStation. The saying less is more is a key
-          inﬂuence in my design and I utilise a very simplistic,
-          minimalist style that effectively portrays my clients needs and expectations.
+          All my logo designs are supplied with a logo usage breakdown, logo alternatives,
+          font files all in vector files, allowing you to easily expand your logo for
+          large scale print and signage.
           </Text>
 
         <LogoCollectionWrapper>

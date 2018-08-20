@@ -31,12 +31,12 @@ export default class WorkPage extends Component<IWorkPageProps, any> {
           </HeadingTextAbout>
 
           <Text>
-            I work as a full time Senior Designer at bOnline Ltd, a UK based
-            company. dealing with small to medium sized business websites. In my
-            spare time I enjoy watching Rugby, Football, American Football, hanging
-            out with friends and playing PlayStation. The saying less is more is a key
+            <span>
+              The saying less is more is a key
             inﬂuence in my design and I utilise a very simplistic,
-            minimalist style that effectively portrays my clients needs and expectations.
+            minimalist style that effectively portrays my clients needs and expectations. <br /><br />
+              See case studies below of my latest work.
+            </span>
           </Text>
 
           <Projects />
