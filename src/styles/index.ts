@@ -88,6 +88,18 @@ text-align: justify;
 `;
 
 
+export const TopArrow = withProps<any>(styled.div)`
+display: flex;
+justify-content: flex-end;
+position: fixed;
+bottom: 20px;
+padding-right: 10px;
+:hover {
+    background-color: #ececed;
+}
+`;
+
+
 export const FooterWrapper = withProps<any>(styled.div)`
 display: flex;
 justify-content: center;
@@ -886,7 +898,7 @@ text-align: ${
 
 export const WorkText = withProps<any>(styled.div)`;
 margin-top: 2rem;
-font-size: 28px;
+font-size: 22px;
 color: #808080;
 line-height: 2.5;
 text-align: justify;
