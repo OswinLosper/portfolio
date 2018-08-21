@@ -4,7 +4,7 @@ const AboutMe = [
     aboutHeading: 'About Me',
 
     about: 'I work as a full time Automation Tester at iPlatform, a company specialising in insurance \n' +
-      'management software, before joining iPlatform I work as a full time Senior Designer and tester at' +
+      'management software, before joining iPlatform I work as a full time Senior Designer and tester at ' +
       'bOnline Ltd, a UK based company, building small to medium sized business websites.',
 
     skillsHeading: 'Skills frequently used',

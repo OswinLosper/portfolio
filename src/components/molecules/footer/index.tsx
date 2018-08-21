@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-
-
-
 import arrowTop from '~/resources/icons/top-arrow.svg';
 
 import {
@@ -48,6 +45,9 @@ export default class Footer extends Component<any, any> {
 
 
       </div>
+
+
+
     );
   }
 }

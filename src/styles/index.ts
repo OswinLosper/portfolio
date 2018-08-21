@@ -87,18 +87,18 @@ text-align: justify;
   }
 `;
 
-
 export const TopArrow = withProps<any>(styled.div)`
 display: flex;
 justify-content: flex-end;
 position: fixed;
 bottom: 20px;
 padding-right: 10px;
+padding: 20px 17px 20px 0;
+cursor: pointer;
 :hover {
     background-color: #ececed;
 }
 `;
-
 
 export const FooterWrapper = withProps<any>(styled.div)`
 display: flex;
@@ -140,8 +140,6 @@ cursor: pointer;
     :hover {
         background-color: rgba(255,255,255,0.1);
     }
-
-
   @media (max-width: 480px) {
     font-size: 0.9rem;
     margin-top: 1rem;
@@ -149,7 +147,6 @@ cursor: pointer;
     height: auto;
     max-width: auto;
     color: #fff;
-
   }
   @media (max-width: 640px) {
     font-size: 0.9rem;
@@ -657,8 +654,8 @@ height: 100vh;
 justify-content: center;
 padding-top: 10rem;
 ${props => {
-  return `background-image: url(${props.backgroundImage});`;
-}}
+    return `background-image: url(${props.backgroundImage});`;
+  }}
 
   @media (max-width: 480px) {
     height: 100vh;
