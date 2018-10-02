@@ -142,31 +142,29 @@ const pages: IPageItem[] = [
   {
     bannerInfo: {
       headerBG: SmartheatHeaderBG,
-      role: 'Role: Web Senior Designer',
       title: 'Smartheat',
-      date: 'Date: 20 July 2018',
+      role: 'Role: Senior Web Designer',
+      date: 'Date: May 2016',
       context: 'Context: Website Design',
-      projectDescription: 'Website built for Busy Hive case study',
+      projectDescription: 'Heating solutions that wont cost the earth',
     },
-    challenge: `Busy Hive have over 16 years’
-    experience of supplying and sourcing administrative and personal support in key
-    sectors across Brighton including start up business', professional organisations and events'
-    We understand the challenges that you and your company face with admin support,
-    company management and planning whether for a particular project at short notice or strengthening your business.`,
-    solution: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-      'Our garden rooms can be built at a fraction of the cost of adding an extension to your home, and as such, ' +
-      'they are the most affordable means of creating additional living space at your property.\n' +
-      'In addition, most of our outbuildings do not require planning permission and can be used all year round',
+    challenge: 'Smart Heat is a fully qualified, fully insured and gas-safe registered company based in London.\n' +
+      'They are built on a solid foundation of more than 10 years experience, so you can rest assure the job will be done by a professional. \n' +
+      'They embrace new technologies when it comes to plumbing, which means they try to use only energy efficient smart solutions to do the job.\n' +
+      'This means we save you money, while also protecting the environment with our energy and water efficient products.',
+    solution: 'The colour scheme for this website, orange and white with shades of gray. The images which were used were \n' +
+      'very minimalist and went really well with the overall colour scheme, which brought all elements together \n' +
+      'in the end (look and feel). The website font and navigation has been kept simple and clear to make it \n' +
+      'more user-friendly, and the responsiveness has been applied so users can browse on their tablet / \n' +
+      'desktop / laptop / mobile devices.',
     fonts: {
-      description: 'Maven PRO, Impact',
+      description: 'Maven PRO',
     },
     icons: {
-      description: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-        'Our garden rooms can be built at a fraction of the cost of adding an extension',
+      description: 'Nice big descriptive icons, to make the website less text heavy.',
     },
-    conclusion: 'Client loved her website! \n' +
-      'She was excited to launch her fully rebranded website and start marketing in order to bring her clients \n' +
-      'to view the brilliantly fresh rebranded website that is now hilotherm.co.uk',
+    conclusion: 'Client was excited to launch his new website and start marketing in order to bring new clients.',
+
     title: '',
 
     route: '/smartheat',
@@ -187,30 +185,28 @@ const pages: IPageItem[] = [
   {
     bannerInfo: {
       headerBG: InvoiceBookAPPHeaderBG,
-      role: 'Role: Web Senior Designer',
+      role: 'Role: Senior Web Designer',
       title: 'Invoice APP',
-      date: 'Date: 20 July 2018',
+      date: 'Date: March 2017',
       context: 'Context: Website Design',
-      projectDescription: 'Website built for Busy Hive case study',
+      projectDescription: 'Your Invoice book in your pocket.',
     },
-    challenge: `Busy Hive have over 16 years
-    experience of supplying and sourcing administrative and personal support in key
-    sectors across Brighton including start up business', professional organisations and events'
-    We understand the challenges that you and your company face with admin support,
-    company management and planning whether for a particular project at short notice or strengthening your business.`,
-    solution: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-      'Our garden rooms can be built at a fraction of the cost of adding an extension to your home, and as such, ' +
-      'they are the most affordable means of creating additional living space at your property.\n' +
-      'In addition, most of our outbuildings do not require planning permission and can be used all year round',
+    challenge: 'Presenting your clients and customers with a professional invoice is essential, however not all of \n' +
+      'with a twist. Everything on the website has been created for easy navigation \n' +
+      ' an invoice especially if you already have a professional accountant handling your books.',
+
+    solution: 'Client had example site that he liked and wanted me to take certain elements they liked.\n' +
+      'with a twist on behalf of the designer. Everything on the website has been created for easy navigation \n' +
+      'for a customer to easily get information about their product and what they have to offer. The green and .\n' +
+      'white colour scheme was perfect for the clean and calming look the client was going for.',
     fonts: {
-      description: 'Maven PRO, Impact',
+      description: 'Muli',
     },
     icons: {
-      description: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-        'Our garden rooms can be built at a fraction of the cost of adding an extension',
+      description: 'Icons display what the APP looks like on the phone.',
     },
-    conclusion: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-      'Our garden rooms can be built at a fraction of the cost of adding an extension',
+    conclusion: 'The client loved his website! .\n' +
+      'He was excited to launch his new website and start marketing in order to bring her clients to view the new website',
     title: '',
 
     route: '/invoice-app',
