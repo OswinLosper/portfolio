@@ -85,33 +85,44 @@ const pages: IPageItem[] = [
       iconsMobile: OutbuildingIconsMobile,
     },
   },
+
+  //
+
   {
     bannerInfo: {
       headerBG: BusyHiveHeaderBG,
-      role: 'Role: Web Senior Designer',
       title: 'Busy Hive',
-      date: 'Date: 20 July 2018',
+      role: 'Role: Senior Web Designer',
+      date: 'Date: Febraury 2017',
       context: 'Context: Website Design',
-      projectDescription: 'Website built for Busy Hive case study',
+      projectDescription: 'Help when and as you need it.',
     },
-    challenge: `Busy Hive have over 16 years’
-    experience of supplying and sourcing administrative and personal support in key
-    sectors across Brighton including start up business', professional organisations and events.
-    We understand the challenges that you and your company face with admin support,
-    company management and planning whether for a particular project at short notice or strengthening your business.`,
-    solution: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-      'Our garden rooms can be built at a fraction of the cost of adding an extension to your home, and as such, ' +
-      'they are the most affordable means of creating additional living space at your property.\n' +
-      'In addition, most of our outbuildings do not require planning permission and can be used all year round',
+    challenge: 'Busy Hive PA has over 16 years experience of supplying and sourcing administrative and personal support in \n' +
+      'key sectors across Brighton including start-up business, professional organisations and events. \n' +
+      'sectors across Brighton including start up business, professional organisations and events. \n' +
+      'The client wanted a modern, user-friendly website that needed to be interactive with the users visiting their site.',
+
+    solution: 'When discussing the client’s requirements, they already had a clear vision of their design. The \n' +
+      'use of colour had to represent their brand; a white background, with black and yellow text, along ' +
+      'with visual elements such as icons and imagery.\n' +
+      'One of the biggest challenges was to display all the content in a pleasant way. Hereby, the \n' +
+      'website layout was created has a one-pager to keep the design interactive. A large amount of text \n' +
+      'causes the user to read through long sections of content; this may cause the website to appear \n' +
+      'text-heavy and therefore the website won’t be as user-friendly. To break up the text-heavy \n' +
+      'sections, modern icon designs and use of other visuals such as imagery helped to balance the design. \n' +
+      'Furthermore, rotating text sections also helped to create a cleaner design and the use of  \n' +
+      'animation effects added the final touch to round off this great-looking website.',
     fonts: {
-      description: 'Maven PRO, Impact',
+      description: 'Muli',
     },
     icons: {
-      description: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-        'Our garden rooms can be built at a fraction of the cost of adding an extension',
+      description: 'I designed nice modern big descriptive icons. The yellow, gray, black & white colour scheme was perfect for \n' +
+        'the clean and calming look the client was going for.',
     },
-    conclusion: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-      'Our garden rooms can be built at a fraction of the cost of adding an extension',
+    conclusion: 'Client loved her website! \n' +
+      'She was excited to launch her fully rebranded website and start marketing in order to bring her clients \n' +
+      'to view the brilliantly fresh rebranded website that is now busyhivepa.com',
+
     title: '',
     route: '/busy-hive',
     images: {
@@ -125,6 +136,9 @@ const pages: IPageItem[] = [
       iconsMobile: BusyHiveIconsMobile,
     },
   },
+
+  //
+
   {
     bannerInfo: {
       headerBG: SmartheatHeaderBG,
@@ -136,7 +150,7 @@ const pages: IPageItem[] = [
     },
     challenge: `Busy Hive have over 16 years’
     experience of supplying and sourcing administrative and personal support in key
-    sectors across Brighton including start up business', professional organisations and events.
+    sectors across Brighton including start up business', professional organisations and events'
     We understand the challenges that you and your company face with admin support,
     company management and planning whether for a particular project at short notice or strengthening your business.`,
     solution: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
@@ -150,9 +164,11 @@ const pages: IPageItem[] = [
       description: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
         'Our garden rooms can be built at a fraction of the cost of adding an extension',
     },
-    conclusion: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-      'Our garden rooms can be built at a fraction of the cost of adding an extension',
+    conclusion: 'Client loved her website! \n' +
+      'She was excited to launch her fully rebranded website and start marketing in order to bring her clients \n' +
+      'to view the brilliantly fresh rebranded website that is now hilotherm.co.uk',
     title: '',
+
     route: '/smartheat',
     images: {
       images: SmartheatImages,
@@ -165,6 +181,9 @@ const pages: IPageItem[] = [
       iconsMobile: SmartheatIconsMobile,
     },
   },
+
+  //
+
   {
     bannerInfo: {
       headerBG: InvoiceBookAPPHeaderBG,
@@ -176,7 +195,7 @@ const pages: IPageItem[] = [
     },
     challenge: `Busy Hive have over 16 years
     experience of supplying and sourcing administrative and personal support in key
-    sectors across Brighton including start up business', professional organisations and events.
+    sectors across Brighton including start up business', professional organisations and events'
     We understand the challenges that you and your company face with admin support,
     company management and planning whether for a particular project at short notice or strengthening your business.`,
     solution: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
@@ -193,6 +212,7 @@ const pages: IPageItem[] = [
     conclusion: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
       'Our garden rooms can be built at a fraction of the cost of adding an extension',
     title: '',
+
     route: '/invoice-app',
     images: {
       images: InvoiceBookAPPImages,
