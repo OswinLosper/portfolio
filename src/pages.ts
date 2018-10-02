@@ -45,29 +45,33 @@ const pages: IPageItem[] = [
   {
     bannerInfo: {
       headerBG: OutbuildingHeaderBG,
-      role: 'Role: Web Senior Designer',
+      role: 'Role: Senior Web Designer',
       title: 'Outbuilding Co.',
-      date: 'Date: 20 July 2018',
+      date: 'Date: December 2016',
       context: 'Context: Website Design',
       projectDescription: 'Create unique outdoor spaces for work and leisure',
     },
     challenge: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
       'Our garden rooms can be built at a fraction of the cost of adding an extension to your home, and as such, ' +
       'they are the most affordable means of creating additional living space at your property.\n' +
-      'In addition, most of our outbuildings do not require planning permission and can be used all year round',
-    solution: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-      'Our garden rooms can be built at a fraction of the cost of adding an extension to your home, and as such, ' +
-      'they are the most affordable means of creating additional living space at your property.\n' +
-      'In addition, most of our outbuildings do not require planning permission and can be used all year round',
+      'In addition, most of our outbuildings do not require planning permission and can be used all year round.',
+
+
+    solution: 'The Outbuilding Company design, I focused on information and images, using appropriately placed \n' +
+      'call to actions across the homepage.  This enables users to get in touch, or take action at any ' +
+      'point on the website. With a brown colour scheme vividly across the site by making use of big background images.\n' +
+      'Everything on the website has been created for easy navigation for a customer to easily get information about.\n' +
+      'their product and what they have to offer. ',
+
     fonts: {
       description: 'Maven PRO, Impact',
     },
     icons: {
-      description: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-        'Our garden rooms can be built at a fraction of the cost of adding an extension',
+      description: 'Nice big modern icons designed to represent The Outbuilding Company architech look and feel.\n',
     },
-    conclusion: 'The Outbuilding Company designs and builds bespoke garden rooms for clients.\n' +
-      'Our garden rooms can be built at a fraction of the cost of adding an extension',
+    conclusion: 'The Outbuilding Company was extremely pleased with the end result of the website. \n' +
+      'They were extremely excited to launch their fully rebranded website and start marketing in order to bring more clients in!.\n',
+
     title: '',
     route: '/outbuilding',
     images: {
