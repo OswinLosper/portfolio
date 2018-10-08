@@ -3,9 +3,13 @@ const AutomationTesting = [
     id: 0,
     automationHeading: 'Automation Testing',
 
-    about: 'I work as a full time Automation Tester at iPlatform, a company specialising in insurance \n' +
-      'management software, before joining iPlatform I work as a full time Senior Designer and tester at ' +
-      'bOnline Ltd, a UK based company, building small to medium sized business websites.',
+    whatisHeading: 'What is Automation Tetsing',
+
+    about: 'In software testing, test automation is the use of special software (separate from the software being tested) to control the \n' +
+      'execution of tests and the comparison of actual outcomes with predicted outcomes. \n' +
+      'Test automation can automate some repetitive but necessary tasks in a formalized testing process already in place, or perform \n' +
+      'additional testing that would be difficult to do manually. Test automation is critical for continuous delivery and continuous  \n' +
+      'testing.',
 
     skillsHeading: 'Skills frequently used',
 

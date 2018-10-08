@@ -36,7 +36,7 @@ export default class Footer extends Component<any, any> {
             Contact me for more information
         </ContactText>
           <Email>
-            oswinlosper@gmail.com
+            oswinlosper[@]gmail.com
         </Email>
 
 

@@ -28,7 +28,6 @@ export const CVLAYOUT = withProps<any>(styled.div)`
 margin: 0 auto;
 max-width: 1100px;
 line-height: 1.5;
-// box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 border: 1px solid #808080;
 `;
 
@@ -42,7 +41,7 @@ padding: 1rem;
 export const Heading = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
-font-size: 3rem;
+font-size: 2.7rem;
 color: #fff;
 font-weight: 600;
 `;
@@ -50,7 +49,7 @@ font-weight: 600;
 export const Title = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
-font-size: 1.2rem;
+font-size: 1rem;
 color: #fff;
 font-weight: 300;
 `;
@@ -65,14 +64,13 @@ font-weight: 300;
 export const SocialMediaWapper = withProps<any>(styled.div)`
 display: flex;
 flex-direction: column;
-height: 8.5rem;
 `;
 
 export const SocialMedia = withProps<any>(styled.div)`
 display: flex;
 color: #fff;
 align-items: center;
-padding: 1rem;
+padding: 0.7rem;
 
     & span {
     margin-left: 0.7rem;
@@ -158,7 +156,8 @@ justify-content: space-between;
 `;
 
 export const CompanyName = withProps<any>(styled.div)`
-color: #808080;
+color: #000000;
+font-weight: 600;
 justify-content: space-between;
 `;
 

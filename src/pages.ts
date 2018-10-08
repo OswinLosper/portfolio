@@ -85,9 +85,6 @@ const pages: IPageItem[] = [
       iconsMobile: OutbuildingIconsMobile,
     },
   },
-
-  //
-
   {
     bannerInfo: {
       headerBG: BusyHiveHeaderBG,

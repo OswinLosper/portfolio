@@ -32,6 +32,7 @@ export default class AutomationPage extends Component<any, any> {
             id,
             automationHeading,
             about,
+            whatisHeading,
             skillsHeading,
             skillContent,
             contactHeading,
@@ -44,8 +45,13 @@ export default class AutomationPage extends Component<any, any> {
                   {automationHeading}
                 </HeadingTextAbout>
 
+                <SkillsHeadingText
+                  data-qa="what-is-heading-text">
+                  {whatisHeading}
+                </SkillsHeadingText>
+
                 <Text
-                  data-qa="about-content-text">
+                  data-qa="automation-content-text">
                   {about}
                 </Text>
 
@@ -53,6 +59,7 @@ export default class AutomationPage extends Component<any, any> {
                   data-qa="skills-heading-text">
                   {skillsHeading}
                 </SkillsHeadingText>
+
                 <Skills
                   data-qa="skills-component" />
 

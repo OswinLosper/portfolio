@@ -65,7 +65,9 @@ export default class AboutMePage extends Component<any, any> {
                   data-qa="contact-heading">
                   {contactHeading}
                 </HeadingTextAbout>
-                <SocialMedia />
+
+                <SocialMedia
+                  data-qa="about-social-media" />
 
                 <Text
                   data-qa="github-text">

@@ -28,7 +28,7 @@ export default class PreviousWork extends Component<any, any> {
         {items.map(item => {
           const {
             id, position, company, date, summary,
-            responsibilties, techUsedHeading, techUsed,
+            techUsedHeading, techUsed,
           } = item;
           return (
             <Fragment key={id}>
@@ -56,18 +56,7 @@ export default class PreviousWork extends Component<any, any> {
                 data-qa="Date of Employment">
 
                 {summary}
-                {
 
-                  responsibilties.map(
-                    ({ idInfo, information, }) =>
-                      (<span>
-                        <ResponsibiltiesDIV
-                          id={idInfo}>{<li>{information}</li>}
-                        </ResponsibiltiesDIV>
-                      </span>
-                      ),
-                  )
-                }
                 <TechHeadingDIV>
                   {techUsedHeading}
                 </TechHeadingDIV>

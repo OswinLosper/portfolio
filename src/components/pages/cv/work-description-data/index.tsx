@@ -1,44 +1,41 @@
 const cvInformation = [
   {
     id: 0,
-    position: 'Automation Tester & Website',
+    position: 'Tester & Font-End Dev',
     company: 'iPlatform',
     date: 'September 2016 - Present',
-    summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    summary: 'I was brought onto the iPlatform team as a full time tester and front-end dev.\n' +
+      'Within a few months, we had grown into a 7 man team of UX, UI and front-end developers on the \n' +
+      'web application side, of whhich I was the lead tester and assist with front-end & styled components using typescript. \n' +
 
-    responsibilties: [
-      {
-        idInfo: 1,
-        information: 'Testcafe',
-      },
-      {
-        idInfo: 2,
-        information: 'React',
-      },
-      {
-        idInfo: 3,
-        information: 'Style Components',
-      },
-    ],
+      'My main focus is spent working on automating user journeys and the web application features to eliminate manaul testing of the \n' +
+      'very complex system we are building. \n' +
+
+      'I also attended daily meetings with the back end team so that we can ensure everything stays aligned and deal with any shared challenges \n' +
+      'being faced',
 
     techUsedHeading: 'Technology Used',
 
     techUsed: [
       {
         idTech: 4,
-        software: 'Testcafe',
+        software: 'TestCafe',
       },
       {
         idTech: 5,
-        software: 'Testcafe',
+        software: 'React Native',
       },
       {
         idTech: 6,
-        software: 'React',
+        software: 'Style Components',
       },
       {
         idTech: 7,
-        software: 'WordPress',
+        software: 'GIT',
+      },
+      {
+        idTech: 8,
+        software: 'Typescript',
       },
     ],
   },
@@ -48,84 +45,80 @@ const cvInformation = [
     position: 'Tester & Senior Designer',
     company: 'bOnline',
     date: 'August 2013 - September 2017',
-    summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    responsibilties: [
-      {
-        idInfo: 11,
-        information: 'Testcafe Automation',
-      },
-      {
-        idInfo: 12,
-        information: 'React Native',
-      },
-      {
-        idInfo: 13,
-        information: 'Style Components',
-      },
-    ],
-
+    summary: 'Some of my day to day tasks includes, testing of websites, design premium websites, escalations from clients, check all sites and \n' +
+      'approve them before it goes live, hiring of new designers, working closely with head of design to reduce escalations, working  \n' +
+      'closely with head of deaign to excel in customer service, offering design help with other designers and juniors, sitting with  \n' +
+      'designers and imparting knowledge - Improving overall service and quality.',
+    // responsibilties: [
+    //   {
+    //     idInfo: 11,
+    //     information: 'HTML & CSS',
+    //   },
+    //   {
+    //     idInfo: 12,
+    //     information: 'WordPress',
+    //   },
+    //   {
+    //     idInfo: 13,
+    //     information: 'UX Design',
+    //   },
+    //   {
+    //     idInfo: 14,
+    //     information: 'Adobe Suite',
+    //   },
+    // ],
     techUsedHeading: 'Technology Used',
 
     techUsed: [
       {
         idTech: 4,
-        software: 'Testcafe',
+        software: 'HTML & CSS',
       },
       {
         idTech: 5,
-        software: 'Testcafe',
+        software: 'WordPress',
       },
       {
         idTech: 6,
-        software: 'React',
+        software: 'Adobe Suite',
       },
       {
         idTech: 7,
-        software: 'WordPress',
+        software: 'UX Design',
       },
     ],
   },
-
 
   {
     id: 2,
     position: '​DTP Operator / Graphic Designer',
     company: 'Perfect Print',
     date: 'August 2012 - August 2013',
-    summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    responsibilties: [
-      {
-        idInfo: 21,
-        information: 'Testcafe Automation',
-      },
-      {
-        idInfo: 22,
-        information: 'React Native',
-      },
-      {
-        idInfo: 24,
-        information: 'Style Components',
-      },
-    ],
+    summary: 'I started my first permenent job at Perfect Print. Day to day duties included: \n ' +
+      'artwork design and editing: logos, business cards, receipt and invoice books, calendars, flyers, posters, any form of design or  \n' +
+      'any marketing material that was required of me. \n' +
+      'Print ready work including (business cards, letterheads, flyers, corporate ID print and design, print litho positives, \n' +
+      'maintaining companies network, editing of artwork, photo manipulation, \n' +
+      'print wide format (A2 – A0+), work with client on daily basis.',
 
     techUsedHeading: 'Technology Used',
 
     techUsed: [
       {
         idTech: 4,
-        software: 'Testcafe',
+        software: 'Adobe Suite',
       },
       {
         idTech: 5,
-        software: 'Testcafe',
+        software: 'CoralDraw',
       },
       {
         idTech: 6,
-        software: 'React',
+        software: 'Wide format Printing',
       },
       {
         idTech: 7,
-        software: 'WordPress',
+        software: 'Positives Printing',
       },
     ],
   },
@@ -133,32 +126,29 @@ const cvInformation = [
 
 export default cvInformation;
 
-
-
 // const cvInformation = [
 //   {
 //     id: 0,
 //     position: 'Automation Tester & Website',
 //     company: 'iPlatform',
 //     date: 'September 2016 - Present',
-//     description: 'Much of my focus is spent is working on the testing of a very complex system in Configurable Insurance Management System application components and working with the team on their feature developments. Part of my role is to understand of the very complex system we are building and attending regular meeting with the back end and front end team so that we can ensure everything stays aligned. Automation & Manual Testing of Configurable Insurance Management System Setting up testing environment using testcafe & git. Using React Native & Style Components.'
-//     ,
+//     description: 'Much of my focus is spent is working on the testing of a very complex system
+// in Configurable Insurance Management System application components and working with the team on
+
 //   },
 //   {
 //     id: 1,
 //     position: 'Tester & Senior Designer',
 //     company: 'bOnline',
 //     date: 'August 2013 - September 2017',
-//     description: 'Much of my focus is spent is working on the testing of a very complex system in Configurable Insurance Management System application components and working with the team on their feature developments. Part of my role is to understand of the very complex system we are building and attending regular meeting with the back end and front end team so that we can ensure everything stays aligned. Automation & Manual Testing of Configurable Insurance Management System Setting up testing environment using testcafe & git. Using React Native & Style Components.'
-//     ,
+//     description: 'Much of my focus is spent is working on the testing of a very
 //   },
 //   {
 //     id: 2,
 //     position: '​DTP Operator / Graphic Designer',
 //     company: 'Perfect Print',
 //     date: 'August 2012 - August 2013',
-//     description: 'Much of my focus is spent is working on the testing of a very complex system in Configurable Insurance Management System application components and working with the team on their feature developments. Part of my role is to understand of the very complex system we are building and attending regular meeting with the back end and front end team so that we can ensure everything stays aligned. Automation & Manual Testing of Configurable Insurance Management System Setting up testing environment using testcafe & git. Using React Native & Style Components.'
-//     ,
+//     description: 'Much of my focus is spent is working on the testing of a very complex system
 //   },
 // ];
 
