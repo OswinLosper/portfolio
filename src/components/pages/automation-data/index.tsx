@@ -3,24 +3,31 @@ const AutomationTesting = [
     id: 0,
     automationHeading: 'Automation Testing',
 
-    whatisHeading: 'What is Automation Tetsing',
+    automationiPlatform: 'Automation Testing at iPlatform',
 
-    about: 'In software testing, test automation is the use of special software (separate from the software being tested) to control the \n' +
-      'execution of tests and the comparison of actual outcomes with predicted outcomes. \n' +
-      'Test automation can automate some repetitive but necessary tasks in a formalized testing process already in place, or perform \n' +
-      'additional testing that would be difficult to do manually. Test automation is critical for continuous delivery and continuous  \n' +
-      'testing.',
+    challengeContent: 'I was brought onto the iPlatform team as a full time tester and front-end dev. Within a few months,\n' +
+      'we had grown into a 7 man \n' +
+      'team of UX, UI and front-end developers on the web application side, of whhich I was the lead tester and assist with front-end & \n' +
+      'My main focus is spent working on automating user journeys and the web application features \n' +
+      'to eliminate manaul testing of the very complex system we are building.',
 
-    skillsHeading: 'Skills frequently used',
+    challengeiPlatform: 'Challenge',
 
-    skillContent: 'In my spare time I enjoy watching Rugby, Football, American Football, hanging out with friends \n' +
-      'and playing PlayStation. The saying less is more is a key inﬂuence in my design and I utilise a ' +
-      'very simplistic, minimalist style that effectively portrays my clients needs and expectations. \n',
-    contactHeading: 'Contact',
+    challengeSolution: 'iPlatform is a React based Progressive Web App aimed at the insurance industry with an initial focus on the day to day \n' +
+      'management from the perspective of brokers and brokerages. \n' +
+      'team of UX, UI and front-end developers on the web application side, of whhich I was the lead tester and assist with front-end & \n' +
+      'We chose to use testCafe, A node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run the different \n' +
+      'user journeys and view report results.',
 
-    githubText: 'Designed & coded with passion by me using react & style components. Open source on Github.',
+    whyTestCafe: 'Why I Choose TestCafe',
 
-    workText: 'See some of my latest work here',
+    howTestCafeWork: 'How TestCafe works',
+
+    exampleTestCafe: 'iPlatform is a React based Progressive Web App aimed at the insurance industry with an initial focus on the day to day \n' +
+      'management from the perspective of brokers and brokerages. \n' +
+      'team of UX, UI and front-end developers on the web application side, of whhich I was the lead tester and assist with front-end & \n' +
+      'We chose to use testCafe, A node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run the different \n' +
+      'user journeys and view report results.',
 
   },
 

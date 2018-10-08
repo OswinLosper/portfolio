@@ -31,60 +31,55 @@ export default class AutomationPage extends Component<any, any> {
           {items.map(({
             id,
             automationHeading,
-            about,
-            whatisHeading,
-            skillsHeading,
-            skillContent,
-            contactHeading,
-            githubText,
-            workText,
+            automationiPlatform,
+            challengeContent,
+            challengeiPlatform,
+            challengeSolution,
+            whyTestCafe,
+            howTestCafeWork,
+            exampleTestCafe,
           }) => (
               <Fragment key={id}>
                 <HeadingTextAbout
-                  data-qa="about-header">
+                  data-qa="automation-testing-header">
                   {automationHeading}
                 </HeadingTextAbout>
 
                 <SkillsHeadingText
-                  data-qa="what-is-heading-text">
-                  {whatisHeading}
+                  data-qa="automation-iplatform">
+                  {automationiPlatform}
                 </SkillsHeadingText>
 
                 <Text
-                  data-qa="automation-content-text">
-                  {about}
+                  data-qa="automation-challenge-content">
+                  {challengeContent}
                 </Text>
 
                 <SkillsHeadingText
-                  data-qa="skills-heading-text">
-                  {skillsHeading}
+                  data-qa="challenge-at-iplatform">
+                  {challengeiPlatform}
+                </SkillsHeadingText>
+
+                <Text
+                  data-qa="solution-iplatform">
+                  {challengeSolution}
+                </Text>
+
+                <SkillsHeadingText
+                  data-qa="challenge-at-iplatform">
+                  {whyTestCafe}
                 </SkillsHeadingText>
 
                 <Skills
                   data-qa="skills-component" />
 
-                <Text
-                  data-qa="about-content-text">
-                  {skillContent}
-                </Text>
+                <SkillsHeadingText
+                  data-qa="challenge-at-iplatform">
+                  {howTestCafeWork}
+                </SkillsHeadingText>
 
-                <HeadingTextAbout
-                  data-qa="contact-heading">
-                  {contactHeading}
-                </HeadingTextAbout>
-                <SocialMedia />
-
-                <Text
-                  data-qa="github-text">
-                  <span>
-                    {githubText}
-                  </span>
-                </Text>
-
-                <ButtonToWork
-                  data-qa="link-to-work-page">
-                  {workText}
-                </ButtonToWork>
+                <Skills
+                  data-qa="skills-component" />
 
               </Fragment>
             ))}
