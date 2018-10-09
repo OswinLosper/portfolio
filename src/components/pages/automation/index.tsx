@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from 'react';
 
-import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
+import { Navbar, SocialMedia, Skills, Footer, WhyIChooseTestCafe } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer, HeadingTextAbout, Text,
-  SkillsHeadingText, ButtonToWork,
+  SkillsHeadingText
 } from '~/styles';
 
 import { AutomationTesting } from '~/components/pages/automation-data-project';
@@ -70,8 +70,8 @@ export default class AutomationPage extends Component<any, any> {
                   {whyTestCafe}
                 </SkillsHeadingText>
 
-                <Skills
-                  data-qa="skills-component" />
+                <WhyIChooseTestCafe
+                  data-qa="why-i-choose-testcafe-component" />
 
                 <SkillsHeadingText
                   data-qa="challenge-at-iplatform">

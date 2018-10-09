@@ -11,5 +11,5 @@ export { default as WorkHeading } from './work-heading';
 export { default as WorkContent } from './work-content';
 export { default as Projects } from './projects';
 export { default as NextAndPrevious } from './next-and-previous';
-
+export { default as WhyIChooseTestCafe } from './why-i-choose-testcafe';
 

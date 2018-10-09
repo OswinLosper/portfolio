@@ -19,9 +19,9 @@ const AutomationTesting = [
       'We chose to use testCafe, A node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run the different \n' +
       'user journeys and view report results.',
 
-    whyTestCafe: 'Why I Choose TestCafe',
+    whyTestCafe: 'Why TestCafe',
 
-    howTestCafeWork: 'How TestCafe works',
+    howTestCafeWork: 'How it works',
 
     exampleTestCafe: 'iPlatform is a React based Progressive Web App aimed at the insurance industry with an initial focus on the day to day \n' +
       'management from the perspective of brokers and brokerages. \n' +

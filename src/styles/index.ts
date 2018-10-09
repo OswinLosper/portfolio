@@ -654,8 +654,8 @@ height: 100vh;
 justify-content: center;
 padding-top: 10rem;
 ${props => {
-    return `background-image: url(${props.backgroundImage});`;
-  }}
+  return `background-image: url(${props.backgroundImage});`;
+}}
 
   @media (max-width: 480px) {
     height: 100vh;
@@ -1036,6 +1036,39 @@ flex-wrap: wrap;
 width: 70%;
 margin-right: auto;
 margin-left: auto;
+`;
+
+// ---------------//
+
+
+// USED IN WHY I CHOOSE TESTCAFE //
+export const WhyIChooseTestcafeWrapper = withProps<any>(styled.div)`
+margin-top: 2rem;
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+width: 70%;
+margin-right: auto;
+margin-left: auto;
+// background-color: #f0f0f0;
+`;
+
+export const WhyIChooseTestcafeInfo = withProps<any>(styled.div)`
+margin-top: 2rem;
+// margin-bottom: 2rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-right: 2%;
+padding: 54px 61px;
+border: 1px solid #ccc;
+background-color: #ffffff;
+height: 300px;
+max-width: 20rem;
+min-width: 20rem;
+text-align: center;
 `;
 
 // ---------------//
