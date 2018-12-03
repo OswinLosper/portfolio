@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
-import automation from '~/resources/icons/automation-testing.svg';
-import react from '~/resources/icons/react.svg';
-import html from '~/resources/icons/html.svg';
-import css from '~/resources/icons/css.svg';
-import adobe from '~/resources/icons/adobe.svg';
+import stableTests from '~/resources/icons/stable-tests.svg';
+import TSorJS from '~/resources/icons/ts-and-js.svg';
+import JSerrors from '~/resources/icons/JS-errors.svg';
+import concurrentTests from '~/resources/icons/concurrent-tests.svg';
+import readableTests from '~/resources/icons/readable-tests.svg';
+import continuousIntegration from '~/resources/icons/continuous-integration.svg';
 
 import {
   WhyIChooseTestcafeWrapper,
-  WhyIChooseTestcafeInfo,
+  WhyIChooseTestcafeInfoAutomation,
 } from '~/styles';
 
 export default class WhyIChooseTestCafe extends Component<any, any> {
@@ -29,35 +30,35 @@ export default class WhyIChooseTestCafe extends Component<any, any> {
     return (
       <WhyIChooseTestcafeWrapper>
 
-        <WhyIChooseTestcafeInfo>
-          <img src={automation} width="150px" />
+        <WhyIChooseTestcafeInfoAutomation>
+          <img src={stableTests} width="80px" />
           Create stable tests (and no manual timeouts)
-        </WhyIChooseTestcafeInfo>
+        </WhyIChooseTestcafeInfoAutomation>
 
-        <WhyIChooseTestcafeInfo>
-          <img src={react} width="150px" />
-          Write in latest JS or TypeScript
-        </WhyIChooseTestcafeInfo>
+        <WhyIChooseTestcafeInfoAutomation>
+          <img src={TSorJS} width="100px" />
+          Code in latest JS or TypeScript
+        </WhyIChooseTestcafeInfoAutomation>
 
-        <WhyIChooseTestcafeInfo>
-          <img src={html} width="150px" />
+        <WhyIChooseTestcafeInfoAutomation>
+          <img src={JSerrors} width="80px" />
           Detect JS errors in your code
-        </WhyIChooseTestcafeInfo>
+        </WhyIChooseTestcafeInfoAutomation>
 
-        <WhyIChooseTestcafeInfo>
-          <img src={css} width="150px" />
+        <WhyIChooseTestcafeInfoAutomation>
+          <img src={concurrentTests} width="100px" />
           Launch concurrent tests
-        </WhyIChooseTestcafeInfo>
+        </WhyIChooseTestcafeInfoAutomation>
 
-        <WhyIChooseTestcafeInfo>
-          <img src={css} width="150px" />
+        <WhyIChooseTestcafeInfoAutomation>
+          <img src={readableTests} width="80px" />
           Build readable tests with PageObject
-        </WhyIChooseTestcafeInfo>
+        </WhyIChooseTestcafeInfoAutomation>
 
-        <WhyIChooseTestcafeInfo>
-          <img src={adobe} width="150px" />
+        <WhyIChooseTestcafeInfoAutomation>
+          <img src={continuousIntegration} width="80px" />
           Include tests in continuous integration system
-        </WhyIChooseTestcafeInfo>
+        </WhyIChooseTestcafeInfoAutomation>
 
       </WhyIChooseTestcafeWrapper>
     );
