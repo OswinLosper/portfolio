@@ -466,6 +466,27 @@ font-size: 0.8rem;
 }
 `;
 
+export const Features = withProps<any>(styled.div)`
+margin-top: 2rem;
+margin-bottom: 2rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-right: 2%;
+padding: 54px 61px;
+border: 1px solid #ccc;
+background-color: #ffffff;
+height: 150px;
+max-width: 150px;
+min-width: 10rem;
+text-align: center;
+font-size: 0.8rem;
+: hover {
+  background-color: #ececed;
+}
+`;
+
 export const SocialMediaContact = withProps<any>(styled.div)`
 margin-top: 2rem;
 margin-bottom: 5rem;
@@ -1048,15 +1069,13 @@ display: flex;
 justify-content: center;
 flex-direction: row;
 flex-wrap: wrap;
-width: 70%;
+width: 73%;
 margin-right: auto;
 margin-left: auto;
-// background-color: #f0f0f0;
 `;
 
 export const WhyIChooseTestcafeInfo = withProps<any>(styled.div)`
 margin-top: 2rem;
-// margin-bottom: 2rem;
 display: flex;
 justify-content: center;
 flex-direction: column;
@@ -1069,6 +1088,26 @@ height: 300px;
 max-width: 20rem;
 min-width: 20rem;
 text-align: center;
+`;
+
+export const WhyIChooseTestcafeInfoAutomation = withProps<any>(styled.div)`
+margin-top: 2rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-right: 2%;
+padding: 50px 50px;
+border: 1px solid #ccc;
+background-color: #ffffff;
+height: 200px;
+max-width: 20rem;
+min-width: 20rem;
+text-align: center;
+:hover {
+    background-color: #ececed;
+}
+
 `;
 
 // ---------------//

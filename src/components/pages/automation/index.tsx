@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-import { Navbar, SocialMedia, Skills, Footer, WhyIChooseTestCafe } from '~/components/molecules';
+import { Navbar, Footer, WhyIChooseTestCafe } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer, HeadingTextAbout, Text,
@@ -78,8 +78,10 @@ export default class AutomationPage extends Component<any, any> {
                   {howTestCafeWork}
                 </SkillsHeadingText>
 
-                <Skills
-                  data-qa="skills-component" />
+                <div
+                  data-qa="how-it-works-slider">
+                  SLIDER TO COME HERE, SKILL COMPONENT MUST BE REPLACED
+                </div>
 
               </Fragment>
             ))}
