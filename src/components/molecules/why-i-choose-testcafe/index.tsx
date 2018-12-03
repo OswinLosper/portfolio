@@ -7,7 +7,6 @@ import concurrentTests from '~/resources/icons/concurrent-tests.svg';
 import readableTests from '~/resources/icons/readable-tests.svg';
 import continuousIntegration from '~/resources/icons/continuous-integration.svg';
 
-
 import {
   WhyIChooseTestcafeWrapper,
   WhyIChooseTestcafeInfoAutomation,

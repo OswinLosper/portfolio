@@ -487,6 +487,33 @@ font-size: 0.8rem;
 }
 `;
 
+export const HowItWorksWrapper = withProps<any>(styled.div)`
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 1rem;
+`;
+
+export const HowItWorks = withProps<any>(styled.div)`
+display: flex;
+flex-direction: column;
+padding: 1rem 1rem 3rem 1rem;
+
+& span {
+  background-color: #ccc;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 20px;
+  width: 200px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+& p {
+  margin-left: 0.5rem;
+}
+`;
+
 export const SocialMediaContact = withProps<any>(styled.div)`
 margin-top: 2rem;
 margin-bottom: 5rem;
@@ -675,8 +702,8 @@ height: 100vh;
 justify-content: center;
 padding-top: 10rem;
 ${props => {
-  return `background-image: url(${props.backgroundImage});`;
-}}
+    return `background-image: url(${props.backgroundImage});`;
+  }}
 
   @media (max-width: 480px) {
     height: 100vh;
