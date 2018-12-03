@@ -78,10 +78,14 @@ export default class AutomationPage extends Component<any, any> {
                   {howTestCafeWork}
                 </SkillsHeadingText>
 
+
+
                 <div
                   data-qa="how-it-works-slider">
                   SLIDER TO COME HERE, SKILL COMPONENT MUST BE REPLACED
                 </div>
+
+
 
               </Fragment>
             ))}
