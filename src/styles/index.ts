@@ -702,8 +702,8 @@ height: 100vh;
 justify-content: center;
 padding-top: 10rem;
 ${props => {
-    return `background-image: url(${props.backgroundImage});`;
-  }}
+  return `background-image: url(${props.backgroundImage});`;
+}}
 
   @media (max-width: 480px) {
     height: 100vh;
@@ -1134,8 +1134,16 @@ text-align: center;
 :hover {
     background-color: #ececed;
 }
-
 `;
+
+export const SliderImage = withProps<any>(styled.div)`
+  padding-top: 3rem;
+  padding-left: 27%;
+  background-color: white;
+}
+`;
+
+
 
 // ---------------//
 
