@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-// import step1 from '~/resources/slider/step1.gif';
+import step1 from '~/resources/slider/step1.gif';
 import step2 from '~/resources/slider/step2.png';
-// import step3 from '~/resources/slider/step3.gif';
+import step3 from '~/resources/slider/step3.gif';
 import step4 from '~/resources/slider/step4.png';
 
 import {
@@ -31,7 +31,7 @@ export default class HowItWorkVisuals extends Component<any, any> {
         <HowItWorks>
           <span>1. Install Testcafe:</span>
           <p>You will need Node.js.</p>
-          <img src={step2} width="800px" />
+          <img src={step1} width="800px" />
         </HowItWorks>
 
         <HowItWorks>
@@ -44,7 +44,7 @@ export default class HowItWorkVisuals extends Component<any, any> {
           <span>3. Run your test:</span>
 
           <p>Choose the browser, and launch the test with one command.</p>
-          <img src={step4} width="800px" />
+          <img src={step3} width="800px" />
         </HowItWorks>
 
         <HowItWorks>
