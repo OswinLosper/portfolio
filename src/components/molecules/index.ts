@@ -13,4 +13,5 @@ export { default as Projects } from './projects';
 export { default as NextAndPrevious } from './next-and-previous';
 export { default as WhyIChooseTestCafe } from './why-i-choose-testcafe';
 export { default as HowItWorkVisuals } from './how-it-work-visuals';
+export { default as SimpleSlider } from './how-it-work-slider';
 
