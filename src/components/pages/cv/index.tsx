@@ -49,12 +49,14 @@ export default class CVPage extends Component<ICVPageProps, any> {
             <SocialMedia
               data-qa="social-media">
               <img src={linkedin} width="30px" />
-              <span>LinkedIn</span>
+              <span>
+                <a href="https://www.linkedin.com/in/oswin-losper-21520330/" target="blank">LinkedIn</a></span>
             </SocialMedia>
             <SocialMedia
               data-qa="social-media">
               <img src={github} width="30px" />
-              <span>Github</span>
+              <span>
+                <a href="https://github.com/OswinLosper" target="blank">Github</a></span>
             </SocialMedia>
           </SocialMediaWapper>
 
@@ -98,7 +100,7 @@ export default class CVPage extends Component<ICVPageProps, any> {
           </WorkEperienceSection>
 
         </ContentLayout>
-      </CVLAYOUT>
+      </CVLAYOUT >
 
     );
   }

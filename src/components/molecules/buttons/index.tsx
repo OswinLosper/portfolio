@@ -25,6 +25,7 @@ export default class Buttons extends Component<any, any> {
         data-qa="home-button-container">
         <HomeButtons
           data-qa="about-contact-button">
+
           About & Contact
           </HomeButtons>
         <HomeButtons

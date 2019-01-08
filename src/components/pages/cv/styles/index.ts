@@ -29,6 +29,7 @@ margin: 0 auto;
 max-width: 1100px;
 line-height: 1.5;
 border: 1px solid #808080;
+
 `;
 
 export const HeaderLayout = withProps<any>(styled.div)`
@@ -74,6 +75,10 @@ padding: 0.7rem;
 
     & span {
     margin-left: 0.7rem;
+
+      & a {
+        color: #fff;
+      }
 }
 `;
 
