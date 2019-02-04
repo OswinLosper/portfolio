@@ -1,42 +1,62 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
 import {
   HomeButtonsContainer,
   HomeButtons,
 } from '~/styles';
 
-export default class Buttons extends Component<any, any> {
+interface IProps {
+  history?: any;
+}
+
+class Buttons extends Component<IProps, any> {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false,
+    this.onButtonClick = this.onButtonClick.bind(this);
+  }
+
+  onButtonClick(url: string) {
+    const { history } = this.props;
+    return () => {
+      history.push(url);
     };
   }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
+
   render() {
     return (
       <HomeButtonsContainer
-        data-qa="home-button-container">
+        data-qa="home-button-container"
+      >
         <HomeButtons
+<<<<<<< HEAD
           data-qa="about-contact-button">
 
+=======
+          onClick={this.onButtonClick('/about')}
+          data-qa="about-contact-button"
+        >
+>>>>>>> e0881d1fbc70df86b22dafb843bcd229e2730fcc
           About & Contact
-          </HomeButtons>
+        </HomeButtons>
+
         <HomeButtons
-          data-qa="work-button">
+          onClick={this.onButtonClick('/work')}
+          data-qa="work-button"
+        >
           My Work
-          </HomeButtons>
+        </HomeButtons>
+
         <HomeButtons
-          data-qa="resume-button">
+          onClick={this.onButtonClick('/cv')}
+          data-qa="resume-button"
+        >
           Resume
-          </HomeButtons>
+        </HomeButtons>
       </HomeButtonsContainer>
     );
   }
 }
+
+export default withRouter(Buttons) as typeof Buttons;
