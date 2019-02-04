@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 import registerServiceWorker from './registerServiceWorker';
+
 const { render } = ReactDOM;
 const target = document.querySelector('#root') as HTMLElement;
 
