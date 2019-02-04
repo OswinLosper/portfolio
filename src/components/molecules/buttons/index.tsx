@@ -1,39 +1,52 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
 import {
   HomeButtonsContainer,
   HomeButtons,
 } from '~/styles';
 
-export default class Buttons extends Component<any, any> {
+interface IProps {
+  history?: any;
+}
+
+class Buttons extends Component<IProps, any> {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false,
+    this.onButtonClick = this.onButtonClick.bind(this);
+  }
+
+  onButtonClick(url: string) {
+    const { history } = this.props;
+    return () => {
+      history.push(url);
     };
   }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
+
   render() {
     return (
       <HomeButtonsContainer>
-        <HomeButtons>
+        <HomeButtons
+          onClick={this.onButtonClick('/about')}
+        >
           About & Contact
-          </HomeButtons>
+        </HomeButtons>
 
-        <HomeButtons>
+        <HomeButtons
+          onClick={this.onButtonClick('/work')}
+        >
           My Work
-          </HomeButtons>
+        </HomeButtons>
 
-        <HomeButtons>
+        <HomeButtons
+          onClick={this.onButtonClick('/cv')}
+        >
           Resume
-          </HomeButtons>
+        </HomeButtons>
       </HomeButtonsContainer>
     );
   }
 }
+
+export default withRouter(Buttons) as typeof Buttons;
