@@ -5,13 +5,14 @@ import busyHive from '~/resources/projects/busy-hive.jpg';
 import invoiceBook from '~/resources/projects/invoice-book.jpg';
 import smartHeat from '~/resources/projects/smartheat.jpg';
 import otherDesigns from '~/resources/projects/other-designs.jpg';
+import automation from '~/resources/projects/automation/automation.jpg';
 
 import {
   InnerPagesLayoutContainer,
   Project,
   ProjectButton,
   ProjectButtonWrapper,
- } from '~/styles';
+} from '~/styles';
 
 export default class Projects extends Component<any, any> {
   constructor(props) {
@@ -23,7 +24,7 @@ export default class Projects extends Component<any, any> {
       <InnerPagesLayoutContainer>
 
         <Project>
-          <img src={outbuilding} width="100%"/>
+          <img src={automation} width="100%" />
         </Project>
 
         <ProjectButtonWrapper>
@@ -33,7 +34,17 @@ export default class Projects extends Component<any, any> {
         </ProjectButtonWrapper>
 
         <Project>
-          <img src={busyHive} width="100%"/>
+          <img src={outbuilding} width="100%" />
+        </Project>
+
+        <ProjectButtonWrapper>
+          <ProjectButton>
+            View Project
+          </ProjectButton>
+        </ProjectButtonWrapper>
+
+        <Project>
+          <img src={busyHive} width="100%" />
         </Project>
 
         <ProjectButtonWrapper>
@@ -68,7 +79,7 @@ export default class Projects extends Component<any, any> {
 
         <ProjectButtonWrapper>
           <ProjectButton>
-            View More Designs
+            View Logos
           </ProjectButton>
         </ProjectButtonWrapper>
 

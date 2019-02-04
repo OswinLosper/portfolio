@@ -1,5 +1,6 @@
 export interface IPageItem {
   bannerInfo: {
+    headerBG: any;
     role: string;
     title: string;
     date: string;
@@ -19,8 +20,12 @@ export interface IPageItem {
   route: string;
   images: {
     images: any;
+    imagesMobile: any;
     logos: any;
+    logosMobile: any;
     colors: any;
+    colorsMobile: any;
     icons: any;
+    iconsMobile: any;
   };
 }

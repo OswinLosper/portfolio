@@ -26,21 +26,26 @@ class Buttons extends Component<IProps, any> {
 
   render() {
     return (
-      <HomeButtonsContainer>
+      <HomeButtonsContainer
+        data-qa="home-button-container"
+      >
         <HomeButtons
           onClick={this.onButtonClick('/about')}
+          data-qa="about-contact-button"
         >
           About & Contact
         </HomeButtons>
 
         <HomeButtons
           onClick={this.onButtonClick('/work')}
+          data-qa="work-button"
         >
           My Work
         </HomeButtons>
 
         <HomeButtons
           onClick={this.onButtonClick('/cv')}
+          data-qa="resume-button"
         >
           Resume
         </HomeButtons>

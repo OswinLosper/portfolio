@@ -4,8 +4,7 @@ import {
   SocialMediaContact,
 } from '~/styles';
 
-import facebook from '~/resources/icons/facebook.svg';
-import googlePlus from '~/resources/icons/google-plus.svg';
+import linkedin from '~/resources/icons/linkedin.svg';
 import github from '~/resources/icons/github.svg';
 
 export default class SocialMedia extends Component<any, any> {
@@ -26,13 +25,8 @@ export default class SocialMedia extends Component<any, any> {
     return (
       <SocialMediaWrapper>
         <SocialMediaContact>
-          <img src={facebook} width="80px" />
+          <img src={linkedin} width="80px" />
         </SocialMediaContact>
-
-        <SocialMediaContact>
-          <img src={googlePlus} width="80px" />
-        </SocialMediaContact>
-
         <SocialMediaContact>
           <img src={github} width="80px" />
         </SocialMediaContact>

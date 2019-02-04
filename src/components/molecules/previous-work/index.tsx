@@ -2,8 +2,8 @@ import React, { Component, Fragment } from 'react';
 
 import {
   WorkSection, PositionHeader, PositionandDate, PositionTitle, Date,
-  CompanyName, WorkDescription, ResponsibiltiesDIV, UsedSkills, UsedSkillsWrapper,
-  TechHeadingDIV,
+  CompanyName, WorkDescription, ResponsibiltiesDIV, UsedSkills,
+  UsedSkillsWrapper, TechHeadingDIV,
 } from '~/components/pages/cv/styles';
 
 import { cvInformation } from '~/components/pages/cv/work-descriptions';
@@ -28,12 +28,12 @@ export default class PreviousWork extends Component<any, any> {
         {items.map(item => {
           const {
             id, position, company, date, summary,
-            responsibilties, techUsedHeading, techUsed,
+            techUsedHeading, techUsed,
           } = item;
           return (
             <Fragment key={id}>
               <PositionHeader
-                data-qa="CV Position Header">
+                data-qa="cv-position-header">
                 <PositionandDate>
                   <PositionTitle
                     data-qa="Position Title">
@@ -56,18 +56,7 @@ export default class PreviousWork extends Component<any, any> {
                 data-qa="Date of Employment">
 
                 {summary}
-                {
 
-                  responsibilties.map(
-                    ({ idInfo, information, }) =>
-                      (<span>
-                        <ResponsibiltiesDIV
-                          id={idInfo}>{<li>{information}</li>}
-                        </ResponsibiltiesDIV>
-                      </span>
-                      ),
-                  )
-                }
                 <TechHeadingDIV>
                   {techUsedHeading}
                 </TechHeadingDIV>

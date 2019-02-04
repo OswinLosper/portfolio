@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import arrowTop from '~/resources/icons/top-arrow.svg';
 
 import {
   FooterWrapper,
   Email,
   ContactText,
+  TopArrow,
 } from '~/styles';
 
 export default class Footer extends Component<any, any> {
@@ -22,16 +24,30 @@ export default class Footer extends Component<any, any> {
   }
   render() {
     return (
-      <FooterWrapper>
-        <ContactText>
-        Contact me for more information
-        </ContactText>
 
-        <Email>
-        oswinlosper@gmail.com
+      <div>
+
+        <TopArrow>
+          <img src={arrowTop} height="120px" />
+        </TopArrow>
+
+        <FooterWrapper>
+          <ContactText>
+            Contact me for more information
+        </ContactText>
+          <Email>
+            oswinlosper[@]gmail.com
         </Email>
 
-      </FooterWrapper>
+
+        </FooterWrapper>
+
+
+
+      </div>
+
+
+
     );
   }
 }

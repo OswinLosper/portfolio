@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
 import {
-  Header, HeadingText, ProjectInfo, Role,
+  LogosHeaderBG, HeadingText, ProjectInfo, Role,
   Date, Context, ProjectDescription, Chevron, ChevronWrapper,
 } from '~/styles';
 
 import chevronIcon from '~/resources/icons/chevron.svg';
+
+import { Animated } from 'react-animated-css';
 
 import { DataHeading } from '~/components/pages/header-data-project';
 
@@ -37,40 +39,49 @@ export default class WorkHeading extends Component<IProps, any> {
     } = this.props;
 
     return (
-      <Header
-        data-qa="big-header-image">
-        <HeadingText
-          data-qa="heading-text">
-          {title}
-        </HeadingText>
+      <Animated animationIn="zoomIn" animationOut="zoomIn" isVisible={true}>
+        <LogosHeaderBG
+          data-qa="big-header-image">
+          <HeadingText
+            data-qa="heading-text">
+            {title}
+          </HeadingText>
 
-        <ChevronWrapper
-          data-qa="content-wrapper">
-          <ProjectInfo
-            data-qa="project-info-wrapper">
-            <Role>
-              {role}
-            </Role>
+          <ChevronWrapper
+            data-qa="content-wrapper">
+            <ProjectInfo
+              data-qa="project-info-wrapper">
+              <Role>
+                {role}
+              </Role>
 
-            <Date
-              data-qa="project-date">
-              {date}
-            </Date>
-            <Context>
-              {context}
-            </Context>
-          </ProjectInfo>
+              <Date
+                data-qa="project-date">
+                {date}
+              </Date>
+              <Context>
+                {context}
+              </Context>
+            </ProjectInfo>
 
-          <ProjectDescription
-            data-qa="project-description">
-            {projectdescription}
-          </ProjectDescription>
+            <ProjectDescription
+              data-qa="project-description">
+              {projectdescription}
+            </ProjectDescription>
 
-        </ChevronWrapper>
-        <Chevron>
-          <img src={chevronIcon} />
-        </Chevron>
-      </Header>
+          </ChevronWrapper>
+
+          <Animated
+            animationIn="bounce"
+            animationOut="bounce"
+            isVisible={true}>
+
+            <Chevron>
+              <img src={chevronIcon} />
+            </Chevron>
+          </Animated>
+        </LogosHeaderBG>
+      </Animated>
 
 
     );

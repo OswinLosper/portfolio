@@ -39,22 +39,22 @@ export default class WorkContent extends Component<IProps, any> {
 
   render() {
     const {
-      id, 
-      challengeheading, 
-      challenge, 
-      solutionheading, 
+      id,
+      challengeheading,
+      challenge,
+      solutionheading,
       solution,
       fontsusedheading,
-      fontsused, 
-      iconsdesingedheading, 
-      iconstext, 
-      conclusionheading, 
-      conclusion, 
-} = this.props;
+      fontsused,
+      iconsdesingedheading,
+      iconstext,
+      conclusionheading,
+      conclusion,
+    } = this.props;
 
     return (
       <InnerPagesLayoutContainer>
-      <WrapperText
+        <WrapperText
           data-qa="wrapper-text">
           <HeadingTextInner
             data-qa="inner-text">
@@ -84,11 +84,11 @@ export default class WorkContent extends Component<IProps, any> {
         <WrapperText>
           <HeadingTextInner
             data-qa="inner-text">
-             {solutionheading}
+            {solutionheading}
           </HeadingTextInner>
 
           <WorkText>
-          {solution}
+            {solution}
             <br /><br />
           </WorkText>
         </WrapperText>
@@ -121,8 +121,8 @@ export default class WorkContent extends Component<IProps, any> {
         </HeadingTextInnerWrapper>
 
         <IconsText>
-         {iconstext}
-          </IconsText>
+          {iconstext}
+        </IconsText>
 
         <IconDesigns>
           <img src={OutbuildingIcons} />
@@ -136,12 +136,12 @@ export default class WorkContent extends Component<IProps, any> {
 
           <WorkText
             data-qa="work-text">
-          {conclusion}
-          <br /><br />
+            {conclusion}
+            <br /><br />
           </WorkText>
         </WrapperText>
 
-</InnerPagesLayoutContainer>
+      </InnerPagesLayoutContainer>
     );
   }
 }

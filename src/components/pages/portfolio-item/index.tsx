@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Navbar, Footer, } from '~/components/molecules';
+import { Navbar, NextAndPrevious, Footer } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
@@ -14,8 +14,11 @@ import SubHeaderSection from './components/SubHeaderSection';
 import WorkDetailsContainer from './components/WorkDetailsContainer';
 import CallToActionButton from './components/CallToActionButton';
 
+import { Animated } from 'react-animated-css';
+
 export interface IProps {
   bannerInfo: {
+    headerBG: any;
     role: string;
     title: string;
     date: string;
@@ -34,9 +37,13 @@ export interface IProps {
   title?: string;
   images: {
     images: any;
+    imagesMobile: any;
     logos: any;
+    logosMobile: any;
     colors: any;
+    colorsMobile: any;
     icons: any;
+    iconsMobile: any;
   };
 }
 
@@ -47,22 +54,26 @@ export default class PortfolioItemPage extends Component<IProps, any> {
       <InnerPagesLayoutContainer
         data-qa="page-container">
 
-        <Navbar/>
+        <Navbar />
 
-        <FullScreenBanner
-          role={bannerInfo.role}
-          title={bannerInfo.title}
-          date={bannerInfo.date}
-          context={bannerInfo.context}
-          projectDescription={bannerInfo.projectDescription}
-        />
+        <Animated animationIn="zoomIn" animationOut="zoomIn" isVisible={true}>
+
+          <FullScreenBanner
+            headerBG={bannerInfo.headerBG}
+            role={bannerInfo.role}
+            title={bannerInfo.title}
+            date={bannerInfo.date}
+            context={bannerInfo.context}
+            projectDescription={bannerInfo.projectDescription}
+          />
+        </Animated>
 
         <WorkDetailsContainer>
           <SubHeaderSection
             header="The Challenge"
             subtext={challenge}
           >
-            <CallToActionButton label="View Website"/>
+            <CallToActionButton label="View Website" />
           </SubHeaderSection>
 
           <SubHeaderSection
@@ -72,31 +83,36 @@ export default class PortfolioItemPage extends Component<IProps, any> {
 
           <OutbuildingDisplay
             data-qa="project-view-displays">
-            <img src={images.images}/>
+            <img src={images.images} className="desktop" />
+            <img src={images.imagesMobile} className="mobile" />
+
           </OutbuildingDisplay>
 
           <SubHeaderSection
-            header="Fonts & Colours Used"
+            header="Fonts & Colours"
             subtext={fonts.description}
             centered={true}
           />
 
           <ProjectColours>
-            <img src={images.colors}/>
+            <img src={images.colors} className="desktop" />
+            <img src={images.colorsMobile} className="mobile" />
           </ProjectColours>
 
           <ProjectColours>
-            <img src={images.logos}/>
+            <img src={images.logos} className="desktop" />
+            <img src={images.logosMobile} className="mobile" />
           </ProjectColours>
 
           <SubHeaderSection
-            header="Icons designed"
+            header="Icons Designed"
             subtext={icons.description}
             centered={true}
           />
 
           <IconDesigns>
-            <img src={images.icons}/>
+            <img src={images.icons} className="desktop" />
+            <img src={images.iconsMobile} className="mobile" />
           </IconDesigns>
 
           <SubHeaderSection
@@ -105,7 +121,9 @@ export default class PortfolioItemPage extends Component<IProps, any> {
           />
         </WorkDetailsContainer>
 
-        <Footer/>
+        <NextAndPrevious />
+
+        <Footer />
       </InnerPagesLayoutContainer>
     );
   }

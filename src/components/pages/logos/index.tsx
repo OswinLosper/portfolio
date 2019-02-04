@@ -8,9 +8,8 @@ import {
 } from '~/components/pages/logos/images';
 
 import {
-  InnerPagesLayoutContainer, HeadingText, WrapperText,
-  LogoCollectionWrapper, Logo, ProjectDescription,
-  SmartHeatHeader, LogoName, Chevron, ChevronWrapper,
+  InnerPagesLayoutContainer, LogoCollectionWrapper,
+  Logo, LogoName, Text,
 } from '~/styles';
 
 import headings from '~/components/pages/header-data';
@@ -30,11 +29,15 @@ export default class LogosPage extends Component<any, any> {
 
         <Navbar />
 
-     <WorkHeading
-          {...headings[4]}
+        <WorkHeading
+          {...headings[0]}
         />
 
-
+        <Text>
+          All my logo designs are supplied with a logo usage breakdown, logo alternatives,
+          font files all in vector files, allowing you to easily expand your logo for
+          large scale print and signage.
+          </Text>
 
         <LogoCollectionWrapper>
           <Logo>
@@ -51,7 +54,6 @@ export default class LogosPage extends Component<any, any> {
             <img src={EarlyTurf} width="100%" />
           </Logo>
         </LogoCollectionWrapper>
-
         <LogoCollectionWrapper>
           <Logo>
             <img src={EliteHandyman} width="100%" />
@@ -94,6 +96,7 @@ export default class LogosPage extends Component<any, any> {
           </Logo>
 
         </LogoCollectionWrapper>
+
 
         <Footer />
 
