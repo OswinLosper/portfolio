@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 import arrowBack from '~/resources/icons/back-arrow.svg';
 import logo from '~/resources/icons/logo.svg';
@@ -50,12 +50,14 @@ class Navbar extends Component<IProps, IState> {
           data-qa="back container"
           onClick={this.handleBackButtonClick}
         >
-          <img src={arrowBack} width="150px"/>
+          <img src={arrowBack} width="150px" />
         </BackContainer>
 
         <LogoContainer
           data-qa="logo container">
-          <img src={logo} width="150px"/>
+          <Link to="/home">
+            <img src={logo} width="150px" />
+          </Link>
         </LogoContainer>
 
       </HeaderContainer>

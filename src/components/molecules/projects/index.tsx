@@ -27,14 +27,9 @@ export default class Projects extends Component<any, any> {
         <Project>
           <img src={automation} width="100%" />
         </Project>
-
         <ProjectButtonWrapper>
-
           <ProjectButton>
-
             <Link to="/automation"> View Project </Link>
-
-
           </ProjectButton>
         </ProjectButtonWrapper>
 
