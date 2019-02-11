@@ -2,13 +2,13 @@ import React, { Component, Fragment } from 'react';
 
 import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
 
+import { AboutMe } from '~/components/pages/about-data-project';
+import { Animated } from 'react-animated-css';
+
 import {
   InnerPagesLayoutContainer, HeadingTextAbout, Text,
   SkillsHeadingText, ButtonToWork,
 } from '~/styles';
-
-import { AboutMe } from '~/components/pages/about-data-project';
-import { Animated } from 'react-animated-css';
 
 export default class AboutMePage extends Component<any, any> {
   static defaultProps = {
@@ -18,6 +18,13 @@ export default class AboutMePage extends Component<any, any> {
   state = {
     items: AboutMe,
   };
+
+  onButtonClick(url: string) {
+    const { history } = this.props;
+    return () => {
+      history.push(url);
+    };
+  }
 
   render() {
     const {
@@ -77,6 +84,7 @@ export default class AboutMePage extends Component<any, any> {
                 </Text>
 
                 <ButtonToWork
+                  onClick={this.onButtonClick('/work')}
                   data-qa="link-to-work-page">
                   {workText}
                 </ButtonToWork>

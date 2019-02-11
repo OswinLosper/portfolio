@@ -30,14 +30,9 @@ class Buttons extends Component<IProps, any> {
         data-qa="home-button-container"
       >
         <HomeButtons
-<<<<<<< HEAD
-          data-qa="about-contact-button">
-
-=======
           onClick={this.onButtonClick('/about')}
           data-qa="about-contact-button"
         >
->>>>>>> e0881d1fbc70df86b22dafb843bcd229e2730fcc
           About & Contact
         </HomeButtons>
 
