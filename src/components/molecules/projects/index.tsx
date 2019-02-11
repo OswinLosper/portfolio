@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import outbuilding from '~/resources/projects/outbuilding-company/outbuilding.jpg';
 import busyHive from '~/resources/projects/busy-hive.jpg';
@@ -28,8 +29,12 @@ export default class Projects extends Component<any, any> {
         </Project>
 
         <ProjectButtonWrapper>
+
           <ProjectButton>
-            View Project
+
+            <Link to="/automation"> View Project </Link>
+
+
           </ProjectButton>
         </ProjectButtonWrapper>
 
@@ -39,7 +44,7 @@ export default class Projects extends Component<any, any> {
 
         <ProjectButtonWrapper>
           <ProjectButton>
-            View Project
+            <Link to="/outbuilding"> View Project </Link>
           </ProjectButton>
         </ProjectButtonWrapper>
 
@@ -49,7 +54,7 @@ export default class Projects extends Component<any, any> {
 
         <ProjectButtonWrapper>
           <ProjectButton>
-            View Project
+            <Link to="/busy-hive"> View Project </Link>
           </ProjectButton>
         </ProjectButtonWrapper>
 
@@ -59,7 +64,7 @@ export default class Projects extends Component<any, any> {
 
         <ProjectButtonWrapper>
           <ProjectButton>
-            View Project
+            <Link to="/smartheat"> View Project </Link>
           </ProjectButton>
         </ProjectButtonWrapper>
 
@@ -69,7 +74,7 @@ export default class Projects extends Component<any, any> {
 
         <ProjectButtonWrapper>
           <ProjectButton>
-            View Project
+            <Link to="/invoice-app"> View Project </Link>
           </ProjectButton>
         </ProjectButtonWrapper>
 
@@ -79,7 +84,7 @@ export default class Projects extends Component<any, any> {
 
         <ProjectButtonWrapper>
           <ProjectButton>
-            View Logos
+            <Link to="/logos"> View Project </Link>
           </ProjectButton>
         </ProjectButtonWrapper>
 
@@ -88,3 +93,4 @@ export default class Projects extends Component<any, any> {
     );
   }
 }
+
