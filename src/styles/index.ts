@@ -72,6 +72,7 @@ text-align: justify;
 
   & span {
     text-align: center;
+
   }
 
   @media (max-width: 850px) {
@@ -413,7 +414,7 @@ font-size: 5rem;
 font-weight: 900;
 color: #544F51;
 text-transform: none;
-padding-top: 5rem;
+padding-top: 4rem;
 padding-bottom: 2rem;
 
   @media (max-width: 480px) {
@@ -516,7 +517,6 @@ padding: 1rem 1rem 3rem 1rem;
 
 export const SocialMediaContact = withProps<any>(styled.div)`
 margin-top: 2rem;
-margin-bottom: 5rem;
 display: flex;
 justify-content: center;
 flex-direction: column;
@@ -529,10 +529,24 @@ height: 150px;
 max-width: 150px;
 min-width: 10rem;
 cursor: pointer;
+
+& a {
+      color: #808080;
+      text-decoration: none;
+      }
+
+      & span {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
 :hover {
   background-color: #ececed;
 }
-  @media (max-width: 480px) {
+
+@media (max-width: 480px) {
     font-size: 0.9rem;
     margin-top: 1rem;
     min-width: 100%;
@@ -670,6 +684,12 @@ export const ProjectButton = withProps<any>(styled.div)`
     width: 250px;
     margin-top: -48px;
     background-color: rgba(255,255,255,1);
+
+    & a {
+      color: #808080;
+      text-decoration: none;
+      }
+
     :hover {
         background-color: #efefef;;
     }
@@ -688,10 +708,6 @@ export const ProjectButton = withProps<any>(styled.div)`
     background-color: rgba(255,255,255,1);
   }
 `;
-
-// -------------------//
-
-
 
 // PROJECT PAGES //
 

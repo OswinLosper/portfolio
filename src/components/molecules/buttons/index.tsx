@@ -49,7 +49,7 @@ class Buttons extends Component<IProps, any> {
         >
           Resume
         </HomeButtons>
-      </HomeButtonsContainer>
+      </HomeButtonsContainer >
     );
   }
 }

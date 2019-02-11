@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import { Navbar, SocialMedia, Skills, Footer } from '~/components/molecules';
 

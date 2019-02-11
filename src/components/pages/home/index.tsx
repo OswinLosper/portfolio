@@ -8,7 +8,6 @@ import {
   LayoutContainer,
 } from '~/styles';
 
-
 export interface IHomePageProps {
   title?: string;
 }
