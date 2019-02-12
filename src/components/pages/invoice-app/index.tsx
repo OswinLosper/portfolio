@@ -25,17 +25,6 @@ export default class InvoiceAppPage extends Component<any, any> {
 
         <Navbar />
 
-        {/* <WorkHeading
-          {...headings[3]}
-        />
-         <WorkContent
-          {...content[3]}
-        /> */}
-
-        <NextAndPreviousWrapper>
-          <NextAndPrevious />
-        </NextAndPreviousWrapper>
-
         <Footer />
 
       </InnerPagesLayoutContainer>

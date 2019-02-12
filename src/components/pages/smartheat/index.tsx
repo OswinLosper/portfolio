@@ -24,17 +24,6 @@ export default class SmartHeatPage extends Component<any, any> {
         data-qa="page-container">
         <Navbar />
 
-        {/* <WorkHeading
-          {...headings[2]}
-        />
-        <WorkContent
-          {...content[2]}
-        /> */}
-
-        <NextAndPreviousWrapper>
-          <NextAndPrevious />
-        </NextAndPreviousWrapper>
-
         <Footer />
 
       </InnerPagesLayoutContainer>

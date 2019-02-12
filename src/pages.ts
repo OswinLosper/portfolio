@@ -120,7 +120,7 @@ const pages: IPageItem[] = [
       'She was excited to launch her fully rebranded website and start marketing in order to bring her clients \n' +
       'to view the brilliantly fresh rebranded website that is now busyhivepa.com',
 
-    title: '',
+    title: 'Busy Hive',
     route: '/busy-hive',
     images: {
       images: BusyHiveImages,

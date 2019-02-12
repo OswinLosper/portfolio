@@ -31,19 +31,8 @@ export default class BusyHivePage extends Component<any, any> {
     return (
       <InnerPagesLayoutContainer
         data-qa="page-container">
+
         <Navbar />
-
-        {/* <WorkHeading
-          {...headings[1]}
-        /> */}
-        {/* <WorkContent
-          {...content[1]}
-        /> */}
-
-        <NextAndPreviousWrapper>
-          <NextAndPrevious />
-        </NextAndPreviousWrapper>
-
 
         <Footer />
 

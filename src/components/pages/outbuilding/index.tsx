@@ -26,10 +26,6 @@ export default class OutBuildingPage extends Component<any, any> {
 
         <Navbar />
 
-        <NextAndPreviousWrapper>
-          <NextAndPrevious />
-        </NextAndPreviousWrapper>
-
         <Footer />
 
       </InnerPagesLayoutContainer>
