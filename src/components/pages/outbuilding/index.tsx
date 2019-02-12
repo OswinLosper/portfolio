@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import { Navbar, Footer, NextAndPrevious } from '~/components/molecules';
+import { Navbar, Footer } from '~/components/molecules';
 
 import {
-  InnerPagesLayoutContainer, NextAndPreviousWrapper,
+  InnerPagesLayoutContainer,
 } from '~/styles';
 
 

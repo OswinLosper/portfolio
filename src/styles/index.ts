@@ -999,36 +999,7 @@ text-align: ${
   }
 `;
 
-export const NextAndPreviousWrapper = withProps<any>(styled.div)`
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-margin-top: 1rem;
-`;
-
-export const NextButtons = withProps<any>(styled.button)`
-background-color: rgba(255, 0, 0, 0.0);
-border: 1px solid #808080;
-color: #808080;
-padding: 1rem 5rem;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 1rem;
-margin: 10px 10px;
-cursor: pointer;
-    : hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-  @media (max-width: 850px) {
-    width: 18rem;
-  }
-`;
-
 // -------------------//
-
-
 
 export const LogosHeaderBG = withProps<any>(styled.div)`
 display: flex;

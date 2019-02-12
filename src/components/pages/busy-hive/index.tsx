@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
 
-import { Navbar, WorkHeading, WorkContent, NextAndPrevious, Footer, } from '~/components/molecules';
-
-import BusyHiveImages from '~/resources/projects/busy-hive/busy-hive-displays.jpg';
-import BusyHiveLogos from '~/resources/projects/busy-hive/logos.jpg';
-import BusyHiveColours from '~/resources/projects/busy-hive/busy-hive-colours.jpg';
-import BusyHiveIcons from '~/resources/projects/busy-hive/busyhive-icons.jpg';
-
-import headings from '~/components/pages/header-data';
-import content from '~/components/pages/work-data';
+import { Navbar, Footer, } from '~/components/molecules';
 
 import {
-  InnerPagesLayoutContainer, NextAndPreviousWrapper,
+  InnerPagesLayoutContainer,
 } from '~/styles';
 
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Navbar, NextAndPrevious, Footer } from '~/components/molecules';
+import { Navbar, Footer } from '~/components/molecules';
 
 import {
   InnerPagesLayoutContainer,
@@ -120,8 +120,6 @@ export default class PortfolioItemPage extends Component<IProps, any> {
             subtext={conclusion}
           />
         </WorkDetailsContainer>
-
-        <NextAndPrevious />
 
         <Footer />
       </InnerPagesLayoutContainer>
