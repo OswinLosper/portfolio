@@ -26,11 +26,6 @@ export default class Footer extends Component<any, any> {
     return (
 
       <div>
-
-        <TopArrow>
-          <img src={arrowTop} height="120px" />
-        </TopArrow>
-
         <FooterWrapper>
           <ContactText>
             Contact me for more information
