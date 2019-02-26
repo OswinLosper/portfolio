@@ -33,16 +33,8 @@ export default class Footer extends Component<any, any> {
           <Email>
             oswinlosper[@]gmail.com
         </Email>
-
-
         </FooterWrapper>
-
-
-
       </div>
-
-
-
     );
   }
 }
