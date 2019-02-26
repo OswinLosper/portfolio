@@ -127,9 +127,3 @@ export default class PortfolioItemPage extends Component<IProps, any> {
   }
 }
 
-
-/**
- * FullScreenBanner
- * WorkDetailsContainer
- * SubHeaderSection (heading can be centered, font size configurable)
- */

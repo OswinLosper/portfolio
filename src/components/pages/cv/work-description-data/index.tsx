@@ -49,24 +49,6 @@ const cvInformation = [
       'approve them before it goes live, hiring of new designers, working closely with head of design to reduce escalations, working  \n' +
       'closely with head of deaign to excel in customer service, offering design help with other designers and juniors, sitting with  \n' +
       'designers and imparting knowledge - Improving overall service and quality.',
-    // responsibilties: [
-    //   {
-    //     idInfo: 11,
-    //     information: 'HTML & CSS',
-    //   },
-    //   {
-    //     idInfo: 12,
-    //     information: 'WordPress',
-    //   },
-    //   {
-    //     idInfo: 13,
-    //     information: 'UX Design',
-    //   },
-    //   {
-    //     idInfo: 14,
-    //     information: 'Adobe Suite',
-    //   },
-    // ],
     techUsedHeading: 'Technology Used',
 
     techUsed: [
@@ -126,31 +108,4 @@ const cvInformation = [
 
 export default cvInformation;
 
-// const cvInformation = [
-//   {
-//     id: 0,
-//     position: 'Automation Tester & Website',
-//     company: 'iPlatform',
-//     date: 'September 2016 - Present',
-//     description: 'Much of my focus is spent is working on the testing of a very complex system
-// in Configurable Insurance Management System application components and working with the team on
-
-//   },
-//   {
-//     id: 1,
-//     position: 'Tester & Senior Designer',
-//     company: 'bOnline',
-//     date: 'August 2013 - September 2017',
-//     description: 'Much of my focus is spent is working on the testing of a very
-//   },
-//   {
-//     id: 2,
-//     position: '​DTP Operator / Graphic Designer',
-//     company: 'Perfect Print',
-//     date: 'August 2012 - August 2013',
-//     description: 'Much of my focus is spent is working on the testing of a very complex system
-//   },
-// ];
-
-// export default cvInformation;
 

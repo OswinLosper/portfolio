@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import { PreviousWork, SkillandTools } from '~/components/molecules';
 
@@ -30,7 +31,8 @@ export default class CVPage extends Component<ICVPageProps, any> {
           <Heading
             data-qa="heading">
             <div>
-              Oswin Losper
+              <Link to="/home"> Oswin Losper </Link>
+
             </div>
 
             <Title

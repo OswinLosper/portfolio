@@ -50,7 +50,7 @@ class Buttons extends Component<IProps, any> {
           data-qa="resume-button"
         >
           Resume
-        </HomeButtons>;
+        </HomeButtons>
       </HomeButtonsContainer >
     );
   }

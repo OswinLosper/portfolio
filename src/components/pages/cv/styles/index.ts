@@ -45,6 +45,12 @@ flex-direction: column;
 font-size: 2.7rem;
 color: #fff;
 font-weight: 600;
+
+    & a {
+      color: #fff;
+      text-decoration: none;
+      }
+
 `;
 
 export const Title = withProps<any>(styled.div)`
