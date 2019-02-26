@@ -73,7 +73,7 @@ export default class PortfolioItemPage extends Component<IProps, any> {
             header="The Challenge"
             subtext={challenge}
           >
-            <CallToActionButton label="View Website" />
+
           </SubHeaderSection>
 
           <SubHeaderSection

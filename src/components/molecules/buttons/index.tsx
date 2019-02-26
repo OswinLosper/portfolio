@@ -44,11 +44,13 @@ class Buttons extends Component<IProps, any> {
         </HomeButtons>
 
         <HomeButtons
-          onClick={this.onButtonClick('/cv')}
+          onClick={this.onButtonClick('/cv')
+
+          }
           data-qa="resume-button"
         >
           Resume
-        </HomeButtons>
+        </HomeButtons>;
       </HomeButtonsContainer >
     );
   }

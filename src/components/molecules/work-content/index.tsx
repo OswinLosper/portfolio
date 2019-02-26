@@ -68,13 +68,6 @@ export default class WorkContent extends Component<IProps, any> {
           </WorkText>
         </WrapperText>
 
-        <ProjectButtonWrapper
-          data-qa="project-button-wrapper">
-          <ProjectButton
-            data-qa="project-button">
-            View Website
-          </ProjectButton>
-        </ProjectButtonWrapper>
 
         <OutbuildingDisplay
           data-qa="project-view-displays">
