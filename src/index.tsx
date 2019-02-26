@@ -16,8 +16,6 @@ import PortfolioItem from './components/pages/portfolio-item';
 import HomePage from '~/components/pages/home';
 import AboutPage from '~/components/pages/about';
 import WorkPage from '~/components/pages/work';
-import SmartHeatPage from '~/components/pages/smartheat';
-import InvoiceAppPage from '~/components/pages/invoice-app';
 import LogosPage from '~/components/pages/logos';
 import CVPage from '~/components/pages/cv';
 import AutomationPage from '~/components/pages/automation';
@@ -32,10 +30,6 @@ render(
         <Route exact path="/home" component={HomePage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/work" component={WorkPage} />
-        {/*<Route exact path="/outbuilding2" component={OutBuildingPage} />*/}
-        {/*<Route exact path="/busy-hive" component={BusyHivePage} />*/}
-        {/* <Route exact path="/smartheat" component={SmartHeatPage} /> */}
-        {/* <Route exact path="/invoice-app" component={InvoiceAppPage} /> */}
         <Route exact path="/logos" component={LogosPage} />
         <Route exact path="/cv" component={CVPage} />
         <Route exact path="/automation" component={AutomationPage} />
